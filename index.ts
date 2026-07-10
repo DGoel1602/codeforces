@@ -291,7 +291,7 @@ function parseReadmeProblems(readme: string): ReadmeProblem[] {
     });
 }
 
-function countValues(values: string[]): Array<[string, number]> {
+function countValuesByName(values: string[]): Array<[string, number]> {
   const counts = new Map<string, number>();
 
   for (const value of values) {
@@ -301,6 +301,22 @@ function countValues(values: string[]): Array<[string, number]> {
   return [...counts.entries()].sort(([left], [right]) =>
     left.localeCompare(right, undefined, { numeric: true }),
   );
+}
+
+function countValuesByFrequency(values: string[]): Array<[string, number]> {
+  const counts = new Map<string, number>();
+
+  for (const value of values) {
+    counts.set(value, (counts.get(value) ?? 0) + 1);
+  }
+
+  return [...counts.entries()].sort(([leftName, leftCount], [rightName, rightCount]) => {
+    if (leftCount !== rightCount) {
+      return rightCount - leftCount;
+    }
+
+    return leftName.localeCompare(rightName, undefined, { numeric: true });
+  });
 }
 
 function renderCountTable(
@@ -322,10 +338,10 @@ function renderSolutionsReadme(problems: ReadmeProblem[]): string {
       numeric: true,
     }),
   );
-  const ratingCounts = countValues(
+  const ratingCounts = countValuesByName(
     sortedProblems.map((problem) => problem.rating || "unrated"),
   );
-  const topicCounts = countValues(
+  const topicCounts = countValuesByFrequency(
     sortedProblems.flatMap((problem) =>
       problem.topics
         ? problem.topics.split(",").map((topic) => topic.trim())

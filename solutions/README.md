@@ -22,39 +22,39 @@
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| 2-sat | 2 |
-| binary search | 58 |
-| bitmasks | 45 |
-| brute force | 74 |
-| combinatorics | 18 |
-| constructive algorithms | 118 |
-| data structures | 53 |
-| dfs and similar | 31 |
-| divide and conquer | 5 |
-| dp | 77 |
-| dsu | 10 |
-| fft | 1 |
-| flows | 4 |
-| games | 15 |
-| geometry | 9 |
-| graph matchings | 1 |
-| graphs | 32 |
 | greedy | 201 |
-| hashing | 2 |
-| implementation | 85 |
-| interactive | 21 |
 | math | 145 |
-| matrices | 1 |
-| number theory | 40 |
-| probabilities | 6 |
-| schedules | 2 |
-| shortest paths | 5 |
+| constructive algorithms | 118 |
+| implementation | 85 |
+| dp | 77 |
+| untagged | 75 |
+| brute force | 74 |
+| binary search | 58 |
+| data structures | 53 |
 | sortings | 49 |
-| strings | 23 |
-| ternary search | 2 |
+| bitmasks | 45 |
+| number theory | 40 |
+| graphs | 32 |
+| dfs and similar | 31 |
 | trees | 27 |
 | two pointers | 27 |
-| untagged | 75 |
+| strings | 23 |
+| interactive | 21 |
+| combinatorics | 18 |
+| games | 15 |
+| dsu | 10 |
+| geometry | 9 |
+| probabilities | 6 |
+| divide and conquer | 5 |
+| shortest paths | 5 |
+| flows | 4 |
+| 2-sat | 2 |
+| hashing | 2 |
+| schedules | 2 |
+| ternary search | 2 |
+| fft | 1 |
+| graph matchings | 1 |
+| matrices | 1 |
 ## Problems
 | Contest | Problem | Rating | Topics |
 | --- | --- | --- | --- |
