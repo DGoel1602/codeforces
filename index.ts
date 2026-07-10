@@ -42,6 +42,44 @@ function problemKey(submission: CodeforcesSubmission): string | null {
   return `${contestId}/${submission.problem.index.toLowerCase()}`;
 }
 
+function extensionForLanguage(language: string): string | null {
+  const normalized = language.toLowerCase();
+
+  if (normalized.includes("c++")) {
+    return "cpp";
+  }
+
+  if (normalized.includes("python") || normalized.includes("pypy")) {
+    return "py";
+  }
+
+  if (normalized.startsWith("java ")) {
+    return "java";
+  }
+
+  if (normalized.includes("gnu c") || normalized === "c") {
+    return "c";
+  }
+
+  return null;
+}
+
+function solutionPath(submission: CodeforcesSubmission): string | null {
+  const contestId = submission.problem.contestId ?? submission.contestId;
+
+  if (!contestId) {
+    return null;
+  }
+
+  const extension = extensionForLanguage(submission.programmingLanguage);
+
+  if (!extension) {
+    return null;
+  }
+
+  return `solutions/${contestId}/${submission.problem.index.toLowerCase()}.${extension}`;
+}
+
 async function fetchSubmissions(handle: string): Promise<CodeforcesSubmission[]> {
   const url = new URL("https://codeforces.com/api/user.status");
   url.searchParams.set("handle", handle);
@@ -98,19 +136,41 @@ function finalAcceptedSubmissions(
 
 const submissions = await fetchSubmissions(handle);
 const accepted = finalAcceptedSubmissions(submissions);
+const planned = await Promise.all(
+  accepted.map(async (submission) => {
+    const path = solutionPath(submission);
+
+    if (!path) {
+      return null;
+    }
+
+    return {
+      path,
+      exists: await Bun.file(path).exists(),
+      submission,
+    };
+  }),
+);
+const validPlanned = planned.filter((item) => item !== null);
+const missing = validPlanned.filter((item) => !item.exists);
 
 console.log(`Found ${accepted.length} final AC submissions for ${handle}.`);
+console.log(
+  `${validPlanned.length} use C++, Java, C, or Python and can be saved.`,
+);
+console.log(`${missing.length} submissions are not in solutions/ yet.`);
 
-for (const submission of accepted.slice(0, 10)) {
+for (const item of missing.slice(0, 10)) {
+  const { submission } = item;
   const contestId = submission.problem.contestId ?? submission.contestId;
   const rating = submission.problem.rating ?? "unrated";
   const tags = submission.problem.tags.join(", ") || "no tags";
 
   console.log(
-    `${contestId}/${submission.problem.index.toLowerCase()} - ${submission.problem.name} (${rating}) [${tags}]`,
+    `${item.path} <- submission ${submission.id}: ${contestId}/${submission.problem.index.toLowerCase()} - ${submission.problem.name} (${rating}) [${submission.programmingLanguage}; ${tags}]`,
   );
 }
 
-if (accepted.length > 10) {
-  console.log(`...and ${accepted.length - 10} more.`);
+if (missing.length > 10) {
+  console.log(`...and ${missing.length - 10} more.`);
 }
