@@ -1,5 +1,6 @@
 import { mkdir } from "node:fs/promises";
 import { createHash } from "node:crypto";
+import { Buffer } from "node:buffer";
 
 const handle = Bun.argv[2];
 
@@ -34,6 +35,7 @@ type CodeforcesSubmission = {
   verdict?: string;
   problem: CodeforcesProblem;
   source?: string;
+  sourceBase64?: string;
 };
 
 type PlannedSubmission = {
@@ -165,13 +167,19 @@ function codeforcesApiUrl(
 }
 
 function submissionSource(submission: CodeforcesSubmission): string {
-  if (!submission.source) {
+  const source =
+    submission.source ??
+    (submission.sourceBase64
+      ? Buffer.from(submission.sourceBase64, "base64").toString("utf8")
+      : undefined);
+
+  if (!source) {
     throw new Error(
       `Submission ${submission.id} did not include source. Set CF_API_KEY and CF_API_SECRET for the Codeforces account "${handle}", then rerun.`,
     );
   }
 
-  return `${submission.source.replace(/\r\n/g, "\n").trimEnd()}\n`;
+  return `${source.replace(/\r\n/g, "\n").trimEnd()}\n`;
 }
 
 function finalAcceptedSubmissions(
