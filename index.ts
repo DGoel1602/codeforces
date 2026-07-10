@@ -1,4 +1,5 @@
 import { mkdir } from "node:fs/promises";
+import { createHash } from "node:crypto";
 
 const handle = Bun.argv[2];
 
@@ -32,6 +33,7 @@ type CodeforcesSubmission = {
   programmingLanguage: string;
   verdict?: string;
   problem: CodeforcesProblem;
+  source?: string;
 };
 
 type PlannedSubmission = {
@@ -46,7 +48,8 @@ type FetchedSubmission = PlannedSubmission & {
 
 const commitSplitThreshold = 20;
 const readmePath = "solutions/README.md";
-const codeforcesCookie = Bun.env.CODEFORCES_COOKIE;
+const codeforcesApiKey = Bun.env.CF_API_KEY;
+const codeforcesApiSecret = Bun.env.CF_API_SECRET;
 
 function problemKey(submission: CodeforcesSubmission): string | null {
   const contestId = submission.problem.contestId ?? submission.contestId;
@@ -96,70 +99,13 @@ function solutionPath(submission: CodeforcesSubmission): string | null {
   return `solutions/${contestId}/${submission.problem.index.toLowerCase()}.${extension}`;
 }
 
-function submissionSourceUrl(submission: CodeforcesSubmission): string {
-  const contestId = submission.problem.contestId ?? submission.contestId;
-
-  if (!contestId) {
-    throw new Error(`Submission ${submission.id} has no contest id`);
-  }
-
-  return `https://codeforces.com/contest/${contestId}/submission/${submission.id}`;
-}
-
-function decodeHtml(value: string): string {
-  const namedEntities: Record<string, string> = {
-    amp: "&",
-    gt: ">",
-    lt: "<",
-    quot: '"',
-    apos: "'",
-    nbsp: " ",
-  };
-
-  return value.replaceAll(
-    /&(#x[0-9a-f]+|#\d+|[a-z]+);/gi,
-    (entity, body: string) => {
-      const normalized = body.toLowerCase();
-
-      if (normalized.startsWith("#x")) {
-        return String.fromCodePoint(Number.parseInt(normalized.slice(2), 16));
-      }
-
-      if (normalized.startsWith("#")) {
-        return String.fromCodePoint(Number.parseInt(normalized.slice(1), 10));
-      }
-
-      return namedEntities[normalized] ?? entity;
-    },
-  );
-}
-
-function extractSource(html: string, submissionId: number): string {
-  const match = html.match(
-    /<pre[^>]*id="program-source-text"[^>]*>([\s\S]*?)<\/pre>/,
-  );
-
-  if (!match) {
-    if (
-      html.includes("Please wait. Your browser is being checked") ||
-      html.includes("Just a moment")
-    ) {
-      throw new Error(
-        `Codeforces blocked source fetch for submission ${submissionId}. Try rerunning with CODEFORCES_COOKIE from a logged-in browser session.`,
-      );
-    }
-
-    throw new Error(
-      `Could not find source for submission ${submissionId}. If this submission is not public, rerun with CODEFORCES_COOKIE from a logged-in browser session.`,
-    );
-  }
-
-  return `${decodeHtml(match[1]).replace(/\r\n/g, "\n").trimEnd()}\n`;
-}
-
 async function fetchSubmissions(handle: string): Promise<CodeforcesSubmission[]> {
-  const url = new URL("https://codeforces.com/api/user.status");
-  url.searchParams.set("handle", handle);
+  const url = codeforcesApiUrl("user.status", {
+    handle,
+    ...(codeforcesApiKey && codeforcesApiSecret
+      ? { includeSources: "true" }
+      : {}),
+  });
 
   const response = await fetch(url);
 
@@ -178,19 +124,54 @@ async function fetchSubmissions(handle: string): Promise<CodeforcesSubmission[]>
   return body.result;
 }
 
-async function fetchSubmissionSource(
-  submission: CodeforcesSubmission,
-): Promise<string> {
-  const headers = codeforcesCookie ? { cookie: codeforcesCookie } : undefined;
-  const response = await fetch(submissionSourceUrl(submission), { headers });
+function codeforcesApiUrl(
+  method: string,
+  params: Record<string, string>,
+): URL {
+  const url = new URL(`https://codeforces.com/api/${method}`);
 
-  if (!response.ok) {
+  if (!codeforcesApiKey || !codeforcesApiSecret) {
+    for (const [key, value] of Object.entries(params)) {
+      url.searchParams.set(key, value);
+    }
+
+    return url;
+  }
+
+  const signedParams: Record<string, string> = {
+    ...params,
+    apiKey: codeforcesApiKey,
+    time: Math.floor(Date.now() / 1000).toString(),
+  };
+  const sortedParams = Object.entries(signedParams).sort(
+    ([leftKey, leftValue], [rightKey, rightValue]) =>
+      leftKey === rightKey
+        ? leftValue.localeCompare(rightValue)
+        : leftKey.localeCompare(rightKey),
+  );
+  const query = new URLSearchParams(sortedParams).toString();
+  const rand = Math.random().toString(36).slice(2, 8).padEnd(6, "0");
+  const hash = createHash("sha512")
+    .update(`${rand}/${method}?${query}#${codeforcesApiSecret}`)
+    .digest("hex");
+
+  for (const [key, value] of sortedParams) {
+    url.searchParams.set(key, value);
+  }
+
+  url.searchParams.set("apiSig", `${rand}${hash}`);
+
+  return url;
+}
+
+function submissionSource(submission: CodeforcesSubmission): string {
+  if (!submission.source) {
     throw new Error(
-      `Codeforces returned HTTP ${response.status} for submission ${submission.id}`,
+      `Submission ${submission.id} did not include source. Set CF_API_KEY and CF_API_SECRET for the Codeforces account "${handle}", then rerun.`,
     );
   }
 
-  return extractSource(await response.text(), submission.id);
+  return `${submission.source.replace(/\r\n/g, "\n").trimEnd()}\n`;
 }
 
 function finalAcceptedSubmissions(
@@ -231,7 +212,7 @@ async function fetchPlannedSubmission(
 ): Promise<FetchedSubmission> {
   return {
     ...item,
-    source: await fetchSubmissionSource(item.submission),
+    source: submissionSource(item.submission),
   };
 }
 
