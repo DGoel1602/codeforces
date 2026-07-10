@@ -1,3 +1,61 @@
+## Rating Counts
+| Rating | Problems |
+| --- | ---: |
+| 800 | 56 |
+| 900 | 23 |
+| 1000 | 10 |
+| 1100 | 27 |
+| 1200 | 22 |
+| 1300 | 28 |
+| 1400 | 20 |
+| 1500 | 24 |
+| 1600 | 18 |
+| 1700 | 10 |
+| 1800 | 46 |
+| 1900 | 35 |
+| 2000 | 9 |
+| 2100 | 3 |
+| 2200 | 4 |
+| 2300 | 4 |
+| 2500 | 1 |
+| unrated | 86 |
+## Topic Counts
+| Topic | Problems |
+| --- | ---: |
+| 2-sat | 2 |
+| binary search | 58 |
+| bitmasks | 45 |
+| brute force | 74 |
+| combinatorics | 18 |
+| constructive algorithms | 118 |
+| data structures | 53 |
+| dfs and similar | 31 |
+| divide and conquer | 5 |
+| dp | 77 |
+| dsu | 10 |
+| fft | 1 |
+| flows | 4 |
+| games | 15 |
+| geometry | 9 |
+| graph matchings | 1 |
+| graphs | 32 |
+| greedy | 201 |
+| hashing | 2 |
+| implementation | 85 |
+| interactive | 21 |
+| math | 145 |
+| matrices | 1 |
+| number theory | 40 |
+| probabilities | 6 |
+| schedules | 2 |
+| shortest paths | 5 |
+| sortings | 49 |
+| strings | 23 |
+| ternary search | 2 |
+| trees | 27 |
+| two pointers | 27 |
+| untagged | 75 |
+## Problems
 | Contest | Problem | Rating | Topics |
 | --- | --- | --- | --- |
 | 20 | C. Dijkstra? | 1900 | graphs, shortest paths |

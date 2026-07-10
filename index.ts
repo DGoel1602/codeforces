@@ -48,6 +48,13 @@ type FetchedSubmission = PlannedSubmission & {
   source: string;
 };
 
+type ReadmeProblem = {
+  contest: string;
+  problem: string;
+  rating: string;
+  topics: string;
+};
+
 const commitSplitThreshold = 20;
 const readmePath = "solutions/README.md";
 const codeforcesApiKey = Bun.env.CF_API_KEY;
@@ -231,40 +238,127 @@ async function writeSubmission(item: FetchedSubmission): Promise<void> {
   await Bun.write(item.path, item.source);
 }
 
-function readmeRow(submission: CodeforcesSubmission): string {
+function readmeProblemFromSubmission(
+  submission: CodeforcesSubmission,
+): ReadmeProblem {
   const contestId = submission.problem.contestId ?? submission.contestId;
-  const problem = `${submission.problem.index}. ${submission.problem.name}`;
-  const rating = submission.problem.rating?.toString() ?? "";
-  const topics = submission.problem.tags.join(", ");
 
-  return `| ${contestId} | ${problem} | ${rating} | ${topics} |`;
+  return {
+    contest: contestId?.toString() ?? "",
+    problem: `${submission.problem.index}. ${submission.problem.name}`,
+    rating: submission.problem.rating?.toString() ?? "",
+    topics: submission.problem.tags.join(", "),
+  };
+}
+
+function markdownCell(value: string): string {
+  return value.replaceAll("|", "\\|");
+}
+
+function readmeProblemKey(problem: ReadmeProblem): string {
+  return `${problem.contest}/${problem.problem}`;
+}
+
+function readmeRow(problem: ReadmeProblem): string {
+  return `| ${markdownCell(problem.contest)} | ${markdownCell(problem.problem)} | ${markdownCell(problem.rating)} | ${markdownCell(problem.topics)} |`;
+}
+
+function parseReadmeProblems(readme: string): ReadmeProblem[] {
+  return readme
+    .split("\n")
+    .flatMap((line) => {
+      if (!line.startsWith("| ") || line.includes("---")) {
+        return [];
+      }
+
+      const cells = line
+        .slice(1, -1)
+        .split("|")
+        .map((cell) => cell.trim());
+
+      if (cells.length !== 4 || !/^\d+$/.test(cells[0])) {
+        return [];
+      }
+
+      return [
+        {
+          contest: cells[0],
+          problem: cells[1],
+          rating: cells[2],
+          topics: cells[3],
+        },
+      ];
+    });
+}
+
+function countValues(values: string[]): Array<[string, number]> {
+  const counts = new Map<string, number>();
+
+  for (const value of values) {
+    counts.set(value, (counts.get(value) ?? 0) + 1);
+  }
+
+  return [...counts.entries()].sort(([left], [right]) =>
+    left.localeCompare(right, undefined, { numeric: true }),
+  );
+}
+
+function renderCountTable(
+  title: string,
+  label: string,
+  rows: Array<[string, number]>,
+): string {
+  return [
+    `## ${title}`,
+    `| ${label} | Problems |`,
+    "| --- | ---: |",
+    ...rows.map(([name, count]) => `| ${markdownCell(name)} | ${count} |`),
+  ].join("\n");
+}
+
+function renderSolutionsReadme(problems: ReadmeProblem[]): string {
+  const sortedProblems = [...problems].sort((left, right) =>
+    readmeRow(left).localeCompare(readmeRow(right), undefined, {
+      numeric: true,
+    }),
+  );
+  const ratingCounts = countValues(
+    sortedProblems.map((problem) => problem.rating || "unrated"),
+  );
+  const topicCounts = countValues(
+    sortedProblems.flatMap((problem) =>
+      problem.topics
+        ? problem.topics.split(",").map((topic) => topic.trim())
+        : ["untagged"],
+    ),
+  );
+
+  return [
+    renderCountTable("Rating Counts", "Rating", ratingCounts),
+    renderCountTable("Topic Counts", "Topic", topicCounts),
+    "## Problems",
+    "| Contest | Problem | Rating | Topics |",
+    "| --- | --- | --- | --- |",
+    ...sortedProblems.map(readmeRow),
+    "",
+  ].join("\n");
 }
 
 async function updateSolutionsReadme(items: PlannedSubmission[]): Promise<void> {
-  const headerLine = "| Contest | Problem | Rating | Topics |";
-  const separatorLine = "| --- | --- | --- | --- |";
-  const header = `${headerLine}\n${separatorLine}`;
-  const existing = await Bun.file(readmePath).text().catch(() => header);
-  const rows = new Set(
-    existing
-      .split("\n")
-      .filter(
-        (line) =>
-          line.startsWith("| ") &&
-          !line.includes("---") &&
-          line !== headerLine,
-      ),
+  const existing = await Bun.file(readmePath).text().catch(() => "");
+  const problems = new Map(
+    parseReadmeProblems(existing).map((problem) => [
+      readmeProblemKey(problem),
+      problem,
+    ]),
   );
 
   for (const item of items) {
-    rows.add(readmeRow(item.submission));
+    const problem = readmeProblemFromSubmission(item.submission);
+    problems.set(readmeProblemKey(problem), problem);
   }
 
-  const sortedRows = [...rows].sort((left, right) =>
-    left.localeCompare(right, undefined, { numeric: true }),
-  );
-
-  await Bun.write(readmePath, `${header}\n${sortedRows.join("\n")}\n`);
+  await Bun.write(readmePath, renderSolutionsReadme([...problems.values()]));
 }
 
 async function runGit(args: string[]): Promise<void> {
@@ -381,5 +475,6 @@ if (missing.length > 0) {
   await writeAndCommitSubmissions(missing);
   console.log(`Wrote and committed ${missing.length} submissions.`);
 } else {
+  await updateSolutionsReadme(validPlanned);
   console.log("No new submissions to write.");
 }
