@@ -40,8 +40,13 @@ type PlannedSubmission = {
   submission: CodeforcesSubmission;
 };
 
+type FetchedSubmission = PlannedSubmission & {
+  source: string;
+};
+
 const commitSplitThreshold = 20;
 const readmePath = "solutions/README.md";
+const codeforcesCookie = Bun.env.CODEFORCES_COOKIE;
 
 function problemKey(submission: CodeforcesSubmission): string | null {
   const contestId = submission.problem.contestId ?? submission.contestId;
@@ -98,7 +103,7 @@ function submissionSourceUrl(submission: CodeforcesSubmission): string {
     throw new Error(`Submission ${submission.id} has no contest id`);
   }
 
-  return `https://codeforces.com/problemset/submission/${contestId}/${submission.id}`;
+  return `https://codeforces.com/contest/${contestId}/submission/${submission.id}`;
 }
 
 function decodeHtml(value: string): string {
@@ -135,7 +140,18 @@ function extractSource(html: string, submissionId: number): string {
   );
 
   if (!match) {
-    throw new Error(`Could not find source for submission ${submissionId}`);
+    if (
+      html.includes("Please wait. Your browser is being checked") ||
+      html.includes("Just a moment")
+    ) {
+      throw new Error(
+        `Codeforces blocked source fetch for submission ${submissionId}. Try rerunning with CODEFORCES_COOKIE from a logged-in browser session.`,
+      );
+    }
+
+    throw new Error(
+      `Could not find source for submission ${submissionId}. If this submission is not public, rerun with CODEFORCES_COOKIE from a logged-in browser session.`,
+    );
   }
 
   return `${decodeHtml(match[1]).replace(/\r\n/g, "\n").trimEnd()}\n`;
@@ -165,7 +181,8 @@ async function fetchSubmissions(handle: string): Promise<CodeforcesSubmission[]>
 async function fetchSubmissionSource(
   submission: CodeforcesSubmission,
 ): Promise<string> {
-  const response = await fetch(submissionSourceUrl(submission));
+  const headers = codeforcesCookie ? { cookie: codeforcesCookie } : undefined;
+  const response = await fetch(submissionSourceUrl(submission), { headers });
 
   if (!response.ok) {
     throw new Error(
@@ -209,12 +226,20 @@ function finalAcceptedSubmissions(
   });
 }
 
-async function writeSubmission(item: PlannedSubmission): Promise<void> {
-  const source = await fetchSubmissionSource(item.submission);
+async function fetchPlannedSubmission(
+  item: PlannedSubmission,
+): Promise<FetchedSubmission> {
+  return {
+    ...item,
+    source: await fetchSubmissionSource(item.submission),
+  };
+}
+
+async function writeSubmission(item: FetchedSubmission): Promise<void> {
   const directory = item.path.slice(0, item.path.lastIndexOf("/"));
 
   await mkdir(directory, { recursive: true });
-  await Bun.write(item.path, source);
+  await Bun.write(item.path, item.source);
 }
 
 function readmeRow(submission: CodeforcesSubmission): string {
@@ -290,11 +315,17 @@ async function writeAndCommitSubmissions(
   }
 
   if (items.length > commitSplitThreshold) {
+    const fetchedItems = [];
+
     for (const item of items) {
+      fetchedItems.push(await fetchPlannedSubmission(item));
+    }
+
+    for (const item of fetchedItems) {
       await writeSubmission(item);
     }
 
-    await updateSolutionsReadme(items);
+    await updateSolutionsReadme(fetchedItems);
     await commitPaths(`Add ${items.length} Codeforces submissions`, [
       ...items.map((item) => item.path),
       readmePath,
@@ -303,7 +334,9 @@ async function writeAndCommitSubmissions(
   }
 
   for (const item of items) {
-    await writeSubmission(item);
+    const fetchedItem = await fetchPlannedSubmission(item);
+
+    await writeSubmission(fetchedItem);
     await updateSolutionsReadme([item]);
     await commitPaths(commitMessageFor(item), [item.path, readmePath]);
   }
