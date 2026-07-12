@@ -18,12 +18,12 @@
 | 2200 | 4 |
 | 2300 | 4 |
 | 2500 | 1 |
-| unrated | 88 |
+| unrated | 89 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 201 |
-| math | 145 |
+| math | 146 |
 | constructive algorithms | 120 |
 | implementation | 85 |
 | dp | 77 |
@@ -40,7 +40,7 @@
 | two pointers | 27 |
 | strings | 23 |
 | interactive | 21 |
-| combinatorics | 18 |
+| combinatorics | 19 |
 | games | 15 |
 | dsu | 10 |
 | geometry | 9 |
@@ -411,6 +411,7 @@
 | 2242 | E. Product of Closures |  | bitmasks, brute force, constructive algorithms, greedy, implementation, math, number theory |
 | 2246 | A. farmpiggie and Subset Sum |  | constructive algorithms |
 | 2246 | B. ezraft and Array |  | constructive algorithms |
+| 2246 | C. 0mar and Alternating Sums |  | combinatorics, math |
 | 104120 | A. Average Walk |  |  |
 | 104120 | B. Business Stamps |  |  |
 | 104120 | C. Company Layoffs |  |  |
