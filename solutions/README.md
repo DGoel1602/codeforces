@@ -18,13 +18,13 @@
 | 2200 | 4 |
 | 2300 | 4 |
 | 2500 | 1 |
-| unrated | 86 |
+| unrated | 87 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 201 |
 | math | 145 |
-| constructive algorithms | 118 |
+| constructive algorithms | 119 |
 | implementation | 85 |
 | dp | 77 |
 | untagged | 75 |
@@ -409,6 +409,7 @@
 | 2242 | C. Unstable Elements |  | brute force, data structures, implementation, sortings, two pointers |
 | 2242 | D. Two Digit Strings |  | dp, strings |
 | 2242 | E. Product of Closures |  | bitmasks, brute force, constructive algorithms, greedy, implementation, math, number theory |
+| 2246 | A. farmpiggie and Subset Sum |  | constructive algorithms |
 | 104120 | A. Average Walk |  |  |
 | 104120 | B. Business Stamps |  |  |
 | 104120 | C. Company Layoffs |  |  |
