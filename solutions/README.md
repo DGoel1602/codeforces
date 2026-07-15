@@ -6,7 +6,7 @@
 | 1000 | 10 |
 | 1100 | 27 |
 | 1200 | 22 |
-| 1300 | 28 |
+| 1300 | 29 |
 | 1400 | 20 |
 | 1500 | 24 |
 | 1600 | 18 |
@@ -24,8 +24,8 @@
 | Topic | Problems |
 | --- | ---: |
 | greedy | 204 |
-| math | 148 |
-| constructive algorithms | 121 |
+| math | 149 |
+| constructive algorithms | 122 |
 | implementation | 85 |
 | dp | 78 |
 | brute force | 75 |
@@ -34,7 +34,7 @@
 | data structures | 53 |
 | sortings | 50 |
 | bitmasks | 45 |
-| number theory | 40 |
+| number theory | 41 |
 | graphs | 32 |
 | dfs and similar | 31 |
 | trees | 27 |
@@ -183,6 +183,7 @@
 | 2026 | E. Best Subsequence | 2500 | bitmasks, dfs and similar, flows, graph matchings, graphs |
 | 2031 | A. Penchick and Modern Monument | 800 | constructive algorithms, dp, greedy, math |
 | 2031 | B. Penchick and Satay Sticks | 900 | brute force, greedy, sortings |
+| 2031 | C. Penchick and BBQ Buns | 1300 | constructive algorithms, math, number theory |
 | 2032 | D. Genokraken | 1800 | constructive algorithms, data structures, graphs, greedy, implementation, interactive, trees, two pointers |
 | 2038 | G. Guess One Character | 1900 | constructive algorithms, implementation, interactive |
 | 2040 | A. Game of Division | 800 | games, math |
