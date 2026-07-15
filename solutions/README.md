@@ -10,7 +10,7 @@
 | 1400 | 20 |
 | 1500 | 24 |
 | 1600 | 18 |
-| 1700 | 10 |
+| 1700 | 11 |
 | 1800 | 46 |
 | 1900 | 35 |
 | 2000 | 9 |
@@ -23,27 +23,27 @@
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 204 |
+| greedy | 205 |
 | math | 149 |
 | constructive algorithms | 122 |
-| implementation | 85 |
-| dp | 78 |
+| implementation | 86 |
+| dp | 79 |
 | brute force | 75 |
 | untagged | 75 |
-| binary search | 58 |
-| data structures | 53 |
+| binary search | 59 |
+| data structures | 54 |
 | sortings | 50 |
 | bitmasks | 45 |
 | number theory | 41 |
+| dfs and similar | 32 |
 | graphs | 32 |
-| dfs and similar | 31 |
+| two pointers | 28 |
 | trees | 27 |
-| two pointers | 27 |
 | strings | 23 |
 | interactive | 22 |
 | combinatorics | 19 |
 | games | 15 |
-| dsu | 10 |
+| dsu | 11 |
 | geometry | 9 |
 | probabilities | 7 |
 | divide and conquer | 5 |
@@ -184,6 +184,7 @@
 | 2031 | A. Penchick and Modern Monument | 800 | constructive algorithms, dp, greedy, math |
 | 2031 | B. Penchick and Satay Sticks | 900 | brute force, greedy, sortings |
 | 2031 | C. Penchick and BBQ Buns | 1300 | constructive algorithms, math, number theory |
+| 2031 | D. Penchick and Desert Rabbit | 1700 | binary search, data structures, dfs and similar, dp, dsu, greedy, implementation, two pointers |
 | 2032 | D. Genokraken | 1800 | constructive algorithms, data structures, graphs, greedy, implementation, interactive, trees, two pointers |
 | 2038 | G. Guess One Character | 1900 | constructive algorithms, implementation, interactive |
 | 2040 | A. Game of Division | 800 | games, math |
