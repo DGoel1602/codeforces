@@ -1,7 +1,7 @@
 ## Rating Counts
 | Rating | Problems |
 | --- | ---: |
-| 800 | 56 |
+| 800 | 57 |
 | 900 | 23 |
 | 1000 | 10 |
 | 1100 | 27 |
@@ -23,11 +23,11 @@
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 202 |
-| math | 147 |
-| constructive algorithms | 120 |
+| greedy | 203 |
+| math | 148 |
+| constructive algorithms | 121 |
 | implementation | 85 |
-| dp | 77 |
+| dp | 78 |
 | untagged | 75 |
 | brute force | 74 |
 | binary search | 58 |
@@ -181,6 +181,7 @@
 | 2026 | B. Black Cells | 1300 | binary search, brute force, constructive algorithms, greedy |
 | 2026 | C. Action Figures | 1500 | binary search, brute force, constructive algorithms, data structures, greedy, implementation |
 | 2026 | E. Best Subsequence | 2500 | bitmasks, dfs and similar, flows, graph matchings, graphs |
+| 2031 | A. Penchick and Modern Monument | 800 | constructive algorithms, dp, greedy, math |
 | 2032 | D. Genokraken | 1800 | constructive algorithms, data structures, graphs, greedy, implementation, interactive, trees, two pointers |
 | 2038 | G. Guess One Character | 1900 | constructive algorithms, implementation, interactive |
 | 2040 | A. Game of Division | 800 | games, math |
