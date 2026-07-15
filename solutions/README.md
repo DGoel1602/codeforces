@@ -19,15 +19,15 @@
 | 2300 | 4 |
 | 2500 | 1 |
 | 2700 | 1 |
-| unrated | 89 |
+| unrated | 90 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 205 |
+| greedy | 206 |
 | math | 149 |
 | constructive algorithms | 122 |
 | implementation | 86 |
-| dp | 79 |
+| dp | 80 |
 | brute force | 75 |
 | untagged | 75 |
 | binary search | 59 |
@@ -39,10 +39,10 @@
 | graphs | 32 |
 | two pointers | 28 |
 | trees | 27 |
-| strings | 23 |
+| strings | 24 |
 | interactive | 22 |
 | combinatorics | 19 |
-| games | 15 |
+| games | 16 |
 | dsu | 11 |
 | geometry | 9 |
 | probabilities | 7 |
@@ -415,6 +415,7 @@
 | 2242 | C. Unstable Elements |  | brute force, data structures, implementation, sortings, two pointers |
 | 2242 | D. Two Digit Strings |  | dp, strings |
 | 2242 | E. Product of Closures |  | bitmasks, brute force, constructive algorithms, greedy, implementation, math, number theory |
+| 2244 | A. Iskander and Drawings |  | dp, games, greedy, strings |
 | 2246 | A. farmpiggie and Subset Sum |  | constructive algorithms |
 | 2246 | B. ezraft and Array |  | constructive algorithms |
 | 2246 | C. 0mar and Alternating Sums |  | combinatorics, math |
