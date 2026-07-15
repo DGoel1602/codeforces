@@ -18,12 +18,13 @@
 | 2200 | 4 |
 | 2300 | 4 |
 | 2500 | 1 |
+| 2700 | 1 |
 | unrated | 89 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 201 |
-| math | 146 |
+| greedy | 202 |
+| math | 147 |
 | constructive algorithms | 120 |
 | implementation | 85 |
 | dp | 77 |
@@ -39,12 +40,12 @@
 | trees | 27 |
 | two pointers | 27 |
 | strings | 23 |
-| interactive | 21 |
+| interactive | 22 |
 | combinatorics | 19 |
 | games | 15 |
 | dsu | 10 |
 | geometry | 9 |
-| probabilities | 6 |
+| probabilities | 7 |
 | divide and conquer | 5 |
 | shortest paths | 5 |
 | flows | 4 |
@@ -74,6 +75,7 @@
 | 1492 | D. Genius's Gambit | 1900 | bitmasks, constructive algorithms, greedy, math |
 | 1496 | D. Let's Go Hiking | 1900 | games |
 | 1509 | C. The Sports Festival | 1800 | dp, greedy |
+| 1510 | I. Is It Rated? | 2700 | greedy, interactive, math, probabilities |
 | 1534 | D. Lost Tree | 1800 | constructive algorithms, interactive, trees |
 | 1556 | D. Take a Guess | 1800 | bitmasks, constructive algorithms, interactive, math |
 | 1617 | D1. Too Many Impostors (easy version) | 1800 | constructive algorithms, implementation, interactive |
