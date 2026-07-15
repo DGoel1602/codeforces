@@ -19,22 +19,22 @@
 | 2300 | 4 |
 | 2500 | 1 |
 | 2700 | 1 |
-| unrated | 91 |
+| unrated | 92 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 207 |
-| math | 150 |
-| constructive algorithms | 122 |
+| greedy | 208 |
+| math | 151 |
+| constructive algorithms | 123 |
 | implementation | 86 |
 | dp | 80 |
 | brute force | 75 |
 | untagged | 75 |
 | binary search | 59 |
 | data structures | 54 |
-| sortings | 51 |
+| sortings | 52 |
 | bitmasks | 45 |
-| number theory | 41 |
+| number theory | 42 |
 | dfs and similar | 32 |
 | graphs | 32 |
 | two pointers | 28 |
@@ -43,7 +43,7 @@
 | interactive | 22 |
 | combinatorics | 19 |
 | games | 16 |
-| dsu | 11 |
+| dsu | 12 |
 | geometry | 9 |
 | probabilities | 7 |
 | divide and conquer | 5 |
@@ -417,6 +417,7 @@
 | 2242 | E. Product of Closures |  | bitmasks, brute force, constructive algorithms, greedy, implementation, math, number theory |
 | 2244 | A. Iskander and Drawings |  | dp, games, greedy, strings |
 | 2244 | B. Nikita and Books |  | greedy, math, sortings |
+| 2244 | C. Stepan and Permutation |  | constructive algorithms, dsu, greedy, math, number theory, sortings |
 | 2246 | A. farmpiggie and Subset Sum |  | constructive algorithms |
 | 2246 | B. ezraft and Array |  | constructive algorithms |
 | 2246 | C. 0mar and Alternating Sums |  | combinatorics, math |
