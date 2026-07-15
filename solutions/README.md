@@ -19,7 +19,7 @@
 | 2300 | 4 |
 | 2500 | 1 |
 | 2700 | 1 |
-| unrated | 95 |
+| unrated | 96 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
@@ -27,11 +27,11 @@
 | math | 152 |
 | constructive algorithms | 124 |
 | implementation | 86 |
-| dp | 83 |
+| dp | 84 |
 | brute force | 75 |
 | untagged | 75 |
 | binary search | 59 |
-| data structures | 55 |
+| data structures | 56 |
 | sortings | 52 |
 | bitmasks | 45 |
 | number theory | 43 |
@@ -421,6 +421,7 @@
 | 2244 | D. Yaroslav and Productivity |  | constructive algorithms, dp, greedy, math, number theory |
 | 2244 | E. Masha and the Garland |  | data structures, dp, strings |
 | 2244 | F. Anya Loves Trees! |  | dp, greedy, trees |
+| 2244 | G. Yura and Deadlines |  | data structures, dp |
 | 2246 | A. farmpiggie and Subset Sum |  | constructive algorithms |
 | 2246 | B. ezraft and Array |  | constructive algorithms |
 | 2246 | C. 0mar and Alternating Sums |  | combinatorics, math |
