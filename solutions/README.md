@@ -19,12 +19,12 @@
 | 2300 | 4 |
 | 2500 | 1 |
 | 2700 | 1 |
-| unrated | 90 |
+| unrated | 91 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 206 |
-| math | 149 |
+| greedy | 207 |
+| math | 150 |
 | constructive algorithms | 122 |
 | implementation | 86 |
 | dp | 80 |
@@ -32,7 +32,7 @@
 | untagged | 75 |
 | binary search | 59 |
 | data structures | 54 |
-| sortings | 50 |
+| sortings | 51 |
 | bitmasks | 45 |
 | number theory | 41 |
 | dfs and similar | 32 |
@@ -416,6 +416,7 @@
 | 2242 | D. Two Digit Strings |  | dp, strings |
 | 2242 | E. Product of Closures |  | bitmasks, brute force, constructive algorithms, greedy, implementation, math, number theory |
 | 2244 | A. Iskander and Drawings |  | dp, games, greedy, strings |
+| 2244 | B. Nikita and Books |  | greedy, math, sortings |
 | 2246 | A. farmpiggie and Subset Sum |  | constructive algorithms |
 | 2246 | B. ezraft and Array |  | constructive algorithms |
 | 2246 | C. 0mar and Alternating Sums |  | combinatorics, math |
