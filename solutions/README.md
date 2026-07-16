@@ -19,7 +19,7 @@
 | 2300 | 4 |
 | 2500 | 1 |
 | 2700 | 1 |
-| unrated | 101 |
+| unrated | 102 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
@@ -35,15 +35,15 @@
 | sortings | 52 |
 | bitmasks | 46 |
 | number theory | 43 |
-| dfs and similar | 34 |
+| dfs and similar | 35 |
 | graphs | 32 |
-| trees | 28 |
+| trees | 29 |
 | two pointers | 28 |
 | strings | 25 |
 | interactive | 22 |
 | combinatorics | 19 |
-| games | 16 |
-| dsu | 12 |
+| games | 17 |
+| dsu | 13 |
 | geometry | 9 |
 | probabilities | 7 |
 | divide and conquer | 5 |
@@ -427,6 +427,7 @@
 | 2245 | C. MEXOR |  | bitmasks, constructive algorithms |
 | 2245 | D1. Construct an Array (Easy Version) |  | dfs and similar, implementation |
 | 2245 | D2. Construct an Array (Hard Version) |  | 2-sat, dfs and similar, implementation |
+| 2245 | E. Tom and Jerry |  | dfs and similar, dsu, games, trees |
 | 2246 | A. farmpiggie and Subset Sum |  | constructive algorithms |
 | 2246 | B. ezraft and Array |  | constructive algorithms |
 | 2246 | C. 0mar and Alternating Sums |  | combinatorics, math |
