@@ -19,14 +19,14 @@
 | 2300 | 4 |
 | 2500 | 1 |
 | 2700 | 1 |
-| unrated | 100 |
+| unrated | 101 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 212 |
 | math | 152 |
 | constructive algorithms | 125 |
-| implementation | 87 |
+| implementation | 88 |
 | dp | 84 |
 | brute force | 75 |
 | untagged | 75 |
@@ -35,7 +35,7 @@
 | sortings | 52 |
 | bitmasks | 46 |
 | number theory | 43 |
-| dfs and similar | 33 |
+| dfs and similar | 34 |
 | graphs | 32 |
 | trees | 28 |
 | two pointers | 28 |
@@ -49,7 +49,7 @@
 | divide and conquer | 5 |
 | shortest paths | 5 |
 | flows | 4 |
-| 2-sat | 2 |
+| 2-sat | 3 |
 | hashing | 2 |
 | schedules | 2 |
 | ternary search | 2 |
@@ -426,6 +426,7 @@
 | 2245 | B. Delete and Concatenate |  | greedy |
 | 2245 | C. MEXOR |  | bitmasks, constructive algorithms |
 | 2245 | D1. Construct an Array (Easy Version) |  | dfs and similar, implementation |
+| 2245 | D2. Construct an Array (Hard Version) |  | 2-sat, dfs and similar, implementation |
 | 2246 | A. farmpiggie and Subset Sum |  | constructive algorithms |
 | 2246 | B. ezraft and Array |  | constructive algorithms |
 | 2246 | C. 0mar and Alternating Sums |  | combinatorics, math |
