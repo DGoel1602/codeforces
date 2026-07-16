@@ -19,11 +19,11 @@
 | 2300 | 4 |
 | 2500 | 1 |
 | 2700 | 1 |
-| unrated | 96 |
+| unrated | 97 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 210 |
+| greedy | 211 |
 | math | 152 |
 | constructive algorithms | 124 |
 | implementation | 86 |
@@ -422,6 +422,7 @@
 | 2244 | E. Masha and the Garland |  | data structures, dp, strings |
 | 2244 | F. Anya Loves Trees! |  | dp, greedy, trees |
 | 2244 | G. Yura and Deadlines |  | data structures, dp |
+| 2245 | A. Who Watches the Watchpig? |  | greedy |
 | 2246 | A. farmpiggie and Subset Sum |  | constructive algorithms |
 | 2246 | B. ezraft and Array |  | constructive algorithms |
 | 2246 | C. 0mar and Alternating Sums |  | combinatorics, math |
