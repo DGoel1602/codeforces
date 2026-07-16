@@ -19,13 +19,13 @@
 | 2300 | 4 |
 | 2500 | 1 |
 | 2700 | 1 |
-| unrated | 98 |
+| unrated | 99 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 212 |
 | math | 152 |
-| constructive algorithms | 124 |
+| constructive algorithms | 125 |
 | implementation | 86 |
 | dp | 84 |
 | brute force | 75 |
@@ -33,7 +33,7 @@
 | binary search | 59 |
 | data structures | 56 |
 | sortings | 52 |
-| bitmasks | 45 |
+| bitmasks | 46 |
 | number theory | 43 |
 | dfs and similar | 32 |
 | graphs | 32 |
@@ -424,6 +424,7 @@
 | 2244 | G. Yura and Deadlines |  | data structures, dp |
 | 2245 | A. Who Watches the Watchpig? |  | greedy |
 | 2245 | B. Delete and Concatenate |  | greedy |
+| 2245 | C. MEXOR |  | bitmasks, constructive algorithms |
 | 2246 | A. farmpiggie and Subset Sum |  | constructive algorithms |
 | 2246 | B. ezraft and Array |  | constructive algorithms |
 | 2246 | C. 0mar and Alternating Sums |  | combinatorics, math |
