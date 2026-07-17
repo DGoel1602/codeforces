@@ -13,7 +13,7 @@
 | 1700 | 11 |
 | 1800 | 46 |
 | 1900 | 35 |
-| 2000 | 10 |
+| 2000 | 11 |
 | 2100 | 3 |
 | 2200 | 4 |
 | 2300 | 4 |
@@ -25,12 +25,12 @@
 | --- | ---: |
 | greedy | 213 |
 | math | 152 |
-| constructive algorithms | 126 |
+| constructive algorithms | 127 |
 | implementation | 89 |
 | dp | 84 |
 | brute force | 76 |
 | untagged | 75 |
-| binary search | 59 |
+| binary search | 60 |
 | data structures | 56 |
 | sortings | 52 |
 | bitmasks | 46 |
@@ -40,7 +40,7 @@
 | trees | 29 |
 | two pointers | 28 |
 | strings | 25 |
-| interactive | 22 |
+| interactive | 23 |
 | combinatorics | 19 |
 | games | 17 |
 | dsu | 13 |
@@ -80,6 +80,7 @@
 | 1534 | D. Lost Tree | 1800 | constructive algorithms, interactive, trees |
 | 1556 | D. Take a Guess | 1800 | bitmasks, constructive algorithms, interactive, math |
 | 1617 | D1. Too Many Impostors (easy version) | 1800 | constructive algorithms, implementation, interactive |
+| 1624 | F. Interacdive Problem | 2000 | binary search, constructive algorithms, interactive |
 | 1647 | D. Madoka and the Best School in Russia | 1900 | constructive algorithms, dp, math, number theory |
 | 1666 | C. Connect the Points | 1800 | brute force, constructive algorithms, geometry |
 | 1672 | F1. Array Shuffling | 2000 | constructive algorithms, graphs, greedy |
