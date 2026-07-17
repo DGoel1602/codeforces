@@ -13,7 +13,7 @@
 | 1700 | 11 |
 | 1800 | 46 |
 | 1900 | 36 |
-| 2000 | 11 |
+| 2000 | 12 |
 | 2100 | 3 |
 | 2200 | 4 |
 | 2300 | 4 |
@@ -23,7 +23,7 @@
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 214 |
+| greedy | 215 |
 | math | 152 |
 | constructive algorithms | 127 |
 | implementation | 89 |
@@ -31,8 +31,8 @@
 | brute force | 76 |
 | untagged | 75 |
 | binary search | 60 |
-| data structures | 56 |
-| sortings | 52 |
+| data structures | 57 |
+| sortings | 53 |
 | bitmasks | 47 |
 | number theory | 43 |
 | dfs and similar | 36 |
@@ -291,6 +291,7 @@
 | 2139 | D. Antiamuny Wants to Learn Swap | 1900 | data structures, greedy |
 | 2139 | E1. Maple and Tree Beauty (Easy Version) | 1800 | dfs and similar, dp, math, trees |
 | 2139 | E2. Maple and Tree Beauty (Hard Version) | 2000 | bitmasks, dfs and similar, dp, fft, trees |
+| 2140 | D. A Cruel Segment's Thesis | 2000 | data structures, greedy, sortings |
 | 2145 | C. Monocarp's String | 1300 | binary search, greedy, strings |
 | 2146 | A. Equal Occurrences | 800 | brute force, greedy, implementation |
 | 2146 | B. Merging the Sets | 1100 | greedy, implementation |
