@@ -19,7 +19,7 @@
 | 2300 | 4 |
 | 2500 | 1 |
 | 2700 | 1 |
-| unrated | 102 |
+| unrated | 103 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
@@ -29,7 +29,7 @@
 | implementation | 89 |
 | dp | 84 |
 | brute force | 76 |
-| untagged | 75 |
+| untagged | 76 |
 | binary search | 60 |
 | data structures | 57 |
 | sortings | 53 |
@@ -435,6 +435,7 @@
 | 2246 | A. farmpiggie and Subset Sum |  | constructive algorithms |
 | 2246 | B. ezraft and Array |  | constructive algorithms |
 | 2246 | C. 0mar and Alternating Sums |  | combinatorics, math |
+| 101239 | M. Window Manager |  |  |
 | 104120 | A. Average Walk |  |  |
 | 104120 | B. Business Stamps |  |  |
 | 104120 | C. Company Layoffs |  |  |
