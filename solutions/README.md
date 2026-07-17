@@ -13,7 +13,7 @@
 | 1700 | 11 |
 | 1800 | 46 |
 | 1900 | 35 |
-| 2000 | 9 |
+| 2000 | 10 |
 | 2100 | 3 |
 | 2200 | 4 |
 | 2300 | 4 |
@@ -23,12 +23,12 @@
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 212 |
+| greedy | 213 |
 | math | 152 |
-| constructive algorithms | 125 |
-| implementation | 88 |
+| constructive algorithms | 126 |
+| implementation | 89 |
 | dp | 84 |
-| brute force | 75 |
+| brute force | 76 |
 | untagged | 75 |
 | binary search | 59 |
 | data structures | 56 |
@@ -36,7 +36,7 @@
 | bitmasks | 46 |
 | number theory | 43 |
 | dfs and similar | 35 |
-| graphs | 32 |
+| graphs | 33 |
 | trees | 29 |
 | two pointers | 28 |
 | strings | 25 |
@@ -72,6 +72,7 @@
 | 1426 | E. Rock, Paper, Scissors | 1800 | brute force, constructive algorithms, flows, greedy, math |
 | 1463 | D. Pairs | 1900 | binary search, constructive algorithms, greedy, two pointers |
 | 1475 | F. Unusual Matrix | 1900 | 2-sat, brute force, constructive algorithms |
+| 1481 | D. AB Graph | 2000 | brute force, constructive algorithms, graphs, greedy, implementation |
 | 1492 | D. Genius's Gambit | 1900 | bitmasks, constructive algorithms, greedy, math |
 | 1496 | D. Let's Go Hiking | 1900 | games |
 | 1509 | C. The Sports Festival | 1800 | dp, greedy |
