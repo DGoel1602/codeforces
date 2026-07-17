@@ -12,7 +12,7 @@
 | 1600 | 18 |
 | 1700 | 11 |
 | 1800 | 46 |
-| 1900 | 35 |
+| 1900 | 36 |
 | 2000 | 11 |
 | 2100 | 3 |
 | 2200 | 4 |
@@ -23,7 +23,7 @@
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 213 |
+| greedy | 214 |
 | math | 152 |
 | constructive algorithms | 127 |
 | implementation | 89 |
@@ -33,17 +33,17 @@
 | binary search | 60 |
 | data structures | 56 |
 | sortings | 52 |
-| bitmasks | 46 |
+| bitmasks | 47 |
 | number theory | 43 |
-| dfs and similar | 35 |
-| graphs | 33 |
+| dfs and similar | 36 |
+| graphs | 34 |
 | trees | 29 |
 | two pointers | 28 |
 | strings | 25 |
 | interactive | 23 |
 | combinatorics | 19 |
 | games | 17 |
-| dsu | 13 |
+| dsu | 14 |
 | geometry | 9 |
 | probabilities | 7 |
 | divide and conquer | 5 |
@@ -81,6 +81,7 @@
 | 1556 | D. Take a Guess | 1800 | bitmasks, constructive algorithms, interactive, math |
 | 1617 | D1. Too Many Impostors (easy version) | 1800 | constructive algorithms, implementation, interactive |
 | 1624 | F. Interacdive Problem | 2000 | binary search, constructive algorithms, interactive |
+| 1624 | G. MinOr Tree | 1900 | bitmasks, dfs and similar, dsu, graphs, greedy |
 | 1647 | D. Madoka and the Best School in Russia | 1900 | constructive algorithms, dp, math, number theory |
 | 1666 | C. Connect the Points | 1800 | brute force, constructive algorithms, geometry |
 | 1672 | F1. Array Shuffling | 2000 | constructive algorithms, graphs, greedy |
