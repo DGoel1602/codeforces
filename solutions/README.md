@@ -13,7 +13,7 @@
 | 1700 | 11 |
 | 1800 | 46 |
 | 1900 | 36 |
-| 2000 | 13 |
+| 2000 | 14 |
 | 2100 | 3 |
 | 2200 | 4 |
 | 2300 | 4 |
@@ -25,10 +25,10 @@
 | --- | ---: |
 | greedy | 215 |
 | math | 153 |
-| constructive algorithms | 127 |
-| implementation | 89 |
-| dp | 85 |
-| brute force | 76 |
+| constructive algorithms | 128 |
+| implementation | 90 |
+| dp | 86 |
+| brute force | 77 |
 | untagged | 76 |
 | binary search | 60 |
 | data structures | 57 |
@@ -39,7 +39,7 @@
 | graphs | 34 |
 | trees | 29 |
 | two pointers | 28 |
-| strings | 25 |
+| strings | 26 |
 | interactive | 23 |
 | combinatorics | 20 |
 | games | 17 |
@@ -50,7 +50,7 @@
 | shortest paths | 5 |
 | flows | 4 |
 | 2-sat | 3 |
-| hashing | 2 |
+| hashing | 3 |
 | schedules | 2 |
 | ternary search | 2 |
 | fft | 1 |
@@ -81,6 +81,7 @@
 | 1534 | D. Lost Tree | 1800 | constructive algorithms, interactive, trees |
 | 1556 | D. Take a Guess | 1800 | bitmasks, constructive algorithms, interactive, math |
 | 1617 | D1. Too Many Impostors (easy version) | 1800 | constructive algorithms, implementation, interactive |
+| 1624 | E. Masha-forgetful | 2000 | brute force, constructive algorithms, dp, hashing, implementation, strings |
 | 1624 | F. Interacdive Problem | 2000 | binary search, constructive algorithms, interactive |
 | 1624 | G. MinOr Tree | 1900 | bitmasks, dfs and similar, dsu, graphs, greedy |
 | 1647 | D. Madoka and the Best School in Russia | 1900 | constructive algorithms, dp, math, number theory |
