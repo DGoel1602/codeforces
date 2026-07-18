@@ -13,7 +13,7 @@
 | 1700 | 11 |
 | 1800 | 46 |
 | 1900 | 36 |
-| 2000 | 12 |
+| 2000 | 13 |
 | 2100 | 3 |
 | 2200 | 4 |
 | 2300 | 4 |
@@ -24,16 +24,16 @@
 | Topic | Problems |
 | --- | ---: |
 | greedy | 215 |
-| math | 152 |
+| math | 153 |
 | constructive algorithms | 127 |
 | implementation | 89 |
-| dp | 84 |
+| dp | 85 |
 | brute force | 76 |
 | untagged | 76 |
 | binary search | 60 |
 | data structures | 57 |
 | sortings | 53 |
-| bitmasks | 47 |
+| bitmasks | 48 |
 | number theory | 43 |
 | dfs and similar | 36 |
 | graphs | 34 |
@@ -41,7 +41,7 @@
 | two pointers | 28 |
 | strings | 25 |
 | interactive | 23 |
-| combinatorics | 19 |
+| combinatorics | 20 |
 | games | 17 |
 | dsu | 14 |
 | geometry | 9 |
@@ -64,6 +64,7 @@
 | 448 | D. Multiplication Table | 1800 | binary search, brute force |
 | 459 | D. Pashmak and Parmida's problem | 1800 | data structures, divide and conquer, sortings |
 | 577 | B. Modulo Sum | 1900 | combinatorics, data structures, dp, two pointers |
+| 895 | C. Square Subsets | 2000 | bitmasks, combinatorics, dp, math |
 | 1324 | F. Maximum White Subtree | 1800 | dfs and similar, dp, graphs, trees |
 | 1329 | A. Dreamoon Likes Coloring | 1800 | constructive algorithms, greedy, implementation, math |
 | 1334 | D. Minimum Euler Cycle | 1800 | constructive algorithms, graphs, greedy, implementation |
