@@ -19,14 +19,14 @@
 | 2300 | 4 |
 | 2500 | 2 |
 | 2700 | 1 |
-| unrated | 184 |
+| unrated | 185 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 234 |
 | math | 162 |
 | constructive algorithms | 139 |
-| untagged | 135 |
+| untagged | 136 |
 | implementation | 96 |
 | dp | 90 |
 | brute force | 82 |
@@ -607,6 +607,7 @@
 | 106513 | B. Support Beam |  |  |
 | 106513 | C. Sprinkler Piping |  |  |
 | 106513 | D. Highway |  |  |
+| 106513 | E. Largest Sorted Partitions |  |  |
 | 106603 | F. Knapsack One Million |  |  |
 | 106603 | K. Urban Horizons |  |  |
 | 614269 | A. Canonical Palindromes |  |  |
