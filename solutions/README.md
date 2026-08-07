@@ -19,11 +19,11 @@
 | 2300 | 4 |
 | 2500 | 2 |
 | 2700 | 1 |
-| unrated | 175 |
+| unrated | 176 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 231 |
+| greedy | 232 |
 | math | 161 |
 | constructive algorithms | 139 |
 | untagged | 130 |
@@ -32,7 +32,7 @@
 | brute force | 81 |
 | data structures | 65 |
 | binary search | 63 |
-| sortings | 56 |
+| sortings | 57 |
 | bitmasks | 51 |
 | number theory | 45 |
 | dfs and similar | 39 |
@@ -474,6 +474,7 @@
 | 2252 | A. Boss Fight |  | data structures, greedy |
 | 2252 | B. Always Changing |  | dp, greedy, math, strings |
 | 2252 | C. Risky Tower |  | binary search, brute force, data structures, greedy, sortings |
+| 2252 | D. Array Replacement |  | greedy, sortings |
 | 100819 | L. Millionaire |  |  |
 | 100819 | M. Magic Trick |  |  |
 | 100819 | N. Egg Drop |  |  |
