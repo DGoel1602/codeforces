@@ -19,11 +19,11 @@
 | 2300 | 4 |
 | 2500 | 2 |
 | 2700 | 1 |
-| unrated | 178 |
+| unrated | 179 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 232 |
+| greedy | 233 |
 | math | 161 |
 | constructive algorithms | 139 |
 | untagged | 131 |
@@ -477,6 +477,7 @@
 | 2252 | D. Array Replacement |  | greedy, sortings |
 | 2253 | A. The Best Card |  |  |
 | 2253 | B. Hypercarp and the Control Panel |  | brute force, data structures, two pointers |
+| 2253 | C. Sum of Distinct Values in a Matrix |  | greedy |
 | 100819 | L. Millionaire |  |  |
 | 100819 | M. Magic Trick |  |  |
 | 100819 | N. Egg Drop |  |  |
