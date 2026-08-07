@@ -19,12 +19,12 @@
 | 2300 | 4 |
 | 2500 | 2 |
 | 2700 | 1 |
-| unrated | 179 |
+| unrated | 180 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 233 |
-| math | 161 |
+| greedy | 234 |
+| math | 162 |
 | constructive algorithms | 139 |
 | untagged | 131 |
 | implementation | 96 |
@@ -44,7 +44,7 @@
 | combinatorics | 23 |
 | games | 18 |
 | dsu | 15 |
-| geometry | 9 |
+| geometry | 10 |
 | probabilities | 8 |
 | divide and conquer | 5 |
 | flows | 5 |
@@ -478,6 +478,7 @@
 | 2253 | A. The Best Card |  |  |
 | 2253 | B. Hypercarp and the Control Panel |  | brute force, data structures, two pointers |
 | 2253 | C. Sum of Distinct Values in a Matrix |  | greedy |
+| 2253 | D. Hypercarp and Interdimensional Jumps |  | geometry, greedy, math |
 | 100819 | L. Millionaire |  |  |
 | 100819 | M. Magic Trick |  |  |
 | 100819 | N. Egg Drop |  |  |
