@@ -19,20 +19,20 @@
 | 2300 | 4 |
 | 2500 | 2 |
 | 2700 | 1 |
-| unrated | 174 |
+| unrated | 175 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 230 |
+| greedy | 231 |
 | math | 161 |
 | constructive algorithms | 139 |
 | untagged | 130 |
 | implementation | 96 |
 | dp | 90 |
-| brute force | 80 |
-| data structures | 64 |
-| binary search | 62 |
-| sortings | 55 |
+| brute force | 81 |
+| data structures | 65 |
+| binary search | 63 |
+| sortings | 56 |
 | bitmasks | 51 |
 | number theory | 45 |
 | dfs and similar | 39 |
@@ -473,6 +473,7 @@
 | 2250 | E. Double-Rift Dial |  | data structures, implementation |
 | 2252 | A. Boss Fight |  | data structures, greedy |
 | 2252 | B. Always Changing |  | dp, greedy, math, strings |
+| 2252 | C. Risky Tower |  | binary search, brute force, data structures, greedy, sortings |
 | 100819 | L. Millionaire |  |  |
 | 100819 | M. Magic Trick |  |  |
 | 100819 | N. Egg Drop |  |  |
