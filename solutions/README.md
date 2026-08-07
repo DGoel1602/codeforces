@@ -19,7 +19,7 @@
 | 2300 | 4 |
 | 2500 | 2 |
 | 2700 | 1 |
-| unrated | 177 |
+| unrated | 178 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
@@ -29,16 +29,16 @@
 | untagged | 131 |
 | implementation | 96 |
 | dp | 90 |
-| brute force | 81 |
-| data structures | 65 |
+| brute force | 82 |
+| data structures | 66 |
 | binary search | 63 |
 | sortings | 57 |
 | bitmasks | 51 |
 | number theory | 45 |
 | dfs and similar | 39 |
 | graphs | 38 |
+| two pointers | 32 |
 | trees | 31 |
-| two pointers | 31 |
 | strings | 28 |
 | interactive | 24 |
 | combinatorics | 23 |
@@ -476,6 +476,7 @@
 | 2252 | C. Risky Tower |  | binary search, brute force, data structures, greedy, sortings |
 | 2252 | D. Array Replacement |  | greedy, sortings |
 | 2253 | A. The Best Card |  |  |
+| 2253 | B. Hypercarp and the Control Panel |  | brute force, data structures, two pointers |
 | 100819 | L. Millionaire |  |  |
 | 100819 | M. Magic Trick |  |  |
 | 100819 | N. Egg Drop |  |  |
