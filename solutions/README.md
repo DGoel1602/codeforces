@@ -19,14 +19,14 @@
 | 2300 | 4 |
 | 2500 | 2 |
 | 2700 | 1 |
-| unrated | 183 |
+| unrated | 184 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 234 |
 | math | 162 |
 | constructive algorithms | 139 |
-| untagged | 134 |
+| untagged | 135 |
 | implementation | 96 |
 | dp | 90 |
 | brute force | 82 |
@@ -606,6 +606,7 @@
 | 106513 | A. Big Back |  |  |
 | 106513 | B. Support Beam |  |  |
 | 106513 | C. Sprinkler Piping |  |  |
+| 106513 | D. Highway |  |  |
 | 106603 | F. Knapsack One Million |  |  |
 | 106603 | K. Urban Horizons |  |  |
 | 614269 | A. Canonical Palindromes |  |  |
