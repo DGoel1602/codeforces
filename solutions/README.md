@@ -19,18 +19,18 @@
 | 2300 | 4 |
 | 2500 | 2 |
 | 2700 | 1 |
-| unrated | 172 |
+| unrated | 173 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 228 |
+| greedy | 229 |
 | math | 160 |
 | constructive algorithms | 139 |
 | untagged | 130 |
 | implementation | 96 |
 | dp | 89 |
 | brute force | 80 |
-| data structures | 63 |
+| data structures | 64 |
 | binary search | 62 |
 | sortings | 55 |
 | bitmasks | 51 |
@@ -471,6 +471,7 @@
 | 2250 | C. Rank Subsequence |  | brute force, greedy, implementation |
 | 2250 | D. Permutation Cuts |  | combinatorics, implementation, math |
 | 2250 | E. Double-Rift Dial |  | data structures, implementation |
+| 2252 | A. Boss Fight |  | data structures, greedy |
 | 100819 | L. Millionaire |  |  |
 | 100819 | M. Magic Trick |  |  |
 | 100819 | N. Egg Drop |  |  |
