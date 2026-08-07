@@ -19,14 +19,14 @@
 | 2300 | 4 |
 | 2500 | 2 |
 | 2700 | 1 |
-| unrated | 180 |
+| unrated | 181 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 234 |
 | math | 162 |
 | constructive algorithms | 139 |
-| untagged | 131 |
+| untagged | 132 |
 | implementation | 96 |
 | dp | 90 |
 | brute force | 82 |
@@ -603,6 +603,7 @@
 | 106452 | J. Guess the Number! |  |  |
 | 106452 | K. Guessing Game |  |  |
 | 106452 | L. MST |  |  |
+| 106513 | A. Big Back |  |  |
 | 106603 | F. Knapsack One Million |  |  |
 | 106603 | K. Urban Horizons |  |  |
 | 614269 | A. Canonical Palindromes |  |  |
