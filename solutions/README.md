@@ -19,13 +19,13 @@
 | 2300 | 4 |
 | 2500 | 2 |
 | 2700 | 1 |
-| unrated | 171 |
+| unrated | 172 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 228 |
 | math | 160 |
-| constructive algorithms | 138 |
+| constructive algorithms | 139 |
 | untagged | 130 |
 | implementation | 96 |
 | dp | 89 |
@@ -33,15 +33,15 @@
 | data structures | 63 |
 | binary search | 62 |
 | sortings | 55 |
-| bitmasks | 50 |
+| bitmasks | 51 |
 | number theory | 45 |
 | dfs and similar | 39 |
-| graphs | 37 |
+| graphs | 38 |
 | trees | 31 |
 | two pointers | 31 |
 | strings | 27 |
+| interactive | 24 |
 | combinatorics | 23 |
-| interactive | 23 |
 | games | 18 |
 | dsu | 15 |
 | geometry | 9 |
@@ -54,6 +54,7 @@
 | graph matchings | 2 |
 | schedules | 2 |
 | ternary search | 2 |
+| communication | 1 |
 | fft | 1 |
 | matrices | 1 |
 ## Problems
@@ -335,6 +336,7 @@
 | 2166 | E. Binary Wine | 2000 | bitmasks, dp, greedy, math |
 | 2167 | E. khba Loves to Sleep! | 1600 | binary search, data structures, geometry, greedy, implementation |
 | 2167 | G. Mukhammadali and the Smooth Array | 1600 | data structures, dp |
+| 2168 | C. Intercepting Butterflies |  | bitmasks, communication, constructive algorithms, graphs, interactive |
 | 2170 | A. Maximum Neighborhood | 800 | bitmasks, brute force, greedy, implementation, math |
 | 2170 | B. Addition on a Segment | 1200 | greedy, math |
 | 2170 | C. Quotient and Remainder | 1300 | binary search, greedy, two pointers |

@@ -116,6 +116,7 @@ function parseArgs(argv: string[]): WatchOptions {
     throw new Error(`Unknown option: ${arg}`);
   }
 
+
   return {
     handle,
     intervalMs,
