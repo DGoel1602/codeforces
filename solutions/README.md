@@ -19,14 +19,14 @@
 | 2300 | 4 |
 | 2500 | 2 |
 | 2700 | 1 |
-| unrated | 176 |
+| unrated | 177 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 232 |
 | math | 161 |
 | constructive algorithms | 139 |
-| untagged | 130 |
+| untagged | 131 |
 | implementation | 96 |
 | dp | 90 |
 | brute force | 81 |
@@ -475,6 +475,7 @@
 | 2252 | B. Always Changing |  | dp, greedy, math, strings |
 | 2252 | C. Risky Tower |  | binary search, brute force, data structures, greedy, sortings |
 | 2252 | D. Array Replacement |  | greedy, sortings |
+| 2253 | A. The Best Card |  |  |
 | 100819 | L. Millionaire |  |  |
 | 100819 | M. Magic Trick |  |  |
 | 100819 | N. Egg Drop |  |  |
