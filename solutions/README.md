@@ -19,15 +19,15 @@
 | 2300 | 5 |
 | 2500 | 2 |
 | 2700 | 1 |
-| unrated | 144 |
+| unrated | 145 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 239 |
-| math | 167 |
+| math | 168 |
 | constructive algorithms | 140 |
 | untagged | 135 |
-| implementation | 97 |
+| implementation | 98 |
 | dp | 91 |
 | brute force | 84 |
 | data structures | 66 |
@@ -481,6 +481,7 @@
 | 2253 | C. Sum of Distinct Values in a Matrix |  | greedy |
 | 2253 | D. Hypercarp and Interdimensional Jumps |  | geometry, greedy, math |
 | 2256 | A. Three Numbers on the Blackboard |  | math, sortings |
+| 2256 | B. Domino Tiles |  | implementation, math |
 | 100819 | L. Millionaire |  |  |
 | 100819 | M. Magic Trick |  |  |
 | 100819 | N. Egg Drop |  |  |
