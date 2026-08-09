@@ -1,48 +1,48 @@
 ## Rating Counts
 | Rating | Problems |
 | --- | ---: |
-| 800 | 58 |
-| 900 | 25 |
-| 1000 | 15 |
-| 1100 | 27 |
-| 1200 | 22 |
-| 1300 | 30 |
-| 1400 | 23 |
-| 1500 | 24 |
-| 1600 | 18 |
-| 1700 | 11 |
+| 800 | 67 |
+| 900 | 27 |
+| 1000 | 19 |
+| 1100 | 32 |
+| 1200 | 23 |
+| 1300 | 33 |
+| 1400 | 27 |
+| 1500 | 25 |
+| 1600 | 20 |
+| 1700 | 16 |
 | 1800 | 47 |
-| 1900 | 36 |
-| 2000 | 18 |
+| 1900 | 38 |
+| 2000 | 21 |
 | 2100 | 3 |
-| 2200 | 4 |
-| 2300 | 4 |
+| 2200 | 5 |
+| 2300 | 5 |
 | 2500 | 2 |
 | 2700 | 1 |
-| unrated | 185 |
+| unrated | 143 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 234 |
-| math | 162 |
-| constructive algorithms | 139 |
-| untagged | 136 |
-| implementation | 96 |
-| dp | 90 |
-| brute force | 82 |
+| greedy | 239 |
+| math | 166 |
+| constructive algorithms | 140 |
+| untagged | 135 |
+| implementation | 97 |
+| dp | 91 |
+| brute force | 84 |
 | data structures | 66 |
 | binary search | 63 |
-| sortings | 57 |
+| sortings | 58 |
 | bitmasks | 51 |
-| number theory | 45 |
-| dfs and similar | 39 |
-| graphs | 38 |
-| two pointers | 32 |
+| number theory | 48 |
+| dfs and similar | 41 |
+| graphs | 39 |
+| two pointers | 33 |
 | trees | 31 |
 | strings | 28 |
 | interactive | 24 |
 | combinatorics | 23 |
-| games | 18 |
+| games | 19 |
 | dsu | 15 |
 | geometry | 10 |
 | probabilities | 8 |
@@ -365,6 +365,7 @@
 | 2200 | B. Deletion Sort | 800 | bitmasks, brute force, greedy, sortings |
 | 2200 | C. Specialty String | 900 | brute force, greedy, strings |
 | 2200 | E. Divisive Battle | 1500 | games, greedy, math, number theory |
+| 2203 | D. Divisibility Game | 1700 | brute force, games, greedy, number theory |
 | 2204 | E. Sum of Digits (and Again) | 1800 | brute force, constructive algorithms, math |
 | 2205 | A. Simons and Making It Beautiful | 800 | brute force, constructive algorithms |
 | 2205 | B. Simons and Cakes for Success | 800 | implementation, math |
@@ -429,48 +430,48 @@
 | 2240 | B. AI Finds Nothing Here | 1100 | combinatorics, math |
 | 2240 | C. Nim Game Is XOR Game | 1300 | games, greedy |
 | 2240 | D. Decidophobia | 1500 | greedy, sortings |
-| 2241 | A. Divide and Conquer |  | greedy, math, number theory |
-| 2241 | B. Good times Good times |  | constructive algorithms, dfs and similar, math |
-| 2241 | C. RemovevomeR |  | greedy |
-| 2241 | D. An Alternative Way |  | dp, greedy, math |
-| 2241 | E. Fair and Square |  | combinatorics, dp, graphs, math, number theory, trees |
-| 2241 | F. A Bit Odd |  | data structures, games, greedy, math |
-| 2242 | A. Bigrams |  | sortings, strings |
-| 2242 | B. Predominant Frequency Division |  | data structures, greedy, implementation, math |
-| 2242 | C. Unstable Elements |  | brute force, data structures, implementation, sortings, two pointers |
-| 2242 | D. Two Digit Strings |  | dp, strings |
-| 2242 | E. Product of Closures |  | bitmasks, brute force, constructive algorithms, greedy, implementation, math, number theory |
-| 2244 | A. Iskander and Drawings |  | dp, games, greedy, strings |
-| 2244 | B. Nikita and Books |  | greedy, math, sortings |
-| 2244 | C. Stepan and Permutation |  | constructive algorithms, dsu, greedy, math, number theory, sortings |
-| 2244 | D. Yaroslav and Productivity |  | constructive algorithms, dp, greedy, math, number theory |
-| 2244 | E. Masha and the Garland |  | data structures, dp, strings |
-| 2244 | F. Anya Loves Trees! |  | dp, greedy, trees |
-| 2244 | G. Yura and Deadlines |  | data structures, dp |
-| 2245 | A. Who Watches the Watchpig? |  | greedy |
-| 2245 | B. Delete and Concatenate |  | greedy |
-| 2245 | C. MEXOR |  | bitmasks, constructive algorithms |
-| 2245 | D1. Construct an Array (Easy Version) |  | dfs and similar, implementation |
-| 2245 | D2. Construct an Array (Hard Version) |  | 2-sat, dfs and similar, implementation |
-| 2245 | E. Tom and Jerry |  | dfs and similar, dsu, games, trees |
-| 2246 | A. farmpiggie and Subset Sum |  | constructive algorithms |
-| 2246 | B. ezraft and Array |  | constructive algorithms |
-| 2246 | C. 0mar and Alternating Sums |  | combinatorics, math |
-| 2247 | A. Zero Sum |  | constructive algorithms, dp, number theory |
-| 2247 | B. Yet Another Constructive |  | constructive algorithms |
-| 2247 | C. Inversion of a Subsequence |  | greedy, math |
-| 2247 | D1. XOR Sorting (Easy Version) |  | bitmasks, greedy |
-| 2247 | D2. XOR Sorting (Hard Version) |  | bitmasks, data structures, greedy |
-| 2248 | A. You Delete, I Delete |  |  |
-| 2248 | B. Merge to Match |  | greedy, sortings |
-| 2248 | C. Maximize the Score |  | dp, greedy |
-| 2248 | D. Good Pair Queries |  | constructive algorithms |
-| 2248 | E. Excuse for Breaks |  | binary search |
-| 2250 | A. Threshold Movement |  | brute force, implementation, math |
-| 2250 | B. String Construction |  | constructive algorithms |
-| 2250 | C. Rank Subsequence |  | brute force, greedy, implementation |
-| 2250 | D. Permutation Cuts |  | combinatorics, implementation, math |
-| 2250 | E. Double-Rift Dial |  | data structures, implementation |
+| 2241 | A. Divide and Conquer | 800 | greedy, math, number theory |
+| 2241 | B. Good times Good times | 1100 | constructive algorithms, dfs and similar, math |
+| 2241 | C. RemovevomeR | 1000 | greedy |
+| 2241 | D. An Alternative Way | 1100 | dp, greedy, math |
+| 2241 | E. Fair and Square | 1600 | combinatorics, dp, graphs, math, number theory, trees |
+| 2241 | F. A Bit Odd | 1700 | data structures, games, greedy, math |
+| 2242 | A. Bigrams | 800 | sortings, strings |
+| 2242 | B. Predominant Frequency Division | 1000 | data structures, greedy, implementation, math |
+| 2242 | C. Unstable Elements | 1300 | brute force, data structures, implementation, sortings, two pointers |
+| 2242 | D. Two Digit Strings | 1600 | dp, strings |
+| 2242 | E. Product of Closures | 2200 | bitmasks, brute force, constructive algorithms, greedy, implementation, math, number theory |
+| 2244 | A. Iskander and Drawings | 800 | dp, games, greedy, strings |
+| 2244 | B. Nikita and Books | 800 | greedy, math, sortings |
+| 2244 | C. Stepan and Permutation | 1100 | constructive algorithms, dfs and similar, dsu, greedy, math, number theory, sortings |
+| 2244 | D. Yaroslav and Productivity | 1200 | constructive algorithms, dp, greedy, math, number theory |
+| 2244 | E. Masha and the Garland | 1400 | data structures, dp, greedy, implementation, math, number theory, strings |
+| 2244 | F. Anya Loves Trees! | 1700 | dfs and similar, dp, greedy, trees |
+| 2244 | G. Yura and Deadlines | 1900 | data structures, dp |
+| 2245 | A. Who Watches the Watchpig? | 800 | greedy |
+| 2245 | B. Delete and Concatenate | 1100 | greedy |
+| 2245 | C. MEXOR | 1400 | bitmasks, constructive algorithms, math |
+| 2245 | D1. Construct an Array (Easy Version) | 1700 | dfs and similar, implementation, sortings |
+| 2245 | D2. Construct an Array (Hard Version) | 2000 | 2-sat, constructive algorithms, dfs and similar, graphs, implementation |
+| 2245 | E. Tom and Jerry | 2300 | dfs and similar, dsu, games, trees |
+| 2246 | A. farmpiggie and Subset Sum | 800 | constructive algorithms |
+| 2246 | B. ezraft and Array | 900 | constructive algorithms, number theory |
+| 2246 | C. 0mar and Alternating Sums | 1400 | combinatorics, dp, math |
+| 2247 | A. Zero Sum | 800 | constructive algorithms, dp, number theory |
+| 2247 | B. Yet Another Constructive | 900 | constructive algorithms |
+| 2247 | C. Inversion of a Subsequence | 1100 | greedy, math |
+| 2247 | D1. XOR Sorting (Easy Version) | 1500 | bitmasks, greedy |
+| 2247 | D2. XOR Sorting (Hard Version) | 2000 | bitmasks, data structures, greedy |
+| 2248 | A. You Delete, I Delete | 800 | greedy |
+| 2248 | B. Merge to Match | 1000 | greedy, sortings |
+| 2248 | C. Maximize the Score | 1300 | dp, greedy |
+| 2248 | D. Good Pair Queries | 1400 | constructive algorithms, greedy, math |
+| 2248 | E. Excuse for Breaks | 1900 | binary search, brute force, greedy, math, two pointers |
+| 2250 | A. Threshold Movement | 800 | brute force, implementation, math |
+| 2250 | B. String Construction | 1000 | constructive algorithms |
+| 2250 | C. Rank Subsequence | 1300 | brute force, greedy, implementation |
+| 2250 | D. Permutation Cuts | 1700 | combinatorics, implementation, math |
+| 2250 | E. Double-Rift Dial | 2000 | data structures, implementation |
 | 2252 | A. Boss Fight |  | data structures, greedy |
 | 2252 | B. Always Changing |  | dp, greedy, math, strings |
 | 2252 | C. Risky Tower |  | binary search, brute force, data structures, greedy, sortings |
