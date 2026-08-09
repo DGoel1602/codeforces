@@ -19,12 +19,12 @@
 | 2300 | 5 |
 | 2500 | 2 |
 | 2700 | 1 |
-| unrated | 143 |
+| unrated | 144 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 239 |
-| math | 166 |
+| math | 167 |
 | constructive algorithms | 140 |
 | untagged | 135 |
 | implementation | 97 |
@@ -32,7 +32,7 @@
 | brute force | 84 |
 | data structures | 66 |
 | binary search | 63 |
-| sortings | 58 |
+| sortings | 59 |
 | bitmasks | 51 |
 | number theory | 48 |
 | dfs and similar | 41 |
@@ -480,6 +480,7 @@
 | 2253 | B. Hypercarp and the Control Panel |  | brute force, data structures, two pointers |
 | 2253 | C. Sum of Distinct Values in a Matrix |  | greedy |
 | 2253 | D. Hypercarp and Interdimensional Jumps |  | geometry, greedy, math |
+| 2256 | A. Three Numbers on the Blackboard |  | math, sortings |
 | 100819 | L. Millionaire |  |  |
 | 100819 | M. Magic Trick |  |  |
 | 100819 | N. Egg Drop |  |  |
