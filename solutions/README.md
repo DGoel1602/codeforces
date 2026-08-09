@@ -19,12 +19,12 @@
 | 2300 | 5 |
 | 2500 | 2 |
 | 2700 | 1 |
-| unrated | 146 |
+| unrated | 147 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 239 |
-| math | 168 |
+| math | 169 |
 | constructive algorithms | 140 |
 | untagged | 135 |
 | implementation | 98 |
@@ -483,6 +483,7 @@
 | 2256 | A. Three Numbers on the Blackboard |  | math, sortings |
 | 2256 | B. Domino Tiles |  | implementation, math |
 | 2256 | C. Hot Potatoes at the Fairy Warehouse |  | games |
+| 2256 | D. A Ribbon for Tomorrow |  | math |
 | 100819 | L. Millionaire |  |  |
 | 100819 | M. Magic Trick |  |  |
 | 100819 | N. Egg Drop |  |  |
