@@ -19,7 +19,7 @@
 | 2300 | 5 |
 | 2500 | 2 |
 | 2700 | 1 |
-| unrated | 145 |
+| unrated | 146 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
@@ -42,7 +42,7 @@
 | strings | 28 |
 | interactive | 24 |
 | combinatorics | 23 |
-| games | 19 |
+| games | 20 |
 | dsu | 15 |
 | geometry | 10 |
 | probabilities | 8 |
@@ -482,6 +482,7 @@
 | 2253 | D. Hypercarp and Interdimensional Jumps |  | geometry, greedy, math |
 | 2256 | A. Three Numbers on the Blackboard |  | math, sortings |
 | 2256 | B. Domino Tiles |  | implementation, math |
+| 2256 | C. Hot Potatoes at the Fairy Warehouse |  | games |
 | 100819 | L. Millionaire |  |  |
 | 100819 | M. Magic Trick |  |  |
 | 100819 | N. Egg Drop |  |  |
