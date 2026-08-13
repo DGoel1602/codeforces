@@ -6,7 +6,7 @@
 | 1000 | 19 |
 | 1100 | 32 |
 | 1200 | 24 |
-| 1300 | 33 |
+| 1300 | 34 |
 | 1400 | 27 |
 | 1500 | 25 |
 | 1600 | 20 |
@@ -24,17 +24,17 @@
 | Topic | Problems |
 | --- | ---: |
 | greedy | 239 |
-| math | 169 |
+| math | 170 |
 | constructive algorithms | 141 |
 | untagged | 135 |
-| implementation | 99 |
+| implementation | 100 |
 | dp | 91 |
 | brute force | 84 |
 | data structures | 66 |
 | binary search | 63 |
 | sortings | 59 |
 | bitmasks | 51 |
-| number theory | 48 |
+| number theory | 49 |
 | dfs and similar | 41 |
 | graphs | 41 |
 | two pointers | 33 |
@@ -66,6 +66,7 @@
 | 292 | B. Network Topology | 1200 | graphs, implementation |
 | 448 | D. Multiplication Table | 1800 | binary search, brute force |
 | 459 | D. Pashmak and Parmida's problem | 1800 | data structures, divide and conquer, sortings |
+| 573 | A. Bear and Poker | 1300 | implementation, math, number theory |
 | 577 | B. Modulo Sum | 1900 | combinatorics, data structures, dp, two pointers |
 | 805 | A. Fake NP | 1000 | greedy, math |
 | 805 | B. 3-palindrome | 1000 | constructive algorithms |
