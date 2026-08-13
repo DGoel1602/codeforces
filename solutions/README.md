@@ -5,7 +5,7 @@
 | 900 | 27 |
 | 1000 | 19 |
 | 1100 | 32 |
-| 1200 | 23 |
+| 1200 | 24 |
 | 1300 | 33 |
 | 1400 | 27 |
 | 1500 | 25 |
@@ -27,7 +27,7 @@
 | math | 169 |
 | constructive algorithms | 141 |
 | untagged | 135 |
-| implementation | 98 |
+| implementation | 99 |
 | dp | 91 |
 | brute force | 84 |
 | data structures | 66 |
@@ -36,7 +36,7 @@
 | bitmasks | 51 |
 | number theory | 48 |
 | dfs and similar | 41 |
-| graphs | 40 |
+| graphs | 41 |
 | two pointers | 33 |
 | trees | 32 |
 | strings | 28 |
@@ -63,6 +63,7 @@
 | 20 | C. Dijkstra? | 1900 | graphs, shortest paths |
 | 161 | D. Distance in Tree | 1800 | dfs and similar, dp, trees |
 | 193 | A. Cutting Figure | 1700 | constructive algorithms, graphs, trees |
+| 292 | B. Network Topology | 1200 | graphs, implementation |
 | 448 | D. Multiplication Table | 1800 | binary search, brute force |
 | 459 | D. Pashmak and Parmida's problem | 1800 | data structures, divide and conquer, sortings |
 | 577 | B. Modulo Sum | 1900 | combinatorics, data structures, dp, two pointers |
