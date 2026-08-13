@@ -5,7 +5,7 @@
 | 900 | 27 |
 | 1000 | 19 |
 | 1100 | 33 |
-| 1200 | 26 |
+| 1200 | 27 |
 | 1300 | 35 |
 | 1400 | 29 |
 | 1500 | 28 |
@@ -24,8 +24,8 @@
 | Topic | Problems |
 | --- | ---: |
 | greedy | 244 |
-| math | 174 |
-| constructive algorithms | 147 |
+| math | 175 |
+| constructive algorithms | 148 |
 | untagged | 135 |
 | implementation | 104 |
 | dp | 92 |
@@ -44,7 +44,7 @@
 | interactive | 25 |
 | games | 20 |
 | dsu | 17 |
-| geometry | 10 |
+| geometry | 11 |
 | probabilities | 8 |
 | divide and conquer | 5 |
 | flows | 5 |
@@ -128,6 +128,7 @@
 | 1825 | D1. LuoTianyi and the Floating Islands (Easy Version) | 1800 | combinatorics, dp, math, trees |
 | 1839 | B. Lamps | 1100 | greedy, sortings |
 | 1840 | B. Binary Cafe | 1100 | bitmasks, combinatorics, math |
+| 1846 | D. Rudolph and Christmas Tree | 1200 | constructive algorithms, geometry, math |
 | 1846 | F. Rudolph and Mimic | 1800 | constructive algorithms, implementation, interactive |
 | 1846 | G. Rudolf and CodeVid-23 | 1900 | bitmasks, dp, graphs, greedy, shortest paths |
 | 1851 | F. Lisa and the Martians | 1800 | bitmasks, greedy, math, strings, trees |
