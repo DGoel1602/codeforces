@@ -7,7 +7,7 @@
 | 1100 | 32 |
 | 1200 | 25 |
 | 1300 | 34 |
-| 1400 | 28 |
+| 1400 | 29 |
 | 1500 | 28 |
 | 1600 | 21 |
 | 1700 | 19 |
@@ -23,7 +23,7 @@
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 241 |
+| greedy | 242 |
 | math | 172 |
 | constructive algorithms | 144 |
 | untagged | 135 |
@@ -31,8 +31,8 @@
 | dp | 91 |
 | brute force | 85 |
 | data structures | 66 |
-| binary search | 63 |
-| sortings | 59 |
+| binary search | 64 |
+| sortings | 60 |
 | bitmasks | 51 |
 | number theory | 50 |
 | dfs and similar | 46 |
@@ -89,6 +89,7 @@
 | 1366 | D. Two Divisors | 2000 | constructive algorithms, math, number theory |
 | 1426 | E. Rock, Paper, Scissors | 1800 | brute force, constructive algorithms, flows, greedy, math |
 | 1428 | B. Belted Rooms | 1200 | graphs, implementation |
+| 1443 | C. The Delivery Dilemma | 1400 | binary search, greedy, sortings |
 | 1463 | D. Pairs | 1900 | binary search, constructive algorithms, greedy, two pointers |
 | 1475 | F. Unusual Matrix | 1900 | 2-sat, brute force, constructive algorithms |
 | 1481 | D. AB Graph | 2000 | brute force, constructive algorithms, graphs, greedy, implementation |
