@@ -10,7 +10,7 @@
 | 1400 | 28 |
 | 1500 | 26 |
 | 1600 | 20 |
-| 1700 | 18 |
+| 1700 | 19 |
 | 1800 | 47 |
 | 1900 | 38 |
 | 2000 | 21 |
@@ -23,11 +23,11 @@
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 239 |
+| greedy | 240 |
 | math | 170 |
-| constructive algorithms | 141 |
+| constructive algorithms | 142 |
 | untagged | 135 |
-| implementation | 100 |
+| implementation | 101 |
 | dp | 91 |
 | brute force | 84 |
 | data structures | 66 |
@@ -77,6 +77,7 @@
 | 977 | E. Cyclic Components | 1500 | dfs and similar, dsu, graphs |
 | 1144 | F. Graph Without Long Directed Paths | 1700 | dfs and similar, graphs |
 | 1167 | C. News Distribution | 1400 | dfs and similar, dsu, graphs |
+| 1254 | A. Feeding Chicken | 1700 | constructive algorithms, greedy, implementation |
 | 1324 | F. Maximum White Subtree | 1800 | dfs and similar, dp, graphs, trees |
 | 1329 | A. Dreamoon Likes Coloring | 1800 | constructive algorithms, greedy, implementation, math |
 | 1334 | D. Minimum Euler Cycle | 1800 | constructive algorithms, graphs, greedy, implementation |
