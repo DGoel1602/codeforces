@@ -9,7 +9,7 @@
 | 1300 | 34 |
 | 1400 | 28 |
 | 1500 | 26 |
-| 1600 | 20 |
+| 1600 | 21 |
 | 1700 | 19 |
 | 1800 | 47 |
 | 1900 | 38 |
@@ -24,24 +24,24 @@
 | Topic | Problems |
 | --- | ---: |
 | greedy | 240 |
-| math | 170 |
+| math | 171 |
 | constructive algorithms | 142 |
 | untagged | 135 |
 | implementation | 101 |
 | dp | 91 |
-| brute force | 84 |
+| brute force | 85 |
 | data structures | 66 |
 | binary search | 63 |
 | sortings | 59 |
 | bitmasks | 51 |
-| number theory | 49 |
+| number theory | 50 |
 | dfs and similar | 44 |
 | graphs | 44 |
 | two pointers | 33 |
 | trees | 32 |
 | strings | 28 |
+| combinatorics | 24 |
 | interactive | 24 |
-| combinatorics | 23 |
 | games | 20 |
 | dsu | 17 |
 | geometry | 10 |
@@ -78,6 +78,7 @@
 | 1144 | F. Graph Without Long Directed Paths | 1700 | dfs and similar, graphs |
 | 1167 | C. News Distribution | 1400 | dfs and similar, dsu, graphs |
 | 1254 | A. Feeding Chicken | 1700 | constructive algorithms, greedy, implementation |
+| 1305 | C. Kuroni and Impossible Calculation | 1600 | brute force, combinatorics, math, number theory |
 | 1324 | F. Maximum White Subtree | 1800 | dfs and similar, dp, graphs, trees |
 | 1329 | A. Dreamoon Likes Coloring | 1800 | constructive algorithms, greedy, implementation, math |
 | 1334 | D. Minimum Euler Cycle | 1800 | constructive algorithms, graphs, greedy, implementation |
