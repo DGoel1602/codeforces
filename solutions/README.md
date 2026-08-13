@@ -5,7 +5,7 @@
 | 900 | 27 |
 | 1000 | 19 |
 | 1100 | 32 |
-| 1200 | 24 |
+| 1200 | 25 |
 | 1300 | 34 |
 | 1400 | 28 |
 | 1500 | 28 |
@@ -27,7 +27,7 @@
 | math | 172 |
 | constructive algorithms | 144 |
 | untagged | 135 |
-| implementation | 101 |
+| implementation | 102 |
 | dp | 91 |
 | brute force | 85 |
 | data structures | 66 |
@@ -36,7 +36,7 @@
 | bitmasks | 51 |
 | number theory | 50 |
 | dfs and similar | 46 |
-| graphs | 44 |
+| graphs | 45 |
 | trees | 33 |
 | two pointers | 33 |
 | strings | 28 |
@@ -88,6 +88,7 @@
 | 1352 | F. Binary String Reconstruction | 1500 | constructive algorithms, dfs and similar, math |
 | 1366 | D. Two Divisors | 2000 | constructive algorithms, math, number theory |
 | 1426 | E. Rock, Paper, Scissors | 1800 | brute force, constructive algorithms, flows, greedy, math |
+| 1428 | B. Belted Rooms | 1200 | graphs, implementation |
 | 1463 | D. Pairs | 1900 | binary search, constructive algorithms, greedy, two pointers |
 | 1475 | F. Unusual Matrix | 1900 | 2-sat, brute force, constructive algorithms |
 | 1481 | D. AB Graph | 2000 | brute force, constructive algorithms, graphs, greedy, implementation |
