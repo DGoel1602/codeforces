@@ -5,7 +5,7 @@
 | 900 | 27 |
 | 1000 | 19 |
 | 1100 | 33 |
-| 1200 | 25 |
+| 1200 | 26 |
 | 1300 | 34 |
 | 1400 | 29 |
 | 1500 | 28 |
@@ -24,17 +24,17 @@
 | Topic | Problems |
 | --- | ---: |
 | greedy | 242 |
-| math | 172 |
-| constructive algorithms | 144 |
+| math | 173 |
+| constructive algorithms | 145 |
 | untagged | 135 |
 | implementation | 103 |
 | dp | 91 |
 | brute force | 86 |
 | data structures | 67 |
 | binary search | 64 |
-| sortings | 60 |
+| sortings | 61 |
 | bitmasks | 51 |
-| number theory | 50 |
+| number theory | 51 |
 | dfs and similar | 46 |
 | graphs | 45 |
 | trees | 34 |
@@ -106,6 +106,7 @@
 | 1624 | F. Interacdive Problem | 2000 | binary search, constructive algorithms, interactive |
 | 1624 | G. MinOr Tree | 1900 | bitmasks, dfs and similar, dsu, graphs, greedy |
 | 1647 | D. Madoka and the Best School in Russia | 1900 | constructive algorithms, dp, math, number theory |
+| 1656 | C. Make Equal With Mod | 1200 | constructive algorithms, math, number theory, sortings |
 | 1666 | C. Connect the Points | 1800 | brute force, constructive algorithms, geometry |
 | 1672 | F1. Array Shuffling | 2000 | constructive algorithms, graphs, greedy |
 | 1697 | D. Guess The String | 1900 | binary search, constructive algorithms, interactive |
