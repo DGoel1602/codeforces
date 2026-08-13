@@ -9,7 +9,7 @@
 | 1300 | 35 |
 | 1400 | 29 |
 | 1500 | 28 |
-| 1600 | 21 |
+| 1600 | 22 |
 | 1700 | 20 |
 | 1800 | 48 |
 | 1900 | 38 |
@@ -23,9 +23,9 @@
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 243 |
+| greedy | 244 |
 | math | 174 |
-| constructive algorithms | 146 |
+| constructive algorithms | 147 |
 | untagged | 135 |
 | implementation | 104 |
 | dp | 92 |
@@ -41,7 +41,7 @@
 | two pointers | 34 |
 | strings | 28 |
 | combinatorics | 25 |
-| interactive | 24 |
+| interactive | 25 |
 | games | 20 |
 | dsu | 17 |
 | geometry | 10 |
@@ -121,6 +121,7 @@
 | 1788 | B. Sum of Two Numbers | 1100 | constructive algorithms, greedy, implementation, math, probabilities |
 | 1793 | C. Dora and Search | 1200 | constructive algorithms, data structures, two pointers |
 | 1795 | B. Ideal Point | 900 | brute force, geometry, greedy |
+| 1797 | C. Li Hua and Chess | 1600 | constructive algorithms, greedy, interactive |
 | 1805 | D. A Wide, Wide Graph | 1800 | dfs and similar, dp, graphs, greedy, trees |
 | 1808 | B. Playing in a Casino | 1200 | math, sortings |
 | 1815 | A. Ian and Array Sorting | 1300 | greedy, math |
