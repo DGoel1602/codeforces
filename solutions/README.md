@@ -8,7 +8,7 @@
 | 1200 | 24 |
 | 1300 | 34 |
 | 1400 | 28 |
-| 1500 | 26 |
+| 1500 | 27 |
 | 1600 | 21 |
 | 1700 | 19 |
 | 1800 | 47 |
@@ -23,9 +23,9 @@
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 240 |
+| greedy | 241 |
 | math | 171 |
-| constructive algorithms | 142 |
+| constructive algorithms | 143 |
 | untagged | 135 |
 | implementation | 101 |
 | dp | 91 |
@@ -35,10 +35,10 @@
 | sortings | 59 |
 | bitmasks | 51 |
 | number theory | 50 |
-| dfs and similar | 44 |
+| dfs and similar | 45 |
 | graphs | 44 |
+| trees | 33 |
 | two pointers | 33 |
-| trees | 32 |
 | strings | 28 |
 | combinatorics | 24 |
 | interactive | 24 |
@@ -80,6 +80,7 @@
 | 1254 | A. Feeding Chicken | 1700 | constructive algorithms, greedy, implementation |
 | 1305 | C. Kuroni and Impossible Calculation | 1600 | brute force, combinatorics, math, number theory |
 | 1324 | F. Maximum White Subtree | 1800 | dfs and similar, dp, graphs, trees |
+| 1325 | C. Ehab and Path-etic MEXs | 1500 | constructive algorithms, dfs and similar, greedy, trees |
 | 1329 | A. Dreamoon Likes Coloring | 1800 | constructive algorithms, greedy, implementation, math |
 | 1334 | D. Minimum Euler Cycle | 1800 | constructive algorithms, graphs, greedy, implementation |
 | 1338 | B. Edge Weight Assignment | 1800 | bitmasks, constructive algorithms, dfs and similar, greedy, math, trees |
