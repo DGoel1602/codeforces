@@ -6,7 +6,7 @@
 | 1000 | 19 |
 | 1100 | 33 |
 | 1200 | 26 |
-| 1300 | 34 |
+| 1300 | 35 |
 | 1400 | 29 |
 | 1500 | 28 |
 | 1600 | 21 |
@@ -28,16 +28,16 @@
 | constructive algorithms | 145 |
 | untagged | 135 |
 | implementation | 103 |
-| dp | 91 |
+| dp | 92 |
 | brute force | 86 |
 | data structures | 67 |
 | binary search | 64 |
 | sortings | 61 |
 | bitmasks | 51 |
 | number theory | 51 |
-| dfs and similar | 46 |
+| dfs and similar | 47 |
 | graphs | 45 |
-| trees | 34 |
+| trees | 35 |
 | two pointers | 33 |
 | strings | 28 |
 | combinatorics | 24 |
@@ -144,6 +144,7 @@
 | 1888 | D1. Dances (Easy version) | 1400 | binary search, greedy |
 | 1891 | F. A Growing Tree | 2000 | data structures, dfs and similar, trees |
 | 1898 | B. Milena and Admirer | 1500 | greedy, math |
+| 1900 | C. Anji's Binary Tree | 1300 | dfs and similar, dp, trees |
 | 1905 | C. Largest Subsequence | 1400 | greedy, strings |
 | 1906 | E. Merge Not Sort | 1900 | constructive algorithms, dp |
 | 1907 | C. Removal of Unattractive Pairs | 1200 | constructive algorithms, greedy, math, strings |
