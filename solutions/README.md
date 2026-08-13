@@ -7,7 +7,7 @@
 | 1100 | 33 |
 | 1200 | 27 |
 | 1300 | 35 |
-| 1400 | 29 |
+| 1400 | 30 |
 | 1500 | 28 |
 | 1600 | 22 |
 | 1700 | 20 |
@@ -23,16 +23,16 @@
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 244 |
-| math | 175 |
+| greedy | 245 |
+| math | 176 |
 | constructive algorithms | 148 |
 | untagged | 135 |
-| implementation | 104 |
+| implementation | 105 |
 | dp | 92 |
 | brute force | 86 |
 | data structures | 68 |
-| binary search | 66 |
-| sortings | 62 |
+| binary search | 67 |
+| sortings | 63 |
 | bitmasks | 51 |
 | number theory | 51 |
 | dfs and similar | 47 |
@@ -181,6 +181,7 @@
 | 1966 | B. Rectangle Filling | 1100 | constructive algorithms, implementation |
 | 1966 | C. Everything Nim | 1400 | games, greedy |
 | 1966 | D. Missing Subsequence Sum | 1800 | constructive algorithms, greedy, math, number theory |
+| 1967 | A. Permutation Counting | 1400 | binary search, greedy, implementation, math, sortings |
 | 1968 | F. Equal XOR Segments | 1800 | binary search, data structures |
 | 1970 | B1. Exact Neighbours (Easy) | 1900 | constructive algorithms |
 | 1971 | C. Clock and Strings | 900 | implementation |
