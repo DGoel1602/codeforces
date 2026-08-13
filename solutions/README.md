@@ -7,7 +7,7 @@
 | 1100 | 32 |
 | 1200 | 24 |
 | 1300 | 34 |
-| 1400 | 27 |
+| 1400 | 28 |
 | 1500 | 26 |
 | 1600 | 20 |
 | 1700 | 18 |
@@ -35,15 +35,15 @@
 | sortings | 59 |
 | bitmasks | 51 |
 | number theory | 49 |
-| dfs and similar | 43 |
-| graphs | 43 |
+| dfs and similar | 44 |
+| graphs | 44 |
 | two pointers | 33 |
 | trees | 32 |
 | strings | 28 |
 | interactive | 24 |
 | combinatorics | 23 |
 | games | 20 |
-| dsu | 16 |
+| dsu | 17 |
 | geometry | 10 |
 | probabilities | 8 |
 | divide and conquer | 5 |
@@ -76,6 +76,7 @@
 | 895 | C. Square Subsets | 2000 | bitmasks, combinatorics, dp, math |
 | 977 | E. Cyclic Components | 1500 | dfs and similar, dsu, graphs |
 | 1144 | F. Graph Without Long Directed Paths | 1700 | dfs and similar, graphs |
+| 1167 | C. News Distribution | 1400 | dfs and similar, dsu, graphs |
 | 1324 | F. Maximum White Subtree | 1800 | dfs and similar, dp, graphs, trees |
 | 1329 | A. Dreamoon Likes Coloring | 1800 | constructive algorithms, greedy, implementation, math |
 | 1334 | D. Minimum Euler Cycle | 1800 | constructive algorithms, graphs, greedy, implementation |
