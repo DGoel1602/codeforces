@@ -11,7 +11,7 @@
 | 1500 | 28 |
 | 1600 | 21 |
 | 1700 | 20 |
-| 1800 | 47 |
+| 1800 | 48 |
 | 1900 | 38 |
 | 2000 | 21 |
 | 2100 | 3 |
@@ -25,13 +25,13 @@
 | --- | ---: |
 | greedy | 243 |
 | math | 174 |
-| constructive algorithms | 145 |
+| constructive algorithms | 146 |
 | untagged | 135 |
-| implementation | 103 |
+| implementation | 104 |
 | dp | 92 |
 | brute force | 86 |
 | data structures | 68 |
-| binary search | 65 |
+| binary search | 66 |
 | sortings | 62 |
 | bitmasks | 51 |
 | number theory | 51 |
@@ -40,7 +40,7 @@
 | trees | 35 |
 | two pointers | 34 |
 | strings | 28 |
-| combinatorics | 24 |
+| combinatorics | 25 |
 | interactive | 24 |
 | games | 20 |
 | dsu | 17 |
@@ -95,6 +95,7 @@
 | 1481 | D. AB Graph | 2000 | brute force, constructive algorithms, graphs, greedy, implementation |
 | 1492 | D. Genius's Gambit | 1900 | bitmasks, constructive algorithms, greedy, math |
 | 1496 | D. Let's Go Hiking | 1900 | games |
+| 1508 | B. Almost Sorted | 1800 | binary search, combinatorics, constructive algorithms, implementation |
 | 1509 | C. The Sports Festival | 1800 | dp, greedy |
 | 1510 | I. Is It Rated? | 2700 | greedy, interactive, math, probabilities |
 | 1511 | C. Yet Another Card Deck | 1100 | brute force, data structures, implementation, trees |
