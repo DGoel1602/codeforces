@@ -4,7 +4,7 @@
 | 800 | 67 |
 | 900 | 27 |
 | 1000 | 19 |
-| 1100 | 32 |
+| 1100 | 33 |
 | 1200 | 25 |
 | 1300 | 34 |
 | 1400 | 29 |
@@ -27,17 +27,17 @@
 | math | 172 |
 | constructive algorithms | 144 |
 | untagged | 135 |
-| implementation | 102 |
+| implementation | 103 |
 | dp | 91 |
-| brute force | 85 |
-| data structures | 66 |
+| brute force | 86 |
+| data structures | 67 |
 | binary search | 64 |
 | sortings | 60 |
 | bitmasks | 51 |
 | number theory | 50 |
 | dfs and similar | 46 |
 | graphs | 45 |
-| trees | 33 |
+| trees | 34 |
 | two pointers | 33 |
 | strings | 28 |
 | combinatorics | 24 |
@@ -97,6 +97,7 @@
 | 1496 | D. Let's Go Hiking | 1900 | games |
 | 1509 | C. The Sports Festival | 1800 | dp, greedy |
 | 1510 | I. Is It Rated? | 2700 | greedy, interactive, math, probabilities |
+| 1511 | C. Yet Another Card Deck | 1100 | brute force, data structures, implementation, trees |
 | 1534 | D. Lost Tree | 1800 | constructive algorithms, interactive, trees |
 | 1556 | D. Take a Guess | 1800 | bitmasks, constructive algorithms, interactive, math |
 | 1567 | D. Expression Evaluation Error | 2000 | constructive algorithms, greedy, implementation, math |
