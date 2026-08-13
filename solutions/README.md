@@ -8,7 +8,7 @@
 | 1200 | 24 |
 | 1300 | 34 |
 | 1400 | 28 |
-| 1500 | 27 |
+| 1500 | 28 |
 | 1600 | 21 |
 | 1700 | 19 |
 | 1800 | 47 |
@@ -24,8 +24,8 @@
 | Topic | Problems |
 | --- | ---: |
 | greedy | 241 |
-| math | 171 |
-| constructive algorithms | 143 |
+| math | 172 |
+| constructive algorithms | 144 |
 | untagged | 135 |
 | implementation | 101 |
 | dp | 91 |
@@ -35,7 +35,7 @@
 | sortings | 59 |
 | bitmasks | 51 |
 | number theory | 50 |
-| dfs and similar | 45 |
+| dfs and similar | 46 |
 | graphs | 44 |
 | trees | 33 |
 | two pointers | 33 |
@@ -85,6 +85,7 @@
 | 1334 | D. Minimum Euler Cycle | 1800 | constructive algorithms, graphs, greedy, implementation |
 | 1338 | B. Edge Weight Assignment | 1800 | bitmasks, constructive algorithms, dfs and similar, greedy, math, trees |
 | 1349 | B. Orac and Medians | 2000 | constructive algorithms, greedy, math |
+| 1352 | F. Binary String Reconstruction | 1500 | constructive algorithms, dfs and similar, math |
 | 1366 | D. Two Divisors | 2000 | constructive algorithms, math, number theory |
 | 1426 | E. Rock, Paper, Scissors | 1800 | brute force, constructive algorithms, flows, greedy, math |
 | 1463 | D. Pairs | 1900 | binary search, constructive algorithms, greedy, two pointers |
