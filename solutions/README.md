@@ -9,7 +9,7 @@
 | 1300 | 35 |
 | 1400 | 30 |
 | 1500 | 28 |
-| 1600 | 22 |
+| 1600 | 23 |
 | 1700 | 20 |
 | 1800 | 49 |
 | 1900 | 38 |
@@ -24,8 +24,8 @@
 | Topic | Problems |
 | --- | ---: |
 | greedy | 246 |
-| math | 177 |
-| constructive algorithms | 148 |
+| math | 178 |
+| constructive algorithms | 149 |
 | untagged | 135 |
 | implementation | 105 |
 | dp | 93 |
@@ -33,8 +33,8 @@
 | data structures | 68 |
 | binary search | 67 |
 | sortings | 64 |
+| number theory | 52 |
 | bitmasks | 51 |
-| number theory | 51 |
 | dfs and similar | 47 |
 | graphs | 45 |
 | trees | 35 |
@@ -103,6 +103,7 @@
 | 1534 | D. Lost Tree | 1800 | constructive algorithms, interactive, trees |
 | 1556 | D. Take a Guess | 1800 | bitmasks, constructive algorithms, interactive, math |
 | 1567 | D. Expression Evaluation Error | 2000 | constructive algorithms, greedy, implementation, math |
+| 1603 | B. Moderate Modular Mode | 1600 | constructive algorithms, math, number theory |
 | 1617 | D1. Too Many Impostors (easy version) | 1800 | constructive algorithms, implementation, interactive |
 | 1624 | E. Masha-forgetful | 2000 | brute force, constructive algorithms, dp, hashing, implementation, strings |
 | 1624 | F. Interacdive Problem | 2000 | binary search, constructive algorithms, interactive |
