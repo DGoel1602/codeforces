@@ -7,7 +7,7 @@
 | 1100 | 33 |
 | 1200 | 27 |
 | 1300 | 36 |
-| 1400 | 30 |
+| 1400 | 31 |
 | 1500 | 28 |
 | 1600 | 23 |
 | 1700 | 20 |
@@ -24,7 +24,7 @@
 | Topic | Problems |
 | --- | ---: |
 | greedy | 246 |
-| math | 178 |
+| math | 179 |
 | constructive algorithms | 150 |
 | untagged | 135 |
 | implementation | 106 |
@@ -33,7 +33,7 @@
 | data structures | 68 |
 | binary search | 67 |
 | sortings | 64 |
-| number theory | 52 |
+| number theory | 53 |
 | bitmasks | 51 |
 | dfs and similar | 47 |
 | graphs | 45 |
@@ -302,6 +302,7 @@
 | 2125 | B. Left and Down | 900 | math, number theory |
 | 2125 | C. Count Good Numbers | 1100 | bitmasks, combinatorics, math, number theory |
 | 2125 | D. Segments Covering | 1600 | dp, math, probabilities |
+| 2126 | E. G-C-D, Unlucky! | 1400 | math, number theory |
 | 2127 | A. Mix Mex Max | 800 | constructive algorithms, greedy, math |
 | 2127 | B. Hamiiid, Haaamid... Hamid? | 1300 | games, greedy |
 | 2127 | C. Trip Shopping | 1400 | games, greedy, sortings |
