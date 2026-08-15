@@ -6,7 +6,7 @@
 | 1000 | 19 |
 | 1100 | 33 |
 | 1200 | 27 |
-| 1300 | 35 |
+| 1300 | 36 |
 | 1400 | 30 |
 | 1500 | 28 |
 | 1600 | 23 |
@@ -25,9 +25,9 @@
 | --- | ---: |
 | greedy | 246 |
 | math | 178 |
-| constructive algorithms | 149 |
+| constructive algorithms | 150 |
 | untagged | 135 |
-| implementation | 105 |
+| implementation | 106 |
 | dp | 93 |
 | brute force | 86 |
 | data structures | 68 |
@@ -270,6 +270,7 @@
 | 2086 | C. Disappearing Permutation | 1300 | dfs and similar, dp, dsu, graphs, greedy, implementation |
 | 2086 | D. Even String | 1700 | brute force, combinatorics, dp, math, strings |
 | 2093 | E. Min Max MEX | 1500 | binary search, brute force, greedy |
+| 2101 | A. Mex in the Grid | 1300 | constructive algorithms, implementation |
 | 2102 | A. Dinner Time | 900 | constructive algorithms, math |
 | 2102 | B. The Picky Cat | 900 | implementation, sortings |
 | 2102 | C. Mex in the Grid | 1300 | constructive algorithms |
