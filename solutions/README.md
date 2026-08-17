@@ -9,7 +9,7 @@
 | 1300 | 37 |
 | 1400 | 31 |
 | 1500 | 29 |
-| 1600 | 23 |
+| 1600 | 24 |
 | 1700 | 20 |
 | 1800 | 50 |
 | 1900 | 38 |
@@ -23,27 +23,27 @@
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 246 |
+| greedy | 247 |
 | math | 181 |
-| constructive algorithms | 152 |
+| constructive algorithms | 153 |
 | untagged | 135 |
-| implementation | 107 |
-| dp | 94 |
+| implementation | 108 |
+| dp | 95 |
 | brute force | 88 |
-| data structures | 68 |
-| binary search | 67 |
+| data structures | 69 |
+| binary search | 68 |
 | sortings | 64 |
 | number theory | 55 |
 | bitmasks | 51 |
 | dfs and similar | 47 |
 | graphs | 45 |
-| trees | 35 |
+| trees | 36 |
 | two pointers | 34 |
 | strings | 28 |
 | combinatorics | 26 |
 | interactive | 25 |
 | games | 20 |
-| dsu | 17 |
+| dsu | 18 |
 | geometry | 11 |
 | probabilities | 8 |
 | flows | 6 |
@@ -367,6 +367,7 @@
 | 2170 | A. Maximum Neighborhood | 800 | bitmasks, brute force, greedy, implementation, math |
 | 2170 | B. Addition on a Segment | 1200 | greedy, math |
 | 2170 | C. Quotient and Remainder | 1300 | binary search, greedy, two pointers |
+| 2171 | F. Rae Taylor and Trees (hard version) | 1600 | binary search, constructive algorithms, data structures, dp, dsu, greedy, implementation, trees |
 | 2173 | A. Sleeping Through Classes | 800 | greedy, implementation |
 | 2173 | B. Niko's Tactical Cards | 1100 | dp, greedy, math |
 | 2173 | C. Kanade's Perfect Multiples | 1400 | brute force, constructive algorithms, greedy, number theory |
