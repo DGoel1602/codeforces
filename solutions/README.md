@@ -6,7 +6,7 @@
 | 1000 | 19 |
 | 1100 | 33 |
 | 1200 | 27 |
-| 1300 | 36 |
+| 1300 | 37 |
 | 1400 | 31 |
 | 1500 | 28 |
 | 1600 | 23 |
@@ -25,11 +25,11 @@
 | --- | ---: |
 | greedy | 246 |
 | math | 180 |
-| constructive algorithms | 151 |
+| constructive algorithms | 152 |
 | untagged | 135 |
-| implementation | 106 |
-| dp | 93 |
-| brute force | 86 |
+| implementation | 107 |
+| dp | 94 |
+| brute force | 87 |
 | data structures | 68 |
 | binary search | 67 |
 | sortings | 64 |
@@ -102,6 +102,7 @@
 | 1510 | I. Is It Rated? | 2700 | greedy, interactive, math, probabilities |
 | 1511 | C. Yet Another Card Deck | 1100 | brute force, data structures, implementation, trees |
 | 1534 | D. Lost Tree | 1800 | constructive algorithms, interactive, trees |
+| 1555 | C. Coin Rows | 1300 | brute force, constructive algorithms, dp, implementation |
 | 1556 | D. Take a Guess | 1800 | bitmasks, constructive algorithms, interactive, math |
 | 1567 | D. Expression Evaluation Error | 2000 | constructive algorithms, greedy, implementation, math |
 | 1603 | B. Moderate Modular Mode | 1600 | constructive algorithms, math, number theory |
