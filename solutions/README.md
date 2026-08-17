@@ -11,7 +11,7 @@
 | 1500 | 28 |
 | 1600 | 23 |
 | 1700 | 20 |
-| 1800 | 49 |
+| 1800 | 50 |
 | 1900 | 38 |
 | 2000 | 21 |
 | 2100 | 3 |
@@ -24,8 +24,8 @@
 | Topic | Problems |
 | --- | ---: |
 | greedy | 246 |
-| math | 179 |
-| constructive algorithms | 150 |
+| math | 180 |
+| constructive algorithms | 151 |
 | untagged | 135 |
 | implementation | 106 |
 | dp | 93 |
@@ -33,14 +33,14 @@
 | data structures | 68 |
 | binary search | 67 |
 | sortings | 64 |
-| number theory | 53 |
+| number theory | 54 |
 | bitmasks | 51 |
 | dfs and similar | 47 |
 | graphs | 45 |
 | trees | 35 |
 | two pointers | 34 |
 | strings | 28 |
-| combinatorics | 25 |
+| combinatorics | 26 |
 | interactive | 25 |
 | games | 20 |
 | dsu | 17 |
@@ -73,6 +73,7 @@
 | 805 | C. Find Amir | 1000 | constructive algorithms |
 | 805 | D. Minimum number of steps | 1400 | combinatorics |
 | 805 | F. Expected diameter of a tree | 2500 | graphs, probabilities, trees |
+| 894 | B. Ralph And His Magic Field | 1800 | combinatorics, constructive algorithms, math, number theory |
 | 895 | C. Square Subsets | 2000 | bitmasks, combinatorics, dp, math |
 | 977 | E. Cyclic Components | 1500 | dfs and similar, dsu, graphs |
 | 1144 | F. Graph Without Long Directed Paths | 1700 | dfs and similar, graphs |
