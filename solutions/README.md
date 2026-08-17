@@ -8,7 +8,7 @@
 | 1200 | 27 |
 | 1300 | 37 |
 | 1400 | 31 |
-| 1500 | 28 |
+| 1500 | 29 |
 | 1600 | 23 |
 | 1700 | 20 |
 | 1800 | 50 |
@@ -24,16 +24,16 @@
 | Topic | Problems |
 | --- | ---: |
 | greedy | 246 |
-| math | 180 |
+| math | 181 |
 | constructive algorithms | 152 |
 | untagged | 135 |
 | implementation | 107 |
 | dp | 94 |
-| brute force | 87 |
+| brute force | 88 |
 | data structures | 68 |
 | binary search | 67 |
 | sortings | 64 |
-| number theory | 54 |
+| number theory | 55 |
 | bitmasks | 51 |
 | dfs and similar | 47 |
 | graphs | 45 |
@@ -118,6 +118,7 @@
 | 1709 | C. Recover an RBS | 1800 | constructive algorithms, greedy, implementation, strings |
 | 1713 | D. Tournament Countdown | 1800 | constructive algorithms, greedy, interactive, number theory, probabilities |
 | 1728 | D. Letter Picking | 1800 | constructive algorithms, dp, games, two pointers |
+| 1744 | E1. Divisible Numbers (easy version) | 1500 | brute force, math, number theory |
 | 1750 | D. Count GCD | 1800 | combinatorics, math, number theory |
 | 1768 | D. Lucky Permutation | 1800 | constructive algorithms, dfs and similar, graphs, greedy |
 | 1770 | D. Koxia and Game | 2000 | constructive algorithms, data structures, dfs and similar, dsu, flows, games, graph matchings, graphs, implementation |
