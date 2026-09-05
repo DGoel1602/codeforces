@@ -19,12 +19,12 @@
 | 2300 | 5 |
 | 2500 | 2 |
 | 2700 | 1 |
-| unrated | 173 |
+| unrated | 174 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 261 |
-| math | 201 |
+| math | 202 |
 | constructive algorithms | 161 |
 | untagged | 156 |
 | implementation | 125 |
@@ -33,7 +33,7 @@
 | binary search | 75 |
 | data structures | 75 |
 | sortings | 72 |
-| number theory | 58 |
+| number theory | 59 |
 | bitmasks | 53 |
 | dfs and similar | 50 |
 | graphs | 48 |
@@ -556,6 +556,7 @@
 | 2258 | B2. Carrot Chopdown (Hard Version) |  | brute force, greedy, implementation, math |
 | 2258 | C. Far Cities |  | interactive, trees, two pointers |
 | 2259 | A. Moo Language School |  | greedy |
+| 2259 | B. Minus Two |  | math, number theory |
 | 100819 | L. Millionaire |  |  |
 | 100819 | M. Magic Trick |  |  |
 | 100819 | N. Egg Drop |  |  |
