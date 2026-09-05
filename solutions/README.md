@@ -7,7 +7,7 @@
 | 1100 | 33 |
 | 1200 | 29 |
 | 1300 | 41 |
-| 1400 | 34 |
+| 1400 | 33 |
 | 1500 | 33 |
 | 1600 | 27 |
 | 1700 | 23 |
@@ -19,7 +19,7 @@
 | 2300 | 5 |
 | 2500 | 2 |
 | 2700 | 1 |
-| unrated | 172 |
+| unrated | 173 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
@@ -27,7 +27,7 @@
 | math | 201 |
 | constructive algorithms | 161 |
 | untagged | 156 |
-| implementation | 126 |
+| implementation | 125 |
 | dp | 102 |
 | brute force | 96 |
 | binary search | 75 |
@@ -62,7 +62,6 @@
 | Contest | Problem | Rating | Topics |
 | --- | --- | --- | --- |
 | 20 | C. Dijkstra? | 1900 | graphs, shortest paths |
-| 42 | A. Guilty --- to the kitchen! | 1400 | greedy, implementation |
 | 148 | C. Terse princess | 1700 | constructive algorithms, greedy |
 | 161 | D. Distance in Tree | 1800 | dfs and similar, dp, trees |
 | 193 | A. Cutting Figure | 1700 | constructive algorithms, graphs, trees |
@@ -556,6 +555,7 @@
 | 2258 | B1. Carrot Chopdown (Easy Version) |  | brute force, games, math |
 | 2258 | B2. Carrot Chopdown (Hard Version) |  | brute force, greedy, implementation, math |
 | 2258 | C. Far Cities |  | interactive, trees, two pointers |
+| 2259 | A. Moo Language School |  | greedy |
 | 100819 | L. Millionaire |  |  |
 | 100819 | M. Magic Trick |  |  |
 | 100819 | N. Egg Drop |  |  |
