@@ -19,13 +19,13 @@
 | 2300 | 5 |
 | 2500 | 2 |
 | 2700 | 1 |
-| unrated | 176 |
+| unrated | 177 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 263 |
+| greedy | 264 |
 | math | 202 |
-| constructive algorithms | 162 |
+| constructive algorithms | 163 |
 | untagged | 156 |
 | implementation | 125 |
 | dp | 102 |
@@ -49,7 +49,7 @@
 | flows | 6 |
 | divide and conquer | 5 |
 | shortest paths | 5 |
-| 2-sat | 3 |
+| 2-sat | 4 |
 | graph matchings | 3 |
 | hashing | 3 |
 | ternary search | 3 |
@@ -559,6 +559,7 @@
 | 2259 | B. Minus Two |  | math, number theory |
 | 2259 | C. 101 |  | greedy |
 | 2259 | D. MEX Multiset |  | constructive algorithms, greedy |
+| 2259 | E. Treasure Map Destruction (Constructive Version) |  | 2-sat, constructive algorithms, greedy |
 | 100819 | L. Millionaire |  |  |
 | 100819 | M. Magic Trick |  |  |
 | 100819 | N. Egg Drop |  |  |
