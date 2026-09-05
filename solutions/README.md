@@ -19,19 +19,19 @@
 | 2300 | 5 |
 | 2500 | 2 |
 | 2700 | 1 |
-| unrated | 178 |
+| unrated | 179 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 264 |
-| math | 202 |
+| math | 203 |
 | constructive algorithms | 163 |
 | untagged | 156 |
 | implementation | 125 |
 | dp | 102 |
 | brute force | 96 |
-| data structures | 76 |
-| binary search | 75 |
+| data structures | 77 |
+| binary search | 76 |
 | sortings | 72 |
 | number theory | 59 |
 | bitmasks | 53 |
@@ -561,6 +561,7 @@
 | 2259 | D. MEX Multiset |  | constructive algorithms, greedy |
 | 2259 | E. Treasure Map Destruction (Constructive Version) |  | 2-sat, constructive algorithms, greedy |
 | 2259 | F. Binary Bubble Sort Inversions |  | data structures, two pointers |
+| 2259 | G. Index Removal |  | binary search, data structures, math |
 | 100819 | L. Millionaire |  |  |
 | 100819 | M. Magic Trick |  |  |
 | 100819 | N. Egg Drop |  |  |
