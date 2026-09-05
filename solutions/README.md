@@ -1,51 +1,51 @@
 ## Rating Counts
 | Rating | Problems |
 | --- | ---: |
-| 800 | 71 |
+| 800 | 79 |
 | 900 | 29 |
 | 1000 | 20 |
 | 1100 | 33 |
 | 1200 | 29 |
-| 1300 | 40 |
-| 1400 | 32 |
-| 1500 | 31 |
-| 1600 | 26 |
-| 1700 | 22 |
+| 1300 | 41 |
+| 1400 | 34 |
+| 1500 | 33 |
+| 1600 | 27 |
+| 1700 | 23 |
 | 1800 | 51 |
-| 1900 | 38 |
+| 1900 | 39 |
 | 2000 | 23 |
 | 2100 | 3 |
 | 2200 | 6 |
 | 2300 | 5 |
 | 2500 | 2 |
 | 2700 | 1 |
-| unrated | 158 |
+| unrated | 172 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 256 |
-| math | 188 |
-| constructive algorithms | 158 |
-| untagged | 146 |
-| implementation | 118 |
-| dp | 100 |
-| brute force | 90 |
-| binary search | 74 |
-| data structures | 74 |
-| sortings | 71 |
-| number theory | 56 |
-| bitmasks | 52 |
-| dfs and similar | 49 |
-| graphs | 47 |
-| two pointers | 39 |
-| trees | 38 |
+| greedy | 261 |
+| math | 201 |
+| constructive algorithms | 161 |
+| untagged | 156 |
+| implementation | 126 |
+| dp | 102 |
+| brute force | 96 |
+| binary search | 75 |
+| data structures | 75 |
+| sortings | 72 |
+| number theory | 58 |
+| bitmasks | 53 |
+| dfs and similar | 50 |
+| graphs | 48 |
+| trees | 41 |
+| two pointers | 41 |
 | strings | 30 |
-| combinatorics | 26 |
-| interactive | 26 |
-| games | 20 |
+| combinatorics | 27 |
+| interactive | 27 |
+| games | 22 |
 | dsu | 19 |
 | geometry | 11 |
-| probabilities | 8 |
+| probabilities | 9 |
 | flows | 6 |
 | divide and conquer | 5 |
 | shortest paths | 5 |
@@ -57,10 +57,12 @@
 | communication | 1 |
 | fft | 1 |
 | matrices | 1 |
+| string suffix structures | 1 |
 ## Problems
 | Contest | Problem | Rating | Topics |
 | --- | --- | --- | --- |
 | 20 | C. Dijkstra? | 1900 | graphs, shortest paths |
+| 42 | A. Guilty --- to the kitchen! | 1400 | greedy, implementation |
 | 148 | C. Terse princess | 1700 | constructive algorithms, greedy |
 | 161 | D. Distance in Tree | 1800 | dfs and similar, dp, trees |
 | 193 | A. Cutting Figure | 1700 | constructive algorithms, graphs, trees |
@@ -77,11 +79,14 @@
 | 805 | D. Minimum number of steps | 1400 | combinatorics |
 | 805 | F. Expected diameter of a tree | 2500 | graphs, probabilities, trees |
 | 809 | A. Do you want a date? | 1500 | implementation, math, sortings |
+| 839 | C. Journey | 1500 | dfs and similar, dp, graphs, probabilities, trees |
 | 894 | B. Ralph And His Magic Field | 1800 | combinatorics, constructive algorithms, math, number theory |
 | 895 | C. Square Subsets | 2000 | bitmasks, combinatorics, dp, math |
 | 977 | E. Cyclic Components | 1500 | dfs and similar, dsu, graphs |
+| 1136 | A. Nastya Is Reading a Book | 800 | implementation |
 | 1144 | F. Graph Without Long Directed Paths | 1700 | dfs and similar, graphs |
 | 1167 | C. News Distribution | 1400 | dfs and similar, dsu, graphs |
+| 1183 | C. Computer Game | 1400 | binary search, math |
 | 1254 | A. Feeding Chicken | 1700 | constructive algorithms, greedy, implementation |
 | 1305 | C. Kuroni and Impossible Calculation | 1600 | brute force, combinatorics, math, number theory |
 | 1324 | F. Maximum White Subtree | 1800 | dfs and similar, dp, graphs, trees |
@@ -92,6 +97,7 @@
 | 1349 | B. Orac and Medians | 2000 | constructive algorithms, greedy, math |
 | 1352 | F. Binary String Reconstruction | 1500 | constructive algorithms, dfs and similar, math |
 | 1366 | D. Two Divisors | 2000 | constructive algorithms, math, number theory |
+| 1368 | A. C+= | 800 | brute force, greedy, implementation, math |
 | 1426 | E. Rock, Paper, Scissors | 1800 | brute force, constructive algorithms, flows, greedy, math |
 | 1428 | B. Belted Rooms | 1200 | graphs, implementation |
 | 1437 | C. Chef Monocarp | 1800 | dp, flows, graph matchings, greedy, math, sortings |
@@ -114,6 +120,7 @@
 | 1624 | E. Masha-forgetful | 2000 | brute force, constructive algorithms, dp, hashing, implementation, strings |
 | 1624 | F. Interacdive Problem | 2000 | binary search, constructive algorithms, interactive |
 | 1624 | G. MinOr Tree | 1900 | bitmasks, dfs and similar, dsu, graphs, greedy |
+| 1644 | B. Anti-Fibonacci Permutation | 800 | brute force, constructive algorithms, implementation |
 | 1647 | D. Madoka and the Best School in Russia | 1900 | constructive algorithms, dp, math, number theory |
 | 1656 | C. Make Equal With Mod | 1200 | constructive algorithms, math, number theory, sortings |
 | 1666 | C. Connect the Points | 1800 | brute force, constructive algorithms, geometry |
@@ -127,6 +134,7 @@
 | 1768 | D. Lucky Permutation | 1800 | constructive algorithms, dfs and similar, graphs, greedy |
 | 1770 | D. Koxia and Game | 2000 | constructive algorithms, data structures, dfs and similar, dsu, flows, games, graph matchings, graphs, implementation |
 | 1775 | D. Friendly Spiders | 1800 | dfs and similar, graphs, math, number theory, shortest paths |
+| 1786 | A2. Alternating Deck (hard version) | 800 | implementation |
 | 1788 | B. Sum of Two Numbers | 1100 | constructive algorithms, greedy, implementation, math, probabilities |
 | 1793 | C. Dora and Search | 1200 | constructive algorithms, data structures, two pointers |
 | 1795 | B. Ideal Point | 900 | brute force, geometry, greedy |
@@ -155,6 +163,7 @@
 | 1888 | C. You Are So Beautiful | 1400 | data structures |
 | 1888 | D1. Dances (Easy version) | 1400 | binary search, greedy |
 | 1891 | F. A Growing Tree | 2000 | data structures, dfs and similar, trees |
+| 1895 | D. XOR Construction | 1900 | bitmasks, constructive algorithms, data structures, math, string suffix structures, trees |
 | 1898 | B. Milena and Admirer | 1500 | greedy, math |
 | 1900 | C. Anji's Binary Tree | 1300 | dfs and similar, dp, trees |
 | 1905 | C. Largest Subsequence | 1400 | greedy, strings |
@@ -186,6 +195,7 @@
 | 1946 | B. Maximum Sum | 1100 | dp, greedy, math |
 | 1946 | C. Tree Cutting | 1600 | binary search, dp, greedy, implementation, trees |
 | 1946 | D. Birthday Gift | 1900 | bitmasks, brute force, constructive algorithms, greedy, implementation |
+| 1950 | C. Clock Conversion | 800 | implementation, math |
 | 1951 | C. Ticket Hoarding | 1400 | greedy, math, sortings |
 | 1954 | D. Colored Balls | 1800 | combinatorics, dp, math, sortings |
 | 1955 | F. Unfair Game | 1800 | dp, games, greedy, math, schedules |
@@ -237,6 +247,7 @@
 | 2028 | B. Alice's Adventures in Permuting | 1400 | binary search, implementation, math |
 | 2028 | C. Alice's Adventures in Cutting Cake | 1600 | binary search, dp, greedy, two pointers |
 | 2028 | D. Alice's Adventures in Cards | 2000 | constructive algorithms, data structures, dp, graphs, greedy, implementation, ternary search |
+| 2029 | A. Set | 800 | greedy, math |
 | 2031 | A. Penchick and Modern Monument | 800 | constructive algorithms, dp, greedy, math |
 | 2031 | B. Penchick and Satay Sticks | 900 | brute force, greedy, sortings |
 | 2031 | C. Penchick and BBQ Buns | 1300 | constructive algorithms, math, number theory |
@@ -284,6 +295,7 @@
 | 2086 | B. Large Array and Segments | 1100 | binary search, brute force, greedy |
 | 2086 | C. Disappearing Permutation | 1300 | dfs and similar, dp, dsu, graphs, greedy, implementation |
 | 2086 | D. Even String | 1700 | brute force, combinatorics, dp, math, strings |
+| 2091 | E. Interesting Ratio | 1300 | brute force, math, number theory, two pointers |
 | 2093 | E. Min Max MEX | 1500 | binary search, brute force, greedy |
 | 2101 | A. Mex in the Grid | 1300 | constructive algorithms, implementation |
 | 2102 | A. Dinner Time | 900 | constructive algorithms, math |
@@ -303,6 +315,7 @@
 | 2110 | E. Melody | 2300 | dfs and similar, graphs, implementation |
 | 2111 | C. Equal Values | 1100 | brute force, greedy, two pointers |
 | 2113 | B. Good Start | 1200 | constructive algorithms, math |
+| 2115 | A. Gellyfish and Flaming Peony | 1500 | constructive algorithms, dp, math, number theory |
 | 2118 | A. Equal Subsequences | 800 | constructive algorithms, greedy |
 | 2118 | B. Make It Permutation | 1200 | constructive algorithms |
 | 2118 | C. Make It Beautiful | 1300 | bitmasks, data structures, greedy, math |
@@ -357,6 +370,7 @@
 | 2146 | C. Wrong Binary Search | 1300 | binary search, constructive algorithms |
 | 2146 | D1. Max Sum OR (Easy Version) | 1500 | bitmasks, constructive algorithms, divide and conquer, greedy, trees |
 | 2148 | E. Split | 1200 | binary search, data structures, two pointers |
+| 2152 | D. Division Versus Addition | 1700 | games, greedy, math |
 | 2153 | C. Symmetrical Polygons | 1500 | constructive algorithms, geometry, greedy, implementation, sortings |
 | 2154 | D. Catshock | 1900 | constructive algorithms, dfs and similar, graphs, trees, two pointers |
 | 2155 | C. The Ancient Wizards' Capes | 1500 | brute force, greedy, implementation |
@@ -368,6 +382,7 @@
 | 2162 | A. Beautiful Average | 800 | brute force, greedy |
 | 2162 | B. Beautiful String | 1000 | brute force, constructive algorithms |
 | 2162 | C. Beautiful XOR | 1100 | bitmasks, constructive algorithms, greedy |
+| 2164 | A. Sequence Game | 800 | brute force, sortings |
 | 2164 | B. Even Modulo Pair | 1000 | brute force, math, number theory |
 | 2166 | A. Same Difference | 800 | brute force, greedy, strings |
 | 2166 | B. Tab Closing | 900 | math |
@@ -428,6 +443,7 @@
 | 2226 | A. Disturbing Distribution | 800 | greedy, math |
 | 2226 | B. Everything Everywhere | 900 | greedy, math, number theory |
 | 2226 | C. Mental Monumental (Easy Version) | 1500 | binary search, data structures, greedy, math, two pointers |
+| 2227 | A. Koshary | 800 | implementation, math |
 | 2227 | E. It All Went Sideways | 1400 | binary search, data structures, dp, greedy |
 | 2228 | A. Marisa Steals Reimu's Takeout | 800 | greedy, implementation |
 | 2228 | B. Remilia Plays Soku | 1100 | games, implementation |
@@ -527,6 +543,7 @@
 | 2254 | D. Silhouette | 1300 | constructive algorithms, math, sortings |
 | 2254 | E. Chronostasis | 1500 | binary search, data structures, greedy |
 | 2254 | G. Nightcrawler | 2200 | data structures, dfs and similar, dp, greedy, sortings, trees |
+| 2255 | B. A Ribbon for Tomorrow | 1600 | combinatorics, math |
 | 2256 | A. Three Numbers on the Blackboard |  | math, sortings |
 | 2256 | B. Domino Tiles |  | implementation, math |
 | 2256 | C. Hot Potatoes at the Fairy Warehouse |  | games |
@@ -535,6 +552,10 @@
 | 2257 | B. Gigantomachy | 800 | math |
 | 2257 | C. Spying on the Beaver | 1200 | constructive algorithms, dfs and similar, dsu, graphs, trees |
 | 2257 | D. Bermuda Rectangle | 1600 | binary search, implementation, math, number theory, two pointers |
+| 2258 | A. Odd Eraser |  | math |
+| 2258 | B1. Carrot Chopdown (Easy Version) |  | brute force, games, math |
+| 2258 | B2. Carrot Chopdown (Hard Version) |  | brute force, greedy, implementation, math |
+| 2258 | C. Far Cities |  | interactive, trees, two pointers |
 | 100819 | L. Millionaire |  |  |
 | 100819 | M. Magic Trick |  |  |
 | 100819 | N. Egg Drop |  |  |
@@ -558,6 +579,16 @@
 | 101606 | J. Just A Minim |  |  |
 | 101606 | K. Knightsbridge Rises |  |  |
 | 101606 | L. Lizard Lounge |  |  |
+| 101801 | A. A. Can Shahhoud Solve it? |  |  |
+| 101801 | B. B. Defeat the Monsters |  |  |
+| 101801 | C. C. UCL Game Night |  |  |
+| 101801 | E. E. Create Your Own Nim Game |  |  |
+| 101801 | F. F. Nim Cheater |  |  |
+| 101801 | H. H. Don’t Ever Ask a Girl for her Codeforces Account |  |  |
+| 101801 | I. I. Odd and Even Queries |  |  |
+| 101801 | J. J. Weird Sum |  |  |
+| 101801 | K. K. Quantum Stones |  |  |
+| 101801 | L. L. Odd and Even Count |  |  |
 | 102791 | A. Christmas Ornaments |  |  |
 | 102791 | B. Look At The Same One |  |  |
 | 102791 | C. Number of Apartments |  |  |
