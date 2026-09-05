@@ -19,11 +19,11 @@
 | 2300 | 5 |
 | 2500 | 2 |
 | 2700 | 1 |
-| unrated | 174 |
+| unrated | 175 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 261 |
+| greedy | 262 |
 | math | 202 |
 | constructive algorithms | 161 |
 | untagged | 156 |
@@ -557,6 +557,7 @@
 | 2258 | C. Far Cities |  | interactive, trees, two pointers |
 | 2259 | A. Moo Language School |  | greedy |
 | 2259 | B. Minus Two |  | math, number theory |
+| 2259 | C. 101 |  | greedy |
 | 100819 | L. Millionaire |  |  |
 | 100819 | M. Magic Trick |  |  |
 | 100819 | N. Egg Drop |  |  |
