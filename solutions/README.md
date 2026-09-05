@@ -19,13 +19,13 @@
 | 2300 | 5 |
 | 2500 | 2 |
 | 2700 | 1 |
-| unrated | 175 |
+| unrated | 176 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 262 |
+| greedy | 263 |
 | math | 202 |
-| constructive algorithms | 161 |
+| constructive algorithms | 162 |
 | untagged | 156 |
 | implementation | 125 |
 | dp | 102 |
@@ -558,6 +558,7 @@
 | 2259 | A. Moo Language School |  | greedy |
 | 2259 | B. Minus Two |  | math, number theory |
 | 2259 | C. 101 |  | greedy |
+| 2259 | D. MEX Multiset |  | constructive algorithms, greedy |
 | 100819 | L. Millionaire |  |  |
 | 100819 | M. Magic Trick |  |  |
 | 100819 | N. Egg Drop |  |  |
