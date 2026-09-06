@@ -70,7 +70,9 @@ function parseWatchOptions(args: string[]): WatchOptions | null {
     intervalMs <= 0 ||
     intervalMs > 2_147_483_647
   ) {
-    throw new Error("--interval must be a whole number of seconds between 1 and 2147483");
+    throw new Error(
+      "--interval must be a whole number of seconds between 1 and 2147483",
+    );
   }
   if (!values.state) throw new Error("--state must be followed by a file path");
   if (values["notify-command"] === "")
@@ -87,16 +89,27 @@ function parseWatchOptions(args: string[]): WatchOptions | null {
 async function checkRating(options: WatchOptions): Promise<void> {
   const previous = await readState(options.statePath);
   const rating = await fetchRating(options.handle);
-  const next = { handle: options.handle, rating, checkedAt: new Date().toISOString() };
+  const next = {
+    handle: options.handle,
+    rating,
+    checkedAt: new Date().toISOString(),
+  };
 
   if (!previous || previous.handle !== next.handle) {
     console.log(
       `Starting rating watch for ${next.handle}; current rating is ${ratingLabel(rating)}.`,
     );
   } else if (previous.rating !== rating) {
-    await notifyRatingChange(next.handle, previous.rating, rating, options.notifyCommand);
+    await notifyRatingChange(
+      next.handle,
+      previous.rating,
+      rating,
+      options.notifyCommand,
+    );
   } else {
-    console.log(`${next.checkedAt} ${next.handle}: ${ratingLabel(rating)} unchanged.`);
+    console.log(
+      `${next.checkedAt} ${next.handle}: ${ratingLabel(rating)} unchanged.`,
+    );
   }
 
   // A failed custom command leaves the previous rating intact for the next check.
@@ -120,7 +133,9 @@ async function readState(path: string): Promise<RatingState | null> {
     typeof state.checkedAt !== "string" ||
     Number.isNaN(Date.parse(state.checkedAt))
   ) {
-    throw new Error(`Invalid rating state in ${path}; expected handle, rating, and checkedAt`);
+    throw new Error(
+      `Invalid rating state in ${path}; expected handle, rating, and checkedAt`,
+    );
   }
   return state;
 }
@@ -161,14 +176,19 @@ async function notifyRatingChange(
       CF_NEW_RATING: ratingLabel(newRating),
       CF_RATING_DELTA: delta,
     });
-  } else if (!(await sendDesktopNotification("Codeforces rating changed", message))) {
+  } else if (
+    !(await sendDesktopNotification("Codeforces rating changed", message))
+  ) {
     console.log(
       "Desktop notification failed. Install notify-send, use macOS osascript, or pass --notify-command.",
     );
   }
 }
 
-async function runNotificationCommand(command: string, env: Record<string, string>): Promise<void> {
+async function runNotificationCommand(
+  command: string,
+  env: Record<string, string>,
+): Promise<void> {
   const child = Bun.spawn(["sh", "-c", command], {
     env: { ...Bun.env, ...env },
     stdout: "pipe",
@@ -182,11 +202,16 @@ async function runNotificationCommand(command: string, env: Record<string, strin
   if (stdout.trim()) console.log(stdout.trim());
   if (exitCode !== 0) {
     const output = [stderr.trim(), stdout.trim()].filter(Boolean).join("\n");
-    throw new Error(`Notification command failed (exit ${exitCode}):\n${output}`);
+    throw new Error(
+      `Notification command failed (exit ${exitCode}):\n${output}`,
+    );
   }
 }
 
-async function sendDesktopNotification(title: string, message: string): Promise<boolean> {
+async function sendDesktopNotification(
+  title: string,
+  message: string,
+): Promise<boolean> {
   const command =
     process.platform === "darwin"
       ? [

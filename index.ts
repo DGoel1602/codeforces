@@ -5,7 +5,11 @@ import { SolutionsReadme } from "./solutions-readme";
 
 type Solution = { contestId: number; path: string; submission: Submission };
 type PreparedSolution = Solution & { source: string };
-type ArchivePlan = { acceptedCount: number; supported: Solution[]; missing: Solution[] };
+type ArchivePlan = {
+  acceptedCount: number;
+  supported: Solution[];
+  missing: Solution[];
+};
 
 const commitSplitThreshold = 20;
 const readmePath = "solutions/README.md";
@@ -16,7 +20,10 @@ async function main(args: string[]): Promise<void> {
 
   const key = Bun.env.CF_API_KEY;
   const secret = Bun.env.CF_API_SECRET;
-  const submissions = await fetchSubmissions(handle, key && secret ? { key, secret } : undefined);
+  const submissions = await fetchSubmissions(
+    handle,
+    key && secret ? { key, secret } : undefined,
+  );
   const plan = await planArchive(submissions);
   printPlan(handle, plan);
 
@@ -36,7 +43,11 @@ async function main(args: string[]): Promise<void> {
   }
 
   if (prepared.length > commitSplitThreshold) {
-    await writeAndCommit(prepared, readme, `Add ${prepared.length} Codeforces submissions`);
+    await writeAndCommit(
+      prepared,
+      readme,
+      `Add ${prepared.length} Codeforces submissions`,
+    );
   } else {
     for (const solution of prepared) {
       const problem = `${solution.contestId}${solution.submission.problem.index.toUpperCase()}`;
@@ -47,7 +58,10 @@ async function main(args: string[]): Promise<void> {
 }
 
 async function planArchive(submissions: Submission[]): Promise<ArchivePlan> {
-  const byProblem = new Map<string, { contestId: number; submission: Submission }>();
+  const byProblem = new Map<
+    string,
+    { contestId: number; submission: Submission }
+  >();
   // user.status returns newest submissions first; choose before filtering languages.
   for (const submission of submissions) {
     const contestId = submission.problem.contestId ?? submission.contestId;
@@ -59,9 +73,13 @@ async function planArchive(submissions: Submission[]): Promise<ArchivePlan> {
   const accepted = [...byProblem.values()].sort(
     (left, right) =>
       left.contestId - right.contestId ||
-      left.submission.problem.index.localeCompare(right.submission.problem.index, undefined, {
-        numeric: true,
-      }),
+      left.submission.problem.index.localeCompare(
+        right.submission.problem.index,
+        undefined,
+        {
+          numeric: true,
+        },
+      ),
   );
   const supported: Solution[] = [];
   const missing: Solution[] = [];
@@ -102,9 +120,15 @@ function submissionSource(submission: Submission, handle: string): string {
 function printPlan(handle: string, plan: ArchivePlan): void {
   const { missing } = plan;
   const mode =
-    missing.length > commitSplitThreshold ? "one batch commit" : "one commit per submission";
-  console.log(`Found ${plan.acceptedCount} final AC submissions for ${handle}.`);
-  console.log(`${plan.supported.length} use C++, Java, C, or Python and can be saved.`);
+    missing.length > commitSplitThreshold
+      ? "one batch commit"
+      : "one commit per submission";
+  console.log(
+    `Found ${plan.acceptedCount} final AC submissions for ${handle}.`,
+  );
+  console.log(
+    `${plan.supported.length} use C++, Java, C, or Python and can be saved.`,
+  );
   console.log(`${missing.length} submissions are not in solutions/ yet.`);
   console.log(`Commit mode for this run: ${mode}.`);
 
@@ -136,9 +160,15 @@ async function writeAndCommit(
 }
 
 function runGit(args: string[]): void {
-  const child = Bun.spawnSync(["git", ...args], { stdout: "pipe", stderr: "pipe" });
+  const child = Bun.spawnSync(["git", ...args], {
+    stdout: "pipe",
+    stderr: "pipe",
+  });
   if (child.exitCode !== 0) {
-    const output = [child.stdout.toString().trim(), child.stderr.toString().trim()]
+    const output = [
+      child.stdout.toString().trim(),
+      child.stderr.toString().trim(),
+    ]
       .filter(Boolean)
       .join("\n");
     throw new Error(`git ${args.join(" ")} failed:\n${output}`);

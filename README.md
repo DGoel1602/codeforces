@@ -48,8 +48,7 @@ bun run watch-rating <codeforces-handle> --state state/rating.json
 bun run watch-rating <codeforces-handle> --notify-command 'echo "$CF_HANDLE $CF_OLD_RATING -> $CF_NEW_RATING"'
 ```
 
-The default interval is 600 seconds. `--interval` accepts whole seconds from 1 to
-2147483. Codeforces limits API calls to [one every two seconds](https://codeforces.com/apiHelp),
+The default interval is 600 seconds. `--interval` accepts whole seconds from 1 to 2147483. Codeforces limits API calls to [one every two seconds](https://codeforces.com/apiHelp),
 so choose an interval that leaves room for other API use. Requests time out after
 30 seconds. `--help` lists all options.
 
@@ -70,9 +69,14 @@ Use separate state files for separate handles; changing the handle resets the ba
 ## Development
 
 ```sh
+bun run format
+bun run format:check
 bun run check
 bun test
 ```
+
+Prettier uses its default settings. Archived submissions and their generated README
+in `solutions/`, along with `bun.lock`, are excluded from formatting.
 
 The two entry points keep their workflows in `index.ts` and `watch-rating.ts`.
 `codeforces.ts` owns API requests, signing, and response validation.

@@ -26,7 +26,11 @@ export async function fetchSubmissions(
 ): Promise<Submission[]> {
   const params: Record<string, string> = { handle };
   if (credentials) params.includeSources = "true";
-  const submissions = (await request("user.status", params, credentials)) as Submission[];
+  const submissions = (await request(
+    "user.status",
+    params,
+    credentials,
+  )) as Submission[];
 
   for (const submission of submissions) {
     const problem = submission?.problem;
@@ -71,7 +75,8 @@ async function request(
   const response = await fetch(apiUrl(method, params, credentials), {
     signal: AbortSignal.timeout(30_000),
   });
-  if (!response.ok) throw new Error(`Codeforces returned HTTP ${response.status}`);
+  if (!response.ok)
+    throw new Error(`Codeforces returned HTTP ${response.status}`);
 
   const body = (await response.json()) as {
     status?: unknown;
@@ -85,7 +90,11 @@ async function request(
   return body.result;
 }
 
-function apiUrl(method: string, params: Record<string, string>, credentials?: Credentials): URL {
+function apiUrl(
+  method: string,
+  params: Record<string, string>,
+  credentials?: Credentials,
+): URL {
   const url = new URL(`https://codeforces.com/api/${method}`);
   url.search = new URLSearchParams(params).toString();
   if (!credentials) return url;
