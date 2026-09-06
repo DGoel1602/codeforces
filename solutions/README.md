@@ -1,17 +1,17 @@
 ## Rating Counts
 | Rating | Problems |
 | --- | ---: |
-| 800 | 79 |
+| 800 | 82 |
 | 900 | 29 |
-| 1000 | 20 |
-| 1100 | 33 |
-| 1200 | 29 |
+| 1000 | 21 |
+| 1100 | 35 |
+| 1200 | 30 |
 | 1300 | 41 |
-| 1400 | 33 |
+| 1400 | 35 |
 | 1500 | 33 |
-| 1600 | 27 |
-| 1700 | 23 |
-| 1800 | 51 |
+| 1600 | 28 |
+| 1700 | 24 |
+| 1800 | 52 |
 | 1900 | 39 |
 | 2000 | 23 |
 | 2100 | 3 |
@@ -19,25 +19,25 @@
 | 2300 | 5 |
 | 2500 | 2 |
 | 2700 | 1 |
-| unrated | 180 |
+| unrated | 169 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 264 |
-| math | 204 |
-| constructive algorithms | 163 |
-| untagged | 156 |
-| implementation | 125 |
+| greedy | 266 |
+| math | 206 |
+| constructive algorithms | 164 |
+| untagged | 155 |
+| implementation | 127 |
 | dp | 103 |
-| brute force | 96 |
+| brute force | 99 |
+| binary search | 77 |
 | data structures | 77 |
-| binary search | 76 |
 | sortings | 72 |
-| number theory | 59 |
+| number theory | 60 |
 | bitmasks | 53 |
-| dfs and similar | 50 |
-| graphs | 48 |
-| two pointers | 42 |
+| dfs and similar | 51 |
+| graphs | 49 |
+| two pointers | 43 |
 | trees | 41 |
 | strings | 30 |
 | combinatorics | 28 |
@@ -47,9 +47,9 @@
 | geometry | 11 |
 | probabilities | 9 |
 | flows | 6 |
+| 2-sat | 5 |
 | divide and conquer | 5 |
 | shortest paths | 5 |
-| 2-sat | 4 |
 | graph matchings | 3 |
 | hashing | 3 |
 | ternary search | 3 |
@@ -62,6 +62,7 @@
 | Contest | Problem | Rating | Topics |
 | --- | --- | --- | --- |
 | 20 | C. Dijkstra? | 1900 | graphs, shortest paths |
+| 42 | A. Guilty --- to the kitchen! | 1400 | greedy, implementation |
 | 148 | C. Terse princess | 1700 | constructive algorithms, greedy |
 | 161 | D. Distance in Tree | 1800 | dfs and similar, dp, trees |
 | 193 | A. Cutting Figure | 1700 | constructive algorithms, graphs, trees |
@@ -527,14 +528,14 @@
 | 2250 | C. Rank Subsequence | 1300 | brute force, greedy, implementation |
 | 2250 | D. Permutation Cuts | 1700 | combinatorics, implementation, math |
 | 2250 | E. Double-Rift Dial | 2000 | data structures, implementation |
-| 2252 | A. Boss Fight |  | data structures, greedy |
-| 2252 | B. Always Changing |  | dp, greedy, math, strings |
-| 2252 | C. Risky Tower |  | binary search, brute force, data structures, greedy, sortings |
-| 2252 | D. Array Replacement |  | greedy, sortings |
-| 2253 | A. The Best Card |  |  |
-| 2253 | B. Hypercarp and the Control Panel |  | brute force, data structures, two pointers |
+| 2252 | A. Boss Fight | 800 | data structures, greedy |
+| 2252 | B. Always Changing | 1100 | dp, greedy, math, strings |
+| 2252 | C. Risky Tower | 1400 | binary search, brute force, data structures, greedy, sortings |
+| 2252 | D. Array Replacement | 1700 | greedy, sortings |
+| 2253 | A. The Best Card | 800 | greedy, math, number theory |
+| 2253 | B. Hypercarp and the Control Panel | 1100 | brute force, data structures, two pointers |
 | 2253 | C. Sum of Distinct Values in a Matrix |  | greedy |
-| 2253 | D. Hypercarp and Interdimensional Jumps |  | geometry, greedy, math |
+| 2253 | D. Hypercarp and Interdimensional Jumps | 1800 | binary search, brute force, geometry, greedy, implementation, math |
 | 2254 | A. Riptide | 800 | implementation, sortings |
 | 2254 | B. Evanescent | 900 | implementation, strings, two pointers |
 | 2254 | C1. Marenol (easy version) | 1000 | greedy |
@@ -543,10 +544,10 @@
 | 2254 | E. Chronostasis | 1500 | binary search, data structures, greedy |
 | 2254 | G. Nightcrawler | 2200 | data structures, dfs and similar, dp, greedy, sortings, trees |
 | 2255 | B. A Ribbon for Tomorrow | 1600 | combinatorics, math |
-| 2256 | A. Three Numbers on the Blackboard |  | math, sortings |
-| 2256 | B. Domino Tiles |  | implementation, math |
-| 2256 | C. Hot Potatoes at the Fairy Warehouse |  | games |
-| 2256 | D. A Ribbon for Tomorrow |  | math |
+| 2256 | A. Three Numbers on the Blackboard | 800 | math, sortings |
+| 2256 | B. Domino Tiles | 1000 | implementation, math |
+| 2256 | C. Hot Potatoes at the Fairy Warehouse | 1200 | brute force, games |
+| 2256 | D. A Ribbon for Tomorrow | 1600 | math |
 | 2257 | A. Creating Abbreviations | 800 | brute force, strings |
 | 2257 | B. Gigantomachy | 800 | math |
 | 2257 | C. Spying on the Beaver | 1200 | constructive algorithms, dfs and similar, dsu, graphs, trees |
@@ -555,14 +556,14 @@
 | 2258 | B1. Carrot Chopdown (Easy Version) |  | brute force, games, math |
 | 2258 | B2. Carrot Chopdown (Hard Version) |  | brute force, greedy, implementation, math |
 | 2258 | C. Far Cities |  | interactive, trees, two pointers |
-| 2259 | A. Moo Language School |  | greedy |
+| 2259 | A. Moo Language School |  | brute force, greedy, two pointers |
 | 2259 | B. Minus Two |  | math, number theory |
-| 2259 | C. 101 |  | greedy |
+| 2259 | C. 101 |  | constructive algorithms, greedy |
 | 2259 | D. MEX Multiset |  | constructive algorithms, greedy |
 | 2259 | E. Treasure Map Destruction (Constructive Version) |  | 2-sat, constructive algorithms, greedy |
-| 2259 | F. Binary Bubble Sort Inversions |  | data structures, two pointers |
+| 2259 | F. Binary Bubble Sort Inversions |  | data structures, math, two pointers |
 | 2259 | G. Index Removal |  | binary search, data structures, math |
-| 2259 | H. Treasure Map Destruction (Counting Version) |  | combinatorics, dp, math |
+| 2259 | H. Treasure Map Destruction (Counting Version) |  | 2-sat, combinatorics, dfs and similar, dp, graphs, math |
 | 100819 | L. Millionaire |  |  |
 | 100819 | M. Magic Trick |  |  |
 | 100819 | N. Egg Drop |  |  |

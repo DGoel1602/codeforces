@@ -1,496 +1,155 @@
 import { mkdir } from "node:fs/promises";
-import { createHash } from "node:crypto";
-import { Buffer } from "node:buffer";
+import { dirname } from "node:path";
+import { fetchSubmissions, type Submission } from "./codeforces";
+import { SolutionsReadme } from "./solutions-readme";
 
-const handle = Bun.argv[2];
-
-if (!handle) {
-  console.error("Usage: bun run index.ts <codeforces-handle>");
-  process.exit(1);
-}
-
-type CodeforcesResponse<T> =
-  | {
-      status: "OK";
-      result: T;
-    }
-  | {
-      status: "FAILED";
-      comment: string;
-    };
-
-type CodeforcesProblem = {
-  contestId?: number;
-  index: string;
-  name: string;
-  rating?: number;
-  tags: string[];
-};
-
-type CodeforcesSubmission = {
-  id: number;
-  creationTimeSeconds: number;
-  contestId?: number;
-  programmingLanguage: string;
-  verdict?: string;
-  problem: CodeforcesProblem;
-  source?: string;
-  sourceBase64?: string;
-};
-
-type PlannedSubmission = {
-  path: string;
-  exists: boolean;
-  submission: CodeforcesSubmission;
-};
-
-type FetchedSubmission = PlannedSubmission & {
-  source: string;
-};
-
-type ReadmeProblem = {
-  contest: string;
-  problem: string;
-  rating: string;
-  topics: string;
-};
+type Solution = { contestId: number; path: string; submission: Submission };
+type PreparedSolution = Solution & { source: string };
+type ArchivePlan = { acceptedCount: number; supported: Solution[]; missing: Solution[] };
 
 const commitSplitThreshold = 20;
 const readmePath = "solutions/README.md";
-const codeforcesApiKey = Bun.env.CF_API_KEY;
-const codeforcesApiSecret = Bun.env.CF_API_SECRET;
 
-function problemKey(submission: CodeforcesSubmission): string | null {
-  const contestId = submission.problem.contestId ?? submission.contestId;
+async function main(args: string[]): Promise<void> {
+  const handle = args[0];
+  if (!handle) throw new Error("Usage: bun run index.ts <codeforces-handle>");
 
-  if (!contestId) {
-    return null;
+  const key = Bun.env.CF_API_KEY;
+  const secret = Bun.env.CF_API_SECRET;
+  const submissions = await fetchSubmissions(handle, key && secret ? { key, secret } : undefined);
+  const plan = await planArchive(submissions);
+  printPlan(handle, plan);
+
+  const prepared = plan.missing.map((solution) => ({
+    ...solution,
+    source: submissionSource(solution.submission, handle),
+  }));
+  const readme = await SolutionsReadme.read(readmePath);
+
+  if (prepared.length === 0) {
+    for (const solution of plan.supported) {
+      readme.add(solution.contestId, solution.submission.problem);
+    }
+    await readme.write();
+    console.log("No new submissions to write.");
+    return;
   }
 
-  return `${contestId}/${submission.problem.index.toLowerCase()}`;
+  if (prepared.length > commitSplitThreshold) {
+    await writeAndCommit(prepared, readme, `Add ${prepared.length} Codeforces submissions`);
+  } else {
+    for (const solution of prepared) {
+      const problem = `${solution.contestId}${solution.submission.problem.index.toUpperCase()}`;
+      await writeAndCommit([solution], readme, `Add Codeforces ${problem}`);
+    }
+  }
+  console.log(`Wrote and committed ${prepared.length} submissions.`);
+}
+
+async function planArchive(submissions: Submission[]): Promise<ArchivePlan> {
+  const byProblem = new Map<string, { contestId: number; submission: Submission }>();
+  // user.status returns newest submissions first; choose before filtering languages.
+  for (const submission of submissions) {
+    const contestId = submission.problem.contestId ?? submission.contestId;
+    if (submission.verdict !== "OK" || !contestId) continue;
+    const key = `${contestId}/${submission.problem.index.toLowerCase()}`;
+    if (!byProblem.has(key)) byProblem.set(key, { contestId, submission });
+  }
+
+  const accepted = [...byProblem.values()].sort(
+    (left, right) =>
+      left.contestId - right.contestId ||
+      left.submission.problem.index.localeCompare(right.submission.problem.index, undefined, {
+        numeric: true,
+      }),
+  );
+  const supported: Solution[] = [];
+  const missing: Solution[] = [];
+  for (const { contestId, submission } of accepted) {
+    const extension = extensionForLanguage(submission.programmingLanguage);
+    if (!extension) continue;
+    const path = `solutions/${contestId}/${submission.problem.index.toLowerCase()}.${extension}`;
+    const solution = { contestId, path, submission };
+    supported.push(solution);
+    if (!(await Bun.file(path).exists())) missing.push(solution);
+  }
+  return { acceptedCount: accepted.length, supported, missing };
 }
 
 function extensionForLanguage(language: string): string | null {
-  const normalized = language.toLowerCase();
-
-  if (normalized.includes("c++")) {
-    return "cpp";
-  }
-
-  if (normalized.includes("python") || normalized.includes("pypy")) {
-    return "py";
-  }
-
-  if (normalized.startsWith("java ")) {
-    return "java";
-  }
-
-  if (normalized.includes("gnu c") || normalized === "c") {
-    return "c";
-  }
-
+  const name = language.toLowerCase();
+  if (name.includes("c++")) return "cpp";
+  if (name.includes("python") || name.includes("pypy")) return "py";
+  if (name.startsWith("java ")) return "java";
+  if (name.includes("gnu c") || name === "c") return "c";
   return null;
 }
 
-function solutionPath(submission: CodeforcesSubmission): string | null {
-  const contestId = submission.problem.contestId ?? submission.contestId;
-
-  if (!contestId) {
-    return null;
-  }
-
-  const extension = extensionForLanguage(submission.programmingLanguage);
-
-  if (!extension) {
-    return null;
-  }
-
-  return `solutions/${contestId}/${submission.problem.index.toLowerCase()}.${extension}`;
-}
-
-async function fetchSubmissions(handle: string): Promise<CodeforcesSubmission[]> {
-  const url = codeforcesApiUrl("user.status", {
-    handle,
-    ...(codeforcesApiKey && codeforcesApiSecret
-      ? { includeSources: "true" }
-      : {}),
-  });
-
-  const response = await fetch(url);
-
-  if (!response.ok) {
-    throw new Error(`Codeforces returned HTTP ${response.status}`);
-  }
-
-  const body = (await response.json()) as CodeforcesResponse<
-    CodeforcesSubmission[]
-  >;
-
-  if (body.status === "FAILED") {
-    throw new Error(body.comment);
-  }
-
-  return body.result;
-}
-
-function codeforcesApiUrl(
-  method: string,
-  params: Record<string, string>,
-): URL {
-  const url = new URL(`https://codeforces.com/api/${method}`);
-
-  if (!codeforcesApiKey || !codeforcesApiSecret) {
-    for (const [key, value] of Object.entries(params)) {
-      url.searchParams.set(key, value);
-    }
-
-    return url;
-  }
-
-  const signedParams: Record<string, string> = {
-    ...params,
-    apiKey: codeforcesApiKey,
-    time: Math.floor(Date.now() / 1000).toString(),
-  };
-  const sortedParams = Object.entries(signedParams).sort(
-    ([leftKey, leftValue], [rightKey, rightValue]) =>
-      leftKey === rightKey
-        ? leftValue.localeCompare(rightValue)
-        : leftKey.localeCompare(rightKey),
-  );
-  const query = new URLSearchParams(sortedParams).toString();
-  const rand = Math.random().toString(36).slice(2, 8).padEnd(6, "0");
-  const hash = createHash("sha512")
-    .update(`${rand}/${method}?${query}#${codeforcesApiSecret}`)
-    .digest("hex");
-
-  for (const [key, value] of sortedParams) {
-    url.searchParams.set(key, value);
-  }
-
-  url.searchParams.set("apiSig", `${rand}${hash}`);
-
-  return url;
-}
-
-function submissionSource(submission: CodeforcesSubmission): string {
+function submissionSource(submission: Submission, handle: string): string {
   const source =
     submission.source ??
-    (submission.sourceBase64
+    (typeof submission.sourceBase64 === "string"
       ? Buffer.from(submission.sourceBase64, "base64").toString("utf8")
       : undefined);
-
-  if (!source) {
+  if (typeof source !== "string" || !source) {
     throw new Error(
       `Submission ${submission.id} did not include source. Set CF_API_KEY and CF_API_SECRET for the Codeforces account "${handle}", then rerun.`,
     );
   }
-
-  return `${source.replace(/\r\n/g, "\n").trimEnd()}\n`;
+  return `${source.replaceAll("\r\n", "\n").trimEnd()}\n`;
 }
 
-function finalAcceptedSubmissions(
-  submissions: CodeforcesSubmission[],
-): CodeforcesSubmission[] {
-  const byProblem = new Map<string, CodeforcesSubmission>();
+function printPlan(handle: string, plan: ArchivePlan): void {
+  const { missing } = plan;
+  const mode =
+    missing.length > commitSplitThreshold ? "one batch commit" : "one commit per submission";
+  console.log(`Found ${plan.acceptedCount} final AC submissions for ${handle}.`);
+  console.log(`${plan.supported.length} use C++, Java, C, or Python and can be saved.`);
+  console.log(`${missing.length} submissions are not in solutions/ yet.`);
+  console.log(`Commit mode for this run: ${mode}.`);
 
-  for (const submission of submissions) {
-    if (submission.verdict !== "OK") {
-      continue;
-    }
-
-    const key = problemKey(submission);
-
-    if (!key || byProblem.has(key)) {
-      continue;
-    }
-
-    byProblem.set(key, submission);
+  for (const { path, contestId, submission } of missing.slice(0, 10)) {
+    const { problem } = submission;
+    const rating = problem.rating ?? "unrated";
+    const tags = problem.tags.join(", ") || "no tags";
+    console.log(
+      `${path} <- submission ${submission.id}: ${contestId}/${problem.index.toLowerCase()} - ${problem.name} (${rating}) [${submission.programmingLanguage}; ${tags}]`,
+    );
   }
-
-  return [...byProblem.values()].sort((left, right) => {
-    const leftContest = left.problem.contestId ?? left.contestId ?? 0;
-    const rightContest = right.problem.contestId ?? right.contestId ?? 0;
-
-    if (leftContest !== rightContest) {
-      return leftContest - rightContest;
-    }
-
-    return left.problem.index.localeCompare(right.problem.index, undefined, {
-      numeric: true,
-    });
-  });
+  if (missing.length > 10) console.log(`...and ${missing.length - 10} more.`);
 }
 
-async function fetchPlannedSubmission(
-  item: PlannedSubmission,
-): Promise<FetchedSubmission> {
-  return {
-    ...item,
-    source: submissionSource(item.submission),
-  };
-}
-
-async function writeSubmission(item: FetchedSubmission): Promise<void> {
-  const directory = item.path.slice(0, item.path.lastIndexOf("/"));
-
-  await mkdir(directory, { recursive: true });
-  await Bun.write(item.path, item.source);
-}
-
-function readmeProblemFromSubmission(
-  submission: CodeforcesSubmission,
-): ReadmeProblem {
-  const contestId = submission.problem.contestId ?? submission.contestId;
-
-  return {
-    contest: contestId?.toString() ?? "",
-    problem: `${submission.problem.index}. ${submission.problem.name}`,
-    rating: submission.problem.rating?.toString() ?? "",
-    topics: submission.problem.tags.join(", "),
-  };
-}
-
-function markdownCell(value: string): string {
-  return value.replaceAll("|", "\\|");
-}
-
-function readmeProblemKey(problem: ReadmeProblem): string {
-  return `${problem.contest}/${problem.problem}`;
-}
-
-function readmeRow(problem: ReadmeProblem): string {
-  return `| ${markdownCell(problem.contest)} | ${markdownCell(problem.problem)} | ${markdownCell(problem.rating)} | ${markdownCell(problem.topics)} |`;
-}
-
-function parseReadmeProblems(readme: string): ReadmeProblem[] {
-  return readme
-    .split("\n")
-    .flatMap((line) => {
-      if (!line.startsWith("| ") || line.includes("---")) {
-        return [];
-      }
-
-      const cells = line
-        .slice(1, -1)
-        .split("|")
-        .map((cell) => cell.trim());
-
-      if (cells.length !== 4 || !/^\d+$/.test(cells[0])) {
-        return [];
-      }
-
-      return [
-        {
-          contest: cells[0],
-          problem: cells[1],
-          rating: cells[2],
-          topics: cells[3],
-        },
-      ];
-    });
-}
-
-function countValuesByName(values: string[]): Array<[string, number]> {
-  const counts = new Map<string, number>();
-
-  for (const value of values) {
-    counts.set(value, (counts.get(value) ?? 0) + 1);
-  }
-
-  return [...counts.entries()].sort(([left], [right]) =>
-    left.localeCompare(right, undefined, { numeric: true }),
-  );
-}
-
-function countValuesByFrequency(values: string[]): Array<[string, number]> {
-  const counts = new Map<string, number>();
-
-  for (const value of values) {
-    counts.set(value, (counts.get(value) ?? 0) + 1);
-  }
-
-  return [...counts.entries()].sort(([leftName, leftCount], [rightName, rightCount]) => {
-    if (leftCount !== rightCount) {
-      return rightCount - leftCount;
-    }
-
-    return leftName.localeCompare(rightName, undefined, { numeric: true });
-  });
-}
-
-function renderCountTable(
-  title: string,
-  label: string,
-  rows: Array<[string, number]>,
-): string {
-  return [
-    `## ${title}`,
-    `| ${label} | Problems |`,
-    "| --- | ---: |",
-    ...rows.map(([name, count]) => `| ${markdownCell(name)} | ${count} |`),
-  ].join("\n");
-}
-
-function renderSolutionsReadme(problems: ReadmeProblem[]): string {
-  const sortedProblems = [...problems].sort((left, right) =>
-    readmeRow(left).localeCompare(readmeRow(right), undefined, {
-      numeric: true,
-    }),
-  );
-  const ratingCounts = countValuesByName(
-    sortedProblems.map((problem) => problem.rating || "unrated"),
-  );
-  const topicCounts = countValuesByFrequency(
-    sortedProblems.flatMap((problem) =>
-      problem.topics
-        ? problem.topics.split(",").map((topic) => topic.trim())
-        : ["untagged"],
-    ),
-  );
-
-  return [
-    renderCountTable("Rating Counts", "Rating", ratingCounts),
-    renderCountTable("Topic Counts", "Topic", topicCounts),
-    "## Problems",
-    "| Contest | Problem | Rating | Topics |",
-    "| --- | --- | --- | --- |",
-    ...sortedProblems.map(readmeRow),
-    "",
-  ].join("\n");
-}
-
-async function updateSolutionsReadme(items: PlannedSubmission[]): Promise<void> {
-  const existing = await Bun.file(readmePath).text().catch(() => "");
-  const problems = new Map(
-    parseReadmeProblems(existing).map((problem) => [
-      readmeProblemKey(problem),
-      problem,
-    ]),
-  );
-
+async function writeAndCommit(
+  items: PreparedSolution[],
+  readme: SolutionsReadme,
+  message: string,
+): Promise<void> {
   for (const item of items) {
-    const problem = readmeProblemFromSubmission(item.submission);
-    problems.set(readmeProblemKey(problem), problem);
+    await mkdir(dirname(item.path), { recursive: true });
+    await Bun.write(item.path, item.source);
+    readme.add(item.contestId, item.submission.problem);
   }
-
-  await Bun.write(readmePath, renderSolutionsReadme([...problems.values()]));
+  await readme.write();
+  const paths = [...items.map((item) => item.path), readme.path];
+  runGit(["add", "--", ...paths]);
+  runGit(["commit", "--only", "-m", message, "--", ...paths]);
 }
 
-async function runGit(args: string[]): Promise<void> {
-  const process = Bun.spawn(["git", ...args], {
-    stderr: "pipe",
-    stdout: "pipe",
-  });
-  const [stdout, stderr, exitCode] = await Promise.all([
-    new Response(process.stdout).text(),
-    new Response(process.stderr).text(),
-    process.exited,
-  ]);
-
-  if (exitCode !== 0) {
-    const output = [stdout.trim(), stderr.trim()].filter(Boolean).join("\n");
+function runGit(args: string[]): void {
+  const child = Bun.spawnSync(["git", ...args], { stdout: "pipe", stderr: "pipe" });
+  if (child.exitCode !== 0) {
+    const output = [child.stdout.toString().trim(), child.stderr.toString().trim()]
+      .filter(Boolean)
+      .join("\n");
     throw new Error(`git ${args.join(" ")} failed:\n${output}`);
   }
 }
 
-async function commitPaths(message: string, paths: string[]): Promise<void> {
-  await runGit(["add", ...paths]);
-  await runGit(["commit", "-m", message]);
-}
-
-function commitMessageFor(item: PlannedSubmission): string {
-  const contestId = item.submission.problem.contestId ?? item.submission.contestId;
-  const index = item.submission.problem.index.toUpperCase();
-
-  return `Add Codeforces ${contestId}${index}`;
-}
-
-async function writeAndCommitSubmissions(
-  items: PlannedSubmission[],
-): Promise<void> {
-  if (items.length === 0) {
-    return;
+if (import.meta.main) {
+  try {
+    await main(Bun.argv.slice(2));
+  } catch (error) {
+    console.error(error instanceof Error ? error.message : String(error));
+    process.exitCode = 1;
   }
-
-  if (items.length > commitSplitThreshold) {
-    const fetchedItems = [];
-
-    for (const item of items) {
-      fetchedItems.push(await fetchPlannedSubmission(item));
-    }
-
-    for (const item of fetchedItems) {
-      await writeSubmission(item);
-    }
-
-    await updateSolutionsReadme(fetchedItems);
-    await commitPaths(`Add ${items.length} Codeforces submissions`, [
-      ...items.map((item) => item.path),
-      readmePath,
-    ]);
-    return;
-  }
-
-  for (const item of items) {
-    const fetchedItem = await fetchPlannedSubmission(item);
-
-    await writeSubmission(fetchedItem);
-    await updateSolutionsReadme([item]);
-    await commitPaths(commitMessageFor(item), [item.path, readmePath]);
-  }
-}
-
-const submissions = await fetchSubmissions(handle);
-const accepted = finalAcceptedSubmissions(submissions);
-const planned = await Promise.all(
-  accepted.map(async (submission) => {
-    const path = solutionPath(submission);
-
-    if (!path) {
-      return null;
-    }
-
-    return {
-      path,
-      exists: await Bun.file(path).exists(),
-      submission,
-    };
-  }),
-);
-const validPlanned = planned.filter((item) => item !== null);
-const missing = validPlanned.filter((item) => !item.exists);
-const commitMode =
-  missing.length > commitSplitThreshold
-    ? "one batch commit"
-    : "one commit per submission";
-
-console.log(`Found ${accepted.length} final AC submissions for ${handle}.`);
-console.log(
-  `${validPlanned.length} use C++, Java, C, or Python and can be saved.`,
-);
-console.log(`${missing.length} submissions are not in solutions/ yet.`);
-console.log(`Commit mode for this run: ${commitMode}.`);
-
-for (const item of missing.slice(0, 10)) {
-  const { submission } = item;
-  const contestId = submission.problem.contestId ?? submission.contestId;
-  const rating = submission.problem.rating ?? "unrated";
-  const tags = submission.problem.tags.join(", ") || "no tags";
-
-  console.log(
-    `${item.path} <- submission ${submission.id}: ${contestId}/${submission.problem.index.toLowerCase()} - ${submission.problem.name} (${rating}) [${submission.programmingLanguage}; ${tags}]`,
-  );
-}
-
-if (missing.length > 10) {
-  console.log(`...and ${missing.length - 10} more.`);
-}
-
-if (missing.length > 0) {
-  await writeAndCommitSubmissions(missing);
-  console.log(`Wrote and committed ${missing.length} submissions.`);
-} else {
-  await updateSolutionsReadme(validPlanned);
-  console.log("No new submissions to write.");
 }
