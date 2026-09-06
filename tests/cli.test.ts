@@ -66,7 +66,7 @@ async function run(
 			"--no-env-file",
 			"--preload",
 			join(cwd, "mock-api.ts"),
-			join(project, script),
+			join(project, "src", script),
 			...args,
 		],
 		{

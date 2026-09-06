@@ -17,7 +17,7 @@ type WatchOptions = {
 	notifyCommand?: string;
 };
 
-const usage = `Usage: bun run watch-rating.ts <codeforces-handle> [options]
+const usage = `Usage: bun run watch-rating <codeforces-handle> [options]
 
 Options:
   --interval <seconds>       Seconds between checks. Default: 600

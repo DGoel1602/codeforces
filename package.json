@@ -4,8 +4,8 @@
 	"type": "module",
 	"private": true,
 	"scripts": {
-		"start": "bun run index.ts",
-		"watch-rating": "bun run watch-rating.ts",
+		"start": "bun run src/index.ts",
+		"watch-rating": "bun run src/watch-rating.ts",
 		"test": "bun test",
 		"check": "tsc --noEmit",
 		"format": "prettier --write .",

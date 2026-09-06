@@ -21,7 +21,7 @@ const readmePath = "solutions/README.md";
 
 async function main(args: string[]): Promise<void> {
 	const handle = args[0];
-	if (!handle) throw new Error("Usage: bun run index.ts <codeforces-handle>");
+	if (!handle) throw new Error("Usage: bun run start <codeforces-handle>");
 
 	const key = Bun.env.CF_API_KEY;
 	const secret = Bun.env.CF_API_SECRET;

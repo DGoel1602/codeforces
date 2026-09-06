@@ -78,9 +78,9 @@ bun test
 Prettier uses tabs with a width of four. Archived submissions and their generated README
 in `solutions/`, along with `bun.lock`, are excluded from formatting.
 
-The two entry points keep their workflows in `index.ts` and `watch-rating.ts`.
-`codeforces.ts` owns API requests, signing, and response validation.
-`solutions-readme.ts` owns the archive table and its counts.
+The two entry points keep their workflows in `src/index.ts` and `src/watch-rating.ts`.
+`src/codeforces.ts` owns API requests, signing, and response validation.
+`src/solutions-readme.ts` owns the archive table and its counts.
 
 Tests run the CLIs with fake API responses and temporary Git repositories. They
 cover archive selection, commit boundaries, preserved files and staged work,
