@@ -75,7 +75,7 @@ bun run check
 bun test
 ```
 
-Prettier uses its default settings. Archived submissions and their generated README
+Prettier uses tabs with a width of four. Archived submissions and their generated README
 in `solutions/`, along with `bun.lock`, are excluded from formatting.
 
 The two entry points keep their workflows in `index.ts` and `watch-rating.ts`.

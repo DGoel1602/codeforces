@@ -1,19 +1,19 @@
 {
-  "name": "codeforce-push",
-  "version": "0.1.0",
-  "type": "module",
-  "private": true,
-  "scripts": {
-    "start": "bun run index.ts",
-    "watch-rating": "bun run watch-rating.ts",
-    "test": "bun test",
-    "check": "tsc --noEmit",
-    "format": "prettier --write .",
-    "format:check": "prettier --check ."
-  },
-  "devDependencies": {
-    "@types/bun": "1.4.1",
-    "prettier": "3.9.6",
-    "typescript": "5.9.3"
-  }
+	"name": "codeforce-push",
+	"version": "0.1.0",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"start": "bun run index.ts",
+		"watch-rating": "bun run watch-rating.ts",
+		"test": "bun test",
+		"check": "tsc --noEmit",
+		"format": "prettier --write .",
+		"format:check": "prettier --check ."
+	},
+	"devDependencies": {
+		"@types/bun": "1.4.1",
+		"prettier": "3.9.6",
+		"typescript": "5.9.3"
+	}
 }
