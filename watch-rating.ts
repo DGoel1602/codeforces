@@ -3,7 +3,12 @@ import { dirname } from "node:path";
 import { parseArgs } from "node:util";
 import { fetchRating } from "./codeforces";
 
-type RatingState = { handle: string; rating: number | null; checkedAt: string };
+type RatingState = {
+  handle: string;
+  rating: number | null;
+  checkedAt: string;
+};
+
 type WatchOptions = {
   handle: string;
   intervalMs: number;
@@ -29,19 +34,22 @@ async function main(args: string[]): Promise<void> {
   if (!options) return;
 
   while (true) {
-    let failed = false;
+    let exitCode = 0;
+
     try {
       await checkRating(options);
     } catch (error) {
-      failed = true;
-      console.error(
-        `${new Date().toISOString()} ${error instanceof Error ? error.message : String(error)}`,
-      );
+      exitCode = 1;
+      const message = error instanceof Error ? error.message : String(error);
+
+      console.error(`${new Date().toISOString()} ${message}`);
     }
+
     if (options.once) {
-      process.exitCode = failed ? 1 : 0;
+      process.exitCode = exitCode;
       return;
     }
+
     await Bun.sleep(options.intervalMs);
   }
 }
@@ -58,11 +66,15 @@ function parseWatchOptions(args: string[]): WatchOptions | null {
       help: { type: "boolean", short: "h" },
     },
   });
+
   if (values.help) {
     console.error(usage);
     return null;
   }
-  if (positionals.length !== 1 || !positionals[0]) throw new Error(usage);
+
+  const [handle] = positionals;
+  if (positionals.length !== 1 || !handle) throw new Error(usage);
+
   const intervalMs = Number(values.interval) * 1000;
   if (
     !/^\d+$/.test(values.interval) ||
@@ -74,11 +86,17 @@ function parseWatchOptions(args: string[]): WatchOptions | null {
       "--interval must be a whole number of seconds between 1 and 2147483",
     );
   }
-  if (!values.state) throw new Error("--state must be followed by a file path");
-  if (values["notify-command"] === "")
+
+  if (!values.state) {
+    throw new Error("--state must be followed by a file path");
+  }
+
+  if (values["notify-command"] === "") {
     throw new Error("--notify-command must be followed by a command");
+  }
+
   return {
-    handle: positionals[0],
+    handle,
     intervalMs,
     statePath: values.state,
     once: values.once,
@@ -87,45 +105,43 @@ function parseWatchOptions(args: string[]): WatchOptions | null {
 }
 
 async function checkRating(options: WatchOptions): Promise<void> {
-  const previous = await readState(options.statePath);
-  const rating = await fetchRating(options.handle);
+  const { handle, statePath, notifyCommand } = options;
+  const previous = await readState(statePath);
+  const rating = await fetchRating(handle);
   const next = {
-    handle: options.handle,
+    handle,
     rating,
     checkedAt: new Date().toISOString(),
   };
 
-  if (!previous || previous.handle !== next.handle) {
+  if (!previous || previous.handle !== handle) {
     console.log(
-      `Starting rating watch for ${next.handle}; current rating is ${ratingLabel(rating)}.`,
+      `Starting rating watch for ${handle}; current rating is ${ratingLabel(rating)}.`,
     );
   } else if (previous.rating !== rating) {
-    await notifyRatingChange(
-      next.handle,
-      previous.rating,
-      rating,
-      options.notifyCommand,
-    );
+    await notifyRatingChange(handle, previous.rating, rating, notifyCommand);
   } else {
     console.log(
-      `${next.checkedAt} ${next.handle}: ${ratingLabel(rating)} unchanged.`,
+      `${next.checkedAt} ${handle}: ${ratingLabel(rating)} unchanged.`,
     );
   }
 
   // A failed custom command leaves the previous rating intact for the next check.
-  await writeState(options.statePath, next);
+  await writeState(statePath, next);
 }
 
 async function readState(path: string): Promise<RatingState | null> {
-  let state;
+  let state: RatingState | null;
+
   try {
     state = await Bun.file(path).json();
   } catch (error) {
     if ((error as NodeJS.ErrnoException).code === "ENOENT") return null;
-    throw new Error(
-      `Cannot read rating state ${path}: ${error instanceof Error ? error.message : String(error)}`,
-    );
+
+    const message = error instanceof Error ? error.message : String(error);
+    throw new Error(`Cannot read rating state ${path}: ${message}`);
   }
+
   if (
     !state ||
     typeof state.handle !== "string" ||
@@ -137,12 +153,14 @@ async function readState(path: string): Promise<RatingState | null> {
       `Invalid rating state in ${path}; expected handle, rating, and checkedAt`,
     );
   }
+
   return state;
 }
 
 async function writeState(path: string, state: RatingState): Promise<void> {
   await mkdir(dirname(path), { recursive: true });
   const temporary = `${path}.${process.pid}.tmp`;
+
   try {
     await Bun.write(temporary, `${JSON.stringify(state, null, 2)}\n`);
     await rename(temporary, path);
@@ -162,23 +180,31 @@ async function notifyRatingChange(
   command?: string,
 ): Promise<void> {
   let delta = "";
+
   if (oldRating !== null && newRating !== null) {
     const difference = newRating - oldRating;
     delta = difference > 0 ? `+${difference}` : difference.toString();
   }
-  const message = `${handle}: ${ratingLabel(oldRating)} -> ${ratingLabel(newRating)}${delta ? ` (${delta})` : ""}`;
+
+  const before = ratingLabel(oldRating);
+  const after = ratingLabel(newRating);
+  const suffix = delta ? ` (${delta})` : "";
+  const message = `${handle}: ${before} -> ${after}${suffix}`;
+
   console.log(`\u0007Rating changed: ${message}`);
 
   if (command) {
     await runNotificationCommand(command, {
       CF_HANDLE: handle,
-      CF_OLD_RATING: ratingLabel(oldRating),
-      CF_NEW_RATING: ratingLabel(newRating),
+      CF_OLD_RATING: before,
+      CF_NEW_RATING: after,
       CF_RATING_DELTA: delta,
     });
-  } else if (
-    !(await sendDesktopNotification("Codeforces rating changed", message))
-  ) {
+    return;
+  }
+
+  const notified = await sendDesktopNotification(message);
+  if (!notified) {
     console.log(
       "Desktop notification failed. Install notify-send, use macOS osascript, or pass --notify-command.",
     );
@@ -194,12 +220,15 @@ async function runNotificationCommand(
     stdout: "pipe",
     stderr: "pipe",
   });
+
   const [stdout, stderr, exitCode] = await Promise.all([
     new Response(child.stdout).text(),
     new Response(child.stderr).text(),
     child.exited,
   ]);
+
   if (stdout.trim()) console.log(stdout.trim());
+
   if (exitCode !== 0) {
     const output = [stderr.trim(), stdout.trim()].filter(Boolean).join("\n");
     throw new Error(
@@ -208,10 +237,8 @@ async function runNotificationCommand(
   }
 }
 
-async function sendDesktopNotification(
-  title: string,
-  message: string,
-): Promise<boolean> {
+async function sendDesktopNotification(message: string): Promise<boolean> {
+  const title = "Codeforces rating changed";
   const command =
     process.platform === "darwin"
       ? [
@@ -220,6 +247,7 @@ async function sendDesktopNotification(
           `display notification ${JSON.stringify(message)} with title ${JSON.stringify(title)}`,
         ]
       : ["notify-send", title, message];
+
   try {
     const child = Bun.spawn(command, { stdout: "ignore", stderr: "ignore" });
     return (await child.exited) === 0;
