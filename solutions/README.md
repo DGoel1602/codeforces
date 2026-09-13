@@ -19,28 +19,28 @@
 | 2300 | 5 |
 | 2500 | 2 |
 | 2700 | 1 |
-| unrated | 169 |
+| unrated | 191 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 266 |
-| math | 206 |
-| constructive algorithms | 164 |
-| untagged | 155 |
-| implementation | 127 |
-| dp | 103 |
-| brute force | 99 |
-| binary search | 77 |
-| data structures | 77 |
-| sortings | 72 |
-| number theory | 60 |
-| bitmasks | 53 |
-| dfs and similar | 51 |
+| greedy | 268 |
+| math | 210 |
+| untagged | 168 |
+| constructive algorithms | 167 |
+| implementation | 130 |
+| dp | 105 |
+| brute force | 102 |
+| binary search | 78 |
+| data structures | 78 |
+| sortings | 74 |
+| number theory | 61 |
+| bitmasks | 54 |
+| dfs and similar | 52 |
 | graphs | 49 |
-| two pointers | 43 |
+| two pointers | 44 |
 | trees | 41 |
-| strings | 30 |
-| combinatorics | 28 |
+| strings | 31 |
+| combinatorics | 29 |
 | interactive | 27 |
 | games | 22 |
 | dsu | 19 |
@@ -564,6 +564,15 @@
 | 2259 | F. Binary Bubble Sort Inversions |  | data structures, math, two pointers |
 | 2259 | G. Index Removal |  | binary search, data structures, math |
 | 2259 | H. Treasure Map Destruction (Counting Version) |  | 2-sat, combinatorics, dfs and similar, dp, graphs, math |
+| 2260 | A. Monocarp's Contest |  | implementation |
+| 2260 | B. Monocarp and Projects |  | brute force, math, number theory |
+| 2260 | C. Maximize XOR, Minimize Operations |  | bitmasks, greedy |
+| 2260 | D. Signs of Prefix Sums |  | brute force, constructive algorithms, dfs and similar, dp, implementation |
+| 2260 | E. Cyclic Balance |  | binary search, constructive algorithms, dp, math |
+| 2264 | A. Rumb Needs a Hand |  | implementation, sortings, two pointers |
+| 2264 | B. Knife's Pill Farm |  | data structures, greedy |
+| 2264 | C. Madamant's Skating Dynasty |  | combinatorics, math, sortings |
+| 2264 | D. Dr. Agos's Dark Mode |  | brute force, constructive algorithms, math, strings |
 | 100819 | L. Millionaire |  |  |
 | 100819 | M. Magic Trick |  |  |
 | 100819 | N. Egg Drop |  |  |
@@ -597,6 +606,10 @@
 | 101801 | J. J. Weird Sum |  |  |
 | 101801 | K. K. Quantum Stones |  |  |
 | 101801 | L. L. Odd and Even Count |  |  |
+| 102433 | I. Error Correction |  |  |
+| 102433 | K. Computer Cache |  |  |
+| 102433 | L. Carry Cam Failure |  |  |
+| 102433 | M. Maze Connect |  |  |
 | 102791 | A. Christmas Ornaments |  |  |
 | 102791 | B. Look At The Same One |  |  |
 | 102791 | C. Number of Apartments |  |  |
@@ -699,6 +712,15 @@
 | 106104 | B. Winning Record |  |  |
 | 106104 | C. Buying Fruit |  |  |
 | 106104 | D. Interview Flights |  |  |
+| 106369 | A. Lucky 7 |  |  |
+| 106369 | B. We Want You Happy! |  |  |
+| 106369 | C. Snailography |  |  |
+| 106369 | D. Good Goalie |  |  |
+| 106369 | E. Most Valuable Pez |  |  |
+| 106369 | F. Land Division |  |  |
+| 106369 | G. Not So Close |  |  |
+| 106369 | H. The Duel of Smokin' Joe |  |  |
+| 106369 | K. Bad Bunny |  |  |
 | 106449 | B. Gift Certificates |  |  |
 | 106449 | D. Shortest Rope |  |  |
 | 106452 | A. Captcha |  |  |
