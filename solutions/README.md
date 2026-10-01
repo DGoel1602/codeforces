@@ -9,7 +9,7 @@
 | 1300 | 41 |
 | 1400 | 35 |
 | 1500 | 33 |
-| 1600 | 28 |
+| 1600 | 29 |
 | 1700 | 24 |
 | 1800 | 53 |
 | 1900 | 39 |
@@ -26,7 +26,7 @@
 | --- | ---: |
 | greedy | 270 |
 | math | 213 |
-| untagged | 175 |
+| untagged | 176 |
 | constructive algorithms | 169 |
 | implementation | 131 |
 | dp | 105 |
@@ -754,3 +754,4 @@
 | 614269 | A. Canonical Palindromes |  |  |
 | 614269 | C. Corrupted Odyssey |  |  |
 | 614269 | H. Shell Shock |  |  |
+| 720386 | I. Empty Triangle | 1600 |  |
