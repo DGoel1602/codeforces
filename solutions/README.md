@@ -11,7 +11,7 @@
 | 1500 | 33 |
 | 1600 | 28 |
 | 1700 | 24 |
-| 1800 | 52 |
+| 1800 | 53 |
 | 1900 | 39 |
 | 2000 | 23 |
 | 2100 | 3 |
@@ -24,9 +24,9 @@
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 268 |
-| math | 211 |
-| constructive algorithms | 168 |
+| greedy | 269 |
+| math | 212 |
+| constructive algorithms | 169 |
 | untagged | 168 |
 | implementation | 130 |
 | dp | 105 |
@@ -35,7 +35,7 @@
 | binary search | 78 |
 | sortings | 74 |
 | number theory | 62 |
-| bitmasks | 55 |
+| bitmasks | 56 |
 | dfs and similar | 52 |
 | graphs | 49 |
 | two pointers | 44 |
@@ -47,9 +47,9 @@
 | dsu | 19 |
 | geometry | 11 |
 | probabilities | 9 |
+| divide and conquer | 6 |
 | flows | 6 |
 | 2-sat | 5 |
-| divide and conquer | 5 |
 | shortest paths | 5 |
 | graph matchings | 3 |
 | hashing | 3 |
@@ -176,6 +176,7 @@
 | 1915 | G. Bicycles | 1800 | graphs, greedy, implementation, shortest paths, sortings |
 | 1920 | D. Array Repetition | 1900 | binary search, brute force, dsu, implementation, math |
 | 1921 | F. Sum of Progression | 1900 | brute force, data structures, dp, implementation, math |
+| 1922 | E. Increasing Subsequences | 1800 | bitmasks, constructive algorithms, divide and conquer, greedy, math |
 | 1923 | C. Find B | 1400 | constructive algorithms, greedy |
 | 1923 | D. Slimes | 1800 | binary search, constructive algorithms, data structures, greedy, two pointers |
 | 1924 | B. Space Harbour | 2100 | data structures, implementation, math, sortings |
