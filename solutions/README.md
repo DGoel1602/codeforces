@@ -20,14 +20,14 @@
 | 2500 | 3 |
 | 2600 | 1 |
 | 2700 | 1 |
-| unrated | 192 |
+| unrated | 193 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 270 |
 | math | 213 |
 | constructive algorithms | 169 |
-| untagged | 168 |
+| untagged | 169 |
 | implementation | 131 |
 | dp | 105 |
 | brute force | 104 |
@@ -590,6 +590,7 @@
 | 100819 | T. Triangle |  |  |
 | 100819 | U. Blur |  |  |
 | 100819 | V. Gears |  |  |
+| 101175 | K. Trash Removal |  |  |
 | 101239 | M. Window Manager |  |  |
 | 101606 | A. Alien Sunset |  |  |
 | 101606 | B. Breaking Biscuits |  |  |
