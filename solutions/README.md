@@ -17,24 +17,24 @@
 | 2100 | 3 |
 | 2200 | 6 |
 | 2300 | 5 |
-| 2500 | 2 |
+| 2500 | 3 |
 | 2700 | 1 |
 | unrated | 191 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 268 |
-| math | 210 |
+| math | 211 |
+| constructive algorithms | 168 |
 | untagged | 168 |
-| constructive algorithms | 167 |
 | implementation | 130 |
 | dp | 105 |
 | brute force | 102 |
 | binary search | 78 |
 | data structures | 78 |
 | sortings | 74 |
-| number theory | 61 |
-| bitmasks | 54 |
+| number theory | 62 |
+| bitmasks | 55 |
 | dfs and similar | 52 |
 | graphs | 49 |
 | two pointers | 44 |
@@ -53,10 +53,10 @@
 | graph matchings | 3 |
 | hashing | 3 |
 | ternary search | 3 |
+| matrices | 2 |
 | schedules | 2 |
 | communication | 1 |
 | fft | 1 |
-| matrices | 1 |
 | string suffix structures | 1 |
 ## Problems
 | Contest | Problem | Rating | Topics |
@@ -99,6 +99,7 @@
 | 1366 | D. Two Divisors | 2000 | constructive algorithms, math, number theory |
 | 1368 | A. C+= | 800 | brute force, greedy, implementation, math |
 | 1426 | E. Rock, Paper, Scissors | 1800 | brute force, constructive algorithms, flows, greedy, math |
+| 1427 | E. Xum | 2500 | bitmasks, constructive algorithms, math, matrices, number theory |
 | 1428 | B. Belted Rooms | 1200 | graphs, implementation |
 | 1437 | C. Chef Monocarp | 1800 | dp, flows, graph matchings, greedy, math, sortings |
 | 1443 | C. The Delivery Dilemma | 1400 | binary search, greedy, sortings |
