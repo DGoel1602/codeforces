@@ -20,7 +20,7 @@
 | 2500 | 3 |
 | 2600 | 1 |
 | 2700 | 1 |
-| unrated | 191 |
+| unrated | 192 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
@@ -28,14 +28,14 @@
 | math | 213 |
 | constructive algorithms | 169 |
 | untagged | 168 |
-| implementation | 130 |
+| implementation | 131 |
 | dp | 105 |
-| brute force | 103 |
+| brute force | 104 |
 | data structures | 79 |
 | binary search | 78 |
-| sortings | 74 |
+| sortings | 75 |
 | number theory | 62 |
-| bitmasks | 56 |
+| bitmasks | 57 |
 | dfs and similar | 52 |
 | graphs | 49 |
 | two pointers | 44 |
@@ -578,6 +578,7 @@
 | 2264 | B. Knife's Pill Farm |  | data structures, greedy |
 | 2264 | C. Madamant's Skating Dynasty |  | combinatorics, math, sortings |
 | 2264 | D. Dr. Agos's Dark Mode |  | brute force, constructive algorithms, math, strings |
+| 2267 | F1. XOR Transformations (Easy Version) |  | bitmasks, brute force, implementation, sortings |
 | 100819 | L. Millionaire |  |  |
 | 100819 | M. Magic Trick |  |  |
 | 100819 | N. Egg Drop |  |  |
