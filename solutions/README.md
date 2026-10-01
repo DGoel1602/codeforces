@@ -20,13 +20,13 @@
 | 2500 | 3 |
 | 2600 | 1 |
 | 2700 | 1 |
-| unrated | 196 |
+| unrated | 197 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 270 |
 | math | 213 |
-| untagged | 172 |
+| untagged | 173 |
 | constructive algorithms | 169 |
 | implementation | 131 |
 | dp | 105 |
@@ -748,6 +748,7 @@
 | 106603 | I. Stepping Stones |  |  |
 | 106603 | K. Urban Horizons |  |  |
 | 106712 | C. Texas-Sized Nuggets |  |  |
+| 106712 | D. Spinnin' On It (Easy) |  |  |
 | 614269 | A. Canonical Palindromes |  |  |
 | 614269 | C. Corrupted Odyssey |  |  |
 | 614269 | H. Shell Shock |  |  |
