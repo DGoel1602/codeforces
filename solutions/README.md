@@ -18,6 +18,7 @@
 | 2200 | 6 |
 | 2300 | 5 |
 | 2500 | 3 |
+| 2600 | 1 |
 | 2700 | 1 |
 | unrated | 191 |
 ## Topic Counts
@@ -30,16 +31,16 @@
 | implementation | 130 |
 | dp | 105 |
 | brute force | 102 |
+| data structures | 79 |
 | binary search | 78 |
-| data structures | 78 |
 | sortings | 74 |
 | number theory | 62 |
 | bitmasks | 55 |
 | dfs and similar | 52 |
 | graphs | 49 |
 | two pointers | 44 |
-| trees | 41 |
-| strings | 31 |
+| trees | 42 |
+| strings | 32 |
 | combinatorics | 29 |
 | interactive | 27 |
 | games | 22 |
@@ -55,9 +56,9 @@
 | ternary search | 3 |
 | matrices | 2 |
 | schedules | 2 |
+| string suffix structures | 2 |
 | communication | 1 |
 | fft | 1 |
-| string suffix structures | 1 |
 ## Problems
 | Contest | Problem | Rating | Topics |
 | --- | --- | --- | --- |
@@ -102,6 +103,7 @@
 | 1427 | E. Xum | 2500 | bitmasks, constructive algorithms, math, matrices, number theory |
 | 1428 | B. Belted Rooms | 1200 | graphs, implementation |
 | 1437 | C. Chef Monocarp | 1800 | dp, flows, graph matchings, greedy, math, sortings |
+| 1437 | G. Death DBMS | 2600 | data structures, string suffix structures, strings, trees |
 | 1443 | C. The Delivery Dilemma | 1400 | binary search, greedy, sortings |
 | 1463 | D. Pairs | 1900 | binary search, constructive algorithms, greedy, two pointers |
 | 1475 | F. Unusual Matrix | 1900 | 2-sat, brute force, constructive algorithms |
