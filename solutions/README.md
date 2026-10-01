@@ -20,13 +20,13 @@
 | 2500 | 3 |
 | 2600 | 1 |
 | 2700 | 1 |
-| unrated | 195 |
+| unrated | 196 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 270 |
 | math | 213 |
-| untagged | 171 |
+| untagged | 172 |
 | constructive algorithms | 169 |
 | implementation | 131 |
 | dp | 105 |
@@ -747,6 +747,7 @@
 | 106603 | F. Knapsack One Million |  |  |
 | 106603 | I. Stepping Stones |  |  |
 | 106603 | K. Urban Horizons |  |  |
+| 106712 | C. Texas-Sized Nuggets |  |  |
 | 614269 | A. Canonical Palindromes |  |  |
 | 614269 | C. Corrupted Odyssey |  |  |
 | 614269 | H. Shell Shock |  |  |
