@@ -5,7 +5,7 @@
 | 900 | 29 |
 | 1000 | 21 |
 | 1100 | 35 |
-| 1200 | 30 |
+| 1200 | 31 |
 | 1300 | 41 |
 | 1400 | 35 |
 | 1500 | 33 |
@@ -24,13 +24,13 @@
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 269 |
-| math | 212 |
+| greedy | 270 |
+| math | 213 |
 | constructive algorithms | 169 |
 | untagged | 168 |
 | implementation | 130 |
 | dp | 105 |
-| brute force | 102 |
+| brute force | 103 |
 | data structures | 79 |
 | binary search | 78 |
 | sortings | 74 |
@@ -45,7 +45,7 @@
 | interactive | 27 |
 | games | 22 |
 | dsu | 19 |
-| geometry | 11 |
+| geometry | 12 |
 | probabilities | 9 |
 | divide and conquer | 6 |
 | flows | 6 |
@@ -230,6 +230,7 @@
 | 1990 | C. Mad MAD Sum | 1500 | brute force, greedy, math |
 | 1991 | D. Prime XOR Coloring | 1900 | bitmasks, constructive algorithms, graphs, greedy, math, number theory |
 | 1995 | B2. Bouquet (Hard Version) | 1700 | binary search, data structures, greedy, math, sortings, two pointers |
+| 2002 | C. Black Circles | 1200 | brute force, geometry, greedy, math |
 | 2008 | E. Alternating String | 1500 | brute force, data structures, dp, greedy, implementation, strings |
 | 2013 | A. Zhan's Blender | 800 | constructive algorithms, math |
 | 2013 | B. Battle for Survive | 900 | constructive algorithms, greedy, math |
