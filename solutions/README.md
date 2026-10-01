@@ -20,14 +20,14 @@
 | 2500 | 3 |
 | 2600 | 1 |
 | 2700 | 1 |
-| unrated | 193 |
+| unrated | 194 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 270 |
 | math | 213 |
+| untagged | 170 |
 | constructive algorithms | 169 |
-| untagged | 169 |
 | implementation | 131 |
 | dp | 105 |
 | brute force | 104 |
@@ -691,6 +691,7 @@
 | 105387 | H. Toys |  |  |
 | 105387 | M. Cinema |  |  |
 | 105387 | N. Entomologist |  |  |
+| 105532 | G. The Picky Ewok |  |  |
 | 105760 | A. Corona Virus Testing |  |  |
 | 105760 | E. Making Connections |  |  |
 | 105761 | A. Odd/Even Strings |  |  |
