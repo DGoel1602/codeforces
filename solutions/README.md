@@ -20,13 +20,13 @@
 | 2500 | 3 |
 | 2600 | 1 |
 | 2700 | 1 |
-| unrated | 197 |
+| unrated | 198 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 270 |
 | math | 213 |
-| untagged | 173 |
+| untagged | 174 |
 | constructive algorithms | 169 |
 | implementation | 131 |
 | dp | 105 |
@@ -749,6 +749,7 @@
 | 106603 | K. Urban Horizons |  |  |
 | 106712 | C. Texas-Sized Nuggets |  |  |
 | 106712 | D. Spinnin' On It (Easy) |  |  |
+| 106712 | E. Speed at Terry Black's |  |  |
 | 614269 | A. Canonical Palindromes |  |  |
 | 614269 | C. Corrupted Odyssey |  |  |
 | 614269 | H. Shell Shock |  |  |
