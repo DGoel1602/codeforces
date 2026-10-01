@@ -20,13 +20,13 @@
 | 2500 | 3 |
 | 2600 | 1 |
 | 2700 | 1 |
-| unrated | 194 |
+| unrated | 195 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 270 |
 | math | 213 |
-| untagged | 170 |
+| untagged | 171 |
 | constructive algorithms | 169 |
 | implementation | 131 |
 | dp | 105 |
@@ -745,6 +745,7 @@
 | 106513 | D. Highway |  |  |
 | 106513 | E. Largest Sorted Partitions |  |  |
 | 106603 | F. Knapsack One Million |  |  |
+| 106603 | I. Stepping Stones |  |  |
 | 106603 | K. Urban Horizons |  |  |
 | 614269 | A. Canonical Palindromes |  |  |
 | 614269 | C. Corrupted Odyssey |  |  |
