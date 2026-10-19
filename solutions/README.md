@@ -20,23 +20,23 @@
 | 2500 | 3 |
 | 2600 | 1 |
 | 2700 | 1 |
-| unrated | 199 |
+| unrated | 226 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 270 |
-| math | 213 |
-| untagged | 176 |
-| constructive algorithms | 169 |
-| implementation | 131 |
-| dp | 105 |
+| greedy | 271 |
+| math | 215 |
+| untagged | 199 |
+| constructive algorithms | 170 |
+| implementation | 132 |
+| dp | 106 |
 | brute force | 104 |
+| binary search | 79 |
 | data structures | 79 |
-| binary search | 78 |
 | sortings | 75 |
-| number theory | 62 |
+| number theory | 63 |
 | bitmasks | 57 |
-| dfs and similar | 52 |
+| dfs and similar | 53 |
 | graphs | 49 |
 | two pointers | 44 |
 | trees | 42 |
@@ -51,8 +51,8 @@
 | flows | 6 |
 | 2-sat | 5 |
 | shortest paths | 5 |
+| hashing | 4 |
 | graph matchings | 3 |
-| hashing | 3 |
 | ternary search | 3 |
 | matrices | 2 |
 | schedules | 2 |
@@ -579,6 +579,10 @@
 | 2264 | C. Madamant's Skating Dynasty |  | combinatorics, math, sortings |
 | 2264 | D. Dr. Agos's Dark Mode |  | brute force, constructive algorithms, math, strings |
 | 2267 | F1. XOR Transformations (Easy Version) |  | bitmasks, brute force, implementation, sortings |
+| 2274 | A. The Projections of Paco |  | dfs and similar, dp, hashing, implementation, math |
+| 2274 | B. Prefix |  | greedy |
+| 2274 | C. Lavencia Oranges |  | binary search, constructive algorithms |
+| 2274 | D. Robot Championship |  | math, number theory |
 | 100819 | L. Millionaire |  |  |
 | 100819 | M. Magic Trick |  |  |
 | 100819 | N. Egg Drop |  |  |
@@ -691,6 +695,13 @@
 | 105387 | H. Toys |  |  |
 | 105387 | M. Cinema |  |  |
 | 105387 | N. Entomologist |  |  |
+| 105471 | A. An Easy Geometry Problem |  |  |
+| 105471 | E. Dominating Point |  |  |
+| 105471 | F. An Easy Counting Problem |  |  |
+| 105471 | G. An Easy Math Problem |  |  |
+| 105471 | H. Elimination Series Once More |  |  |
+| 105471 | J. Graph Changing |  |  |
+| 105471 | N. Python Program |  |  |
 | 105532 | G. The Picky Ewok |  |  |
 | 105760 | A. Corona Virus Testing |  |  |
 | 105760 | E. Making Connections |  |  |
@@ -720,6 +731,22 @@
 | 106104 | B. Winning Record |  |  |
 | 106104 | C. Buying Fruit |  |  |
 | 106104 | D. Interview Flights |  |  |
+| 106164 | B. Bring It To Back |  |  |
+| 106164 | C. Challenge to the Reader |  |  |
+| 106164 | E. Elena and Travel Pass |  |  |
+| 106164 | G. Galactic Adventure Agency |  |  |
+| 106164 | I. ICPC Extractor |  |  |
+| 106164 | M. Merticulous Manipulation |  |  |
+| 106164 | N. No Distance is Too Far Apart |  |  |
+| 106262 | A. Alphabet Chocolate |  |  |
+| 106262 | D. Drinking Culture |  |  |
+| 106262 | E. Long Distance Examination |  |  |
+| 106262 | G. Max Cut Min Flow |  |  |
+| 106262 | H. Prime Topology |  |  |
+| 106262 | I. Stone Steps |  |  |
+| 106262 | J. Tic-Tac-Toe on a Graph |  |  |
+| 106262 | L. Trace of Product of Sparse Square Matrices |  |  |
+| 106262 | M. Web Delivery |  |  |
 | 106369 | A. Lucky 7 |  |  |
 | 106369 | B. We Want You Happy! |  |  |
 | 106369 | C. Snailography |  |  |
