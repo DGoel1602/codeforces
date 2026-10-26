@@ -20,11 +20,11 @@
 | 2500 | 3 |
 | 2600 | 1 |
 | 2700 | 1 |
-| unrated | 230 |
+| unrated | 231 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
-| greedy | 271 |
+| greedy | 272 |
 | math | 215 |
 | untagged | 201 |
 | constructive algorithms | 171 |
@@ -583,6 +583,7 @@
 | 2272 | B. Frogs Jump |  |  |
 | 2272 | C. Yet Another Black Cell Problem |  | binary search |
 | 2272 | D. Connecting the Conflicts |  | constructive algorithms |
+| 2272 | E. Memory Cell Interception |  | greedy |
 | 2274 | A. The Projections of Paco |  | dfs and similar, dp, hashing, implementation, math |
 | 2274 | B. Prefix |  | greedy |
 | 2274 | C. Lavencia Oranges |  | binary search, constructive algorithms |
