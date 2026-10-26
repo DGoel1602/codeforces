@@ -20,13 +20,13 @@
 | 2500 | 3 |
 | 2600 | 1 |
 | 2700 | 1 |
-| unrated | 242 |
+| unrated | 243 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 272 |
 | math | 215 |
-| untagged | 212 |
+| untagged | 213 |
 | constructive algorithms | 171 |
 | implementation | 132 |
 | dp | 106 |
@@ -707,6 +707,7 @@
 | 105231 | I. Neuvillette Circling |  |  |
 | 105231 | J. Magic Mahjong |  |  |
 | 105231 | K. Magic Tree |  |  |
+| 105231 | L. Campus |  |  |
 | 105387 | A. Dilation |  |  |
 | 105387 | H. Toys |  |  |
 | 105387 | M. Cinema |  |  |
