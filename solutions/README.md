@@ -20,13 +20,13 @@
 | 2500 | 3 |
 | 2600 | 1 |
 | 2700 | 1 |
-| unrated | 237 |
+| unrated | 238 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 272 |
 | math | 215 |
-| untagged | 207 |
+| untagged | 208 |
 | constructive algorithms | 171 |
 | implementation | 132 |
 | dp | 106 |
@@ -702,6 +702,7 @@
 | 105231 | D. Magic LCM  |  |  |
 | 105231 | E. Magic Subsequence |  |  |
 | 105231 | F. The Ropeways |  |  |
+| 105231 | G. Multiples of 5 |  |  |
 | 105387 | A. Dilation |  |  |
 | 105387 | H. Toys |  |  |
 | 105387 | M. Cinema |  |  |
