@@ -20,13 +20,13 @@
 | 2500 | 3 |
 | 2600 | 1 |
 | 2700 | 1 |
-| unrated | 231 |
+| unrated | 232 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 272 |
 | math | 215 |
-| untagged | 201 |
+| untagged | 202 |
 | constructive algorithms | 171 |
 | implementation | 132 |
 | dp | 106 |
@@ -696,6 +696,7 @@
 | 104783 | R. Cyanide Rivers |  |  |
 | 104783 | S. Screamers in the Storm |  |  |
 | 104783 | W. Win Diesel |  |  |
+| 105231 | A. Maliang Learning Painting |  |  |
 | 105387 | A. Dilation |  |  |
 | 105387 | H. Toys |  |  |
 | 105387 | M. Cinema |  |  |
