@@ -20,13 +20,13 @@
 | 2500 | 3 |
 | 2600 | 1 |
 | 2700 | 1 |
-| unrated | 233 |
+| unrated | 234 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 272 |
 | math | 215 |
-| untagged | 203 |
+| untagged | 204 |
 | constructive algorithms | 171 |
 | implementation | 132 |
 | dp | 106 |
@@ -698,6 +698,7 @@
 | 104783 | W. Win Diesel |  |  |
 | 105231 | A. Maliang Learning Painting |  |  |
 | 105231 | B. Magic Leeks |  |  |
+| 105231 | C. Liar |  |  |
 | 105387 | A. Dilation |  |  |
 | 105387 | H. Toys |  |  |
 | 105387 | M. Cinema |  |  |
