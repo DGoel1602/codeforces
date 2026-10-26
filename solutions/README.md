@@ -20,13 +20,13 @@
 | 2500 | 3 |
 | 2600 | 1 |
 | 2700 | 1 |
-| unrated | 226 |
+| unrated | 227 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 271 |
 | math | 215 |
-| untagged | 199 |
+| untagged | 200 |
 | constructive algorithms | 170 |
 | implementation | 132 |
 | dp | 106 |
@@ -579,6 +579,7 @@
 | 2264 | C. Madamant's Skating Dynasty |  | combinatorics, math, sortings |
 | 2264 | D. Dr. Agos's Dark Mode |  | brute force, constructive algorithms, math, strings |
 | 2267 | F1. XOR Transformations (Easy Version) |  | bitmasks, brute force, implementation, sortings |
+| 2272 | A. Maximize One MEX |  |  |
 | 2274 | A. The Projections of Paco |  | dfs and similar, dp, hashing, implementation, math |
 | 2274 | B. Prefix |  | greedy |
 | 2274 | C. Lavencia Oranges |  | binary search, constructive algorithms |
