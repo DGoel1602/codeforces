@@ -20,13 +20,13 @@
 | 2500 | 3 |
 | 2600 | 1 |
 | 2700 | 1 |
-| unrated | 240 |
+| unrated | 241 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 272 |
 | math | 215 |
-| untagged | 210 |
+| untagged | 211 |
 | constructive algorithms | 171 |
 | implementation | 132 |
 | dp | 106 |
@@ -705,6 +705,7 @@
 | 105231 | G. Multiples of 5 |  |  |
 | 105231 | H. Convolution |  |  |
 | 105231 | I. Neuvillette Circling |  |  |
+| 105231 | J. Magic Mahjong |  |  |
 | 105387 | A. Dilation |  |  |
 | 105387 | H. Toys |  |  |
 | 105387 | M. Cinema |  |  |
