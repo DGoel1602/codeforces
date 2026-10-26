@@ -20,7 +20,7 @@
 | 2500 | 3 |
 | 2600 | 1 |
 | 2700 | 1 |
-| unrated | 228 |
+| unrated | 229 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
@@ -31,7 +31,7 @@
 | implementation | 132 |
 | dp | 106 |
 | brute force | 104 |
-| binary search | 79 |
+| binary search | 80 |
 | data structures | 79 |
 | sortings | 75 |
 | number theory | 63 |
@@ -581,6 +581,7 @@
 | 2267 | F1. XOR Transformations (Easy Version) |  | bitmasks, brute force, implementation, sortings |
 | 2272 | A. Maximize One MEX |  |  |
 | 2272 | B. Frogs Jump |  |  |
+| 2272 | C. Yet Another Black Cell Problem |  | binary search |
 | 2274 | A. The Projections of Paco |  | dfs and similar, dp, hashing, implementation, math |
 | 2274 | B. Prefix |  | greedy |
 | 2274 | C. Lavencia Oranges |  | binary search, constructive algorithms |
