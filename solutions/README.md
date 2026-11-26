@@ -20,13 +20,13 @@
 | 2500 | 3 |
 | 2600 | 1 |
 | 2700 | 1 |
-| unrated | 243 |
+| unrated | 284 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 272 |
+| untagged | 254 |
 | math | 215 |
-| untagged | 213 |
 | constructive algorithms | 171 |
 | implementation | 132 |
 | dp | 106 |
@@ -588,6 +588,7 @@
 | 2274 | B. Prefix |  | greedy |
 | 2274 | C. Lavencia Oranges |  | binary search, constructive algorithms |
 | 2274 | D. Robot Championship |  | math, number theory |
+| 100283 | A. Rasheda And The Zeriba |  |  |
 | 100819 | L. Millionaire |  |  |
 | 100819 | M. Magic Trick |  |  |
 | 100819 | N. Egg Drop |  |  |
@@ -677,6 +678,7 @@
 | 104587 | J. Simply Sudoku |  |  |
 | 104587 | K. Weighty Tomes |  |  |
 | 104587 | L. Workers of the World Unite! Just Not Too Close. |  |  |
+| 104736 | J. Journey of the Robber |  |  |
 | 104767 | A. Beth's Cookies |  |  |
 | 104767 | B. Clubbing |  |  |
 | 104767 | D. Expressions |  |  |
@@ -699,7 +701,7 @@
 | 105231 | A. Maliang Learning Painting |  |  |
 | 105231 | B. Magic Leeks |  |  |
 | 105231 | C. Liar |  |  |
-| 105231 | D. Magic LCM  |  |  |
+| 105231 | D. Magic LCM |  |  |
 | 105231 | E. Magic Subsequence |  |  |
 | 105231 | F. The Ropeways |  |  |
 | 105231 | G. Multiples of 5 |  |  |
@@ -712,6 +714,15 @@
 | 105387 | H. Toys |  |  |
 | 105387 | M. Cinema |  |  |
 | 105387 | N. Entomologist |  |  |
+| 105465 | A. AND-OR closure |  |  |
+| 105465 | B. Build Permutation |  |  |
+| 105465 | C. Christmas Sky |  |  |
+| 105465 | E. Eliminate Tree |  |  |
+| 105465 | F. Fast XORting |  |  |
+| 105465 | G. Graph Race |  |  |
+| 105465 | J. Jackpot |  |  |
+| 105465 | K. $K$ Subsequences |  |  |
+| 105465 | M. Max Minus Min |  |  |
 | 105471 | A. An Easy Geometry Problem |  |  |
 | 105471 | E. Dominating Point |  |  |
 | 105471 | F. An Easy Counting Problem |  |  |
@@ -788,13 +799,43 @@
 | 106513 | C. Sprinkler Piping |  |  |
 | 106513 | D. Highway |  |  |
 | 106513 | E. Largest Sorted Partitions |  |  |
+| 106603 | B. Cocktail Sort |  |  |
 | 106603 | F. Knapsack One Million |  |  |
 | 106603 | I. Stepping Stones |  |  |
 | 106603 | K. Urban Horizons |  |  |
+| 106666 | H. RSC-IV (Redstone Computer 4) |  |  |
+| 106682 | A. At the midpoint |  |  |
+| 106682 | B. Breaking Rosarigasino |  |  |
+| 106682 | C. Confrontation of Numbers |  |  |
+| 106682 | D. Digit One Dilemma |  |  |
+| 106682 | H. Harmonic Arrays |  |  |
+| 106682 | I. Is There a Winner? |  |  |
+| 106682 | J. Joy of playing TAPum |  |  |
+| 106682 | K. Kilograms Exceeded |  |  |
+| 106682 | L. Luana's Album |  |  |
+| 106682 | M. Mendocinos Mismanaging Malbec |  |  |
+| 106682 | N. Number of Strings  |  |  |
 | 106712 | C. Texas-Sized Nuggets |  |  |
 | 106712 | D. Spinnin' On It (Easy) |  |  |
 | 106712 | E. Speed at Terry Black's |  |  |
 | 106712 | F. Texas-Sized Number |  |  |
+| 106730 | A. Ambagaata |  |  |
+| 106730 | B. Butter, Cheese, and Eggs |  |  |
+| 106730 | C. Chaotic Crossing |  |  |
+| 106730 | D. Dicey Decision |  |  |
+| 106730 | E. Exhausted Economist |  |  |
+| 106730 | F. Football Forecast |  |  |
+| 106730 | H. Handing Over |  |  |
+| 106730 | I. Irritating Interruption I |  |  |
+| 106730 | J. Joyful Jogging |  |  |
+| 106730 | K. Khoikhoi Dralinpome |  |  |
+| 106730 | L. Lock In |  |  |
+| 106730 | M. Manic Ceramic |  |  |
+| 106803 | A. Magikarp Jump |  |  |
+| 106803 | B. Changing Change |  |  |
+| 106803 | C. Trail Running |  |  |
+| 106803 | D. Maximum Value Plot II: Plot Harder |  |  |
+| 106803 | E. UTPC Code |  |  |
 | 614269 | A. Canonical Palindromes |  |  |
 | 614269 | C. Corrupted Odyssey |  |  |
 | 614269 | H. Shell Shock |  |  |
