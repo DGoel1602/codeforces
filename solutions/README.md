@@ -20,12 +20,12 @@
 | 2500 | 3 |
 | 2600 | 1 |
 | 2700 | 1 |
-| unrated | 294 |
+| unrated | 295 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 272 |
-| untagged | 264 |
+| untagged | 265 |
 | math | 215 |
 | constructive algorithms | 171 |
 | implementation | 132 |
@@ -751,6 +751,7 @@
 | 105811 | J. Security Breach |  |  |
 | 105811 | K. Philadelphia Museum of Art |  |  |
 | 105811 | L. Trapped in the Big Apple |  |  |
+| 105811 | M. Tea Party |  |  |
 | 105873 | A. Analysing Electrocardiograms |  |  |
 | 105873 | B. Buying Paint |  |  |
 | 105873 | D. Delivering Orders |  |  |
