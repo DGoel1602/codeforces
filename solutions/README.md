@@ -20,12 +20,12 @@
 | 2500 | 3 |
 | 2600 | 1 |
 | 2700 | 1 |
-| unrated | 292 |
+| unrated | 293 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 272 |
-| untagged | 262 |
+| untagged | 263 |
 | math | 215 |
 | constructive algorithms | 171 |
 | implementation | 132 |
@@ -749,6 +749,7 @@
 | 105811 | H. Lineism |  |  |
 | 105811 | I. Game, Set, Match |  |  |
 | 105811 | J. Security Breach |  |  |
+| 105811 | K. Philadelphia Museum of Art |  |  |
 | 105873 | A. Analysing Electrocardiograms |  |  |
 | 105873 | B. Buying Paint |  |  |
 | 105873 | D. Delivering Orders |  |  |
