@@ -20,12 +20,12 @@
 | 2500 | 3 |
 | 2600 | 1 |
 | 2700 | 1 |
-| unrated | 288 |
+| unrated | 289 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 272 |
-| untagged | 258 |
+| untagged | 259 |
 | math | 215 |
 | constructive algorithms | 171 |
 | implementation | 132 |
@@ -745,6 +745,7 @@
 | 105811 | B. Card Counting |  |  |
 | 105811 | D. City Renewal |  |  |
 | 105811 | E. Cable Plan |  |  |
+| 105811 | G. Music Festival |  |  |
 | 105873 | A. Analysing Electrocardiograms |  |  |
 | 105873 | B. Buying Paint |  |  |
 | 105873 | D. Delivering Orders |  |  |
