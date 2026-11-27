@@ -20,12 +20,12 @@
 | 2500 | 3 |
 | 2600 | 1 |
 | 2700 | 1 |
-| unrated | 286 |
+| unrated | 287 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 272 |
-| untagged | 256 |
+| untagged | 257 |
 | math | 215 |
 | constructive algorithms | 171 |
 | implementation | 132 |
@@ -743,6 +743,7 @@
 | 105761 | I. K-gap Subsequence |  |  |
 | 105811 | A. Fishy Tank |  |  |
 | 105811 | B. Card Counting |  |  |
+| 105811 | D. City Renewal |  |  |
 | 105873 | A. Analysing Electrocardiograms |  |  |
 | 105873 | B. Buying Paint |  |  |
 | 105873 | D. Delivering Orders |  |  |
