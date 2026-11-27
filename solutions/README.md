@@ -20,12 +20,12 @@
 | 2500 | 3 |
 | 2600 | 1 |
 | 2700 | 1 |
-| unrated | 284 |
+| unrated | 285 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 272 |
-| untagged | 254 |
+| untagged | 255 |
 | math | 215 |
 | constructive algorithms | 171 |
 | implementation | 132 |
@@ -741,6 +741,7 @@
 | 105761 | G. Toboggan Ride |  |  |
 | 105761 | H. Discord Daisy Chain |  |  |
 | 105761 | I. K-gap Subsequence |  |  |
+| 105811 | A. Fishy Tank |  |  |
 | 105873 | A. Analysing Electrocardiograms |  |  |
 | 105873 | B. Buying Paint |  |  |
 | 105873 | D. Delivering Orders |  |  |
@@ -814,7 +815,7 @@
 | 106682 | K. Kilograms Exceeded |  |  |
 | 106682 | L. Luana's Album |  |  |
 | 106682 | M. Mendocinos Mismanaging Malbec |  |  |
-| 106682 | N. Number of Strings  |  |  |
+| 106682 | N. Number of Strings |  |  |
 | 106712 | C. Texas-Sized Nuggets |  |  |
 | 106712 | D. Spinnin' On It (Easy) |  |  |
 | 106712 | E. Speed at Terry Black's |  |  |
