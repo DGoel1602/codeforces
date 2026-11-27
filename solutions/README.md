@@ -20,12 +20,12 @@
 | 2500 | 3 |
 | 2600 | 1 |
 | 2700 | 1 |
-| unrated | 291 |
+| unrated | 292 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 272 |
-| untagged | 261 |
+| untagged | 262 |
 | math | 215 |
 | constructive algorithms | 171 |
 | implementation | 132 |
@@ -748,6 +748,7 @@
 | 105811 | G. Music Festival |  |  |
 | 105811 | H. Lineism |  |  |
 | 105811 | I. Game, Set, Match |  |  |
+| 105811 | J. Security Breach |  |  |
 | 105873 | A. Analysing Electrocardiograms |  |  |
 | 105873 | B. Buying Paint |  |  |
 | 105873 | D. Delivering Orders |  |  |
