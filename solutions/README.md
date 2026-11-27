@@ -20,12 +20,12 @@
 | 2500 | 3 |
 | 2600 | 1 |
 | 2700 | 1 |
-| unrated | 287 |
+| unrated | 288 |
 ## Topic Counts
 | Topic | Problems |
 | --- | ---: |
 | greedy | 272 |
-| untagged | 257 |
+| untagged | 258 |
 | math | 215 |
 | constructive algorithms | 171 |
 | implementation | 132 |
@@ -744,6 +744,7 @@
 | 105811 | A. Fishy Tank |  |  |
 | 105811 | B. Card Counting |  |  |
 | 105811 | D. City Renewal |  |  |
+| 105811 | E. Cable Plan |  |  |
 | 105873 | A. Analysing Electrocardiograms |  |  |
 | 105873 | B. Buying Paint |  |  |
 | 105873 | D. Delivering Orders |  |  |
